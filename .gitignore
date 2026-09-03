@@ -5,6 +5,10 @@
 *.mmdb
 run*.log
 
+# Local page previews: data files copied next to the page
+/site/chains.json
+/site/*/
+
 # Go
 *.test
 *.out

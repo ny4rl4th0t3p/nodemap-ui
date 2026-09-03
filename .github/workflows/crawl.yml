@@ -1,0 +1,131 @@
+name: crawl
+
+on:
+  schedule:
+    - cron: "7 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# One crawl at a time: the data branch push and the deploy must not race.
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+env:
+  NODEMAP_VERSION: v0.2.0
+  DBIP_BASE: https://download.db-ip.com/free
+
+jobs:
+  crawl:
+    # Kill switch, first lever: nothing below runs while the variable is set.
+    if: vars.NODEMAP_PAUSED != '1'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: check out the data branch, creating it on the first run
+        run: |
+          set -euo pipefail
+          if git ls-remote --exit-code --heads origin data > /dev/null; then
+            git fetch --depth 1 origin data
+            git worktree add data FETCH_HEAD
+          else
+            git worktree add --orphan data
+          fi
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: tools/go.mod
+
+      - name: install the pinned crawler
+        run: go install github.com/ny4rl4th0t3p/nodemap@${{ env.NODEMAP_VERSION }}
+
+      - name: geolocation databases for this month
+        id: month
+        run: echo "month=$(date -u +%Y-%m)" >> "$GITHUB_OUTPUT"
+      - uses: actions/cache@v4
+        id: dbip
+        with:
+          path: db-ip
+          key: dbip-lite-${{ steps.month.outputs.month }}
+      - if: steps.dbip.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p db-ip
+          m="${{ steps.month.outputs.month }}"
+          for kind in country asn; do
+            curl -fsSL "$DBIP_BASE/dbip-$kind-lite-$m.mmdb.gz" | gunzip > "db-ip/$kind.mmdb"
+          done
+
+      - name: crawl every chain
+        id: crawl
+        run: |
+          # The loop never aborts: a chain that fails keeps its last good
+          # files on the data branch; a hard error is reported at the end.
+          set -uo pipefail
+          hard=0
+          for f in instance/seeds/*.json; do
+            chain=$(jq -r .chain_id "$f")
+            nodemap -seeds "$f" -chain "$chain" \
+              -geo-country db-ip/country.mmdb -geo-asn db-ip/asn.mmdb \
+              -suppress instance/suppression.txt -out "data/$chain" \
+              -workers 16 -max-runtime 10m -progress 0
+            rc=$?
+            echo "$chain: exit $rc"
+            if [ "$rc" -eq 2 ]; then hard=1; fi
+          done
+          echo "hard=$hard" >> "$GITHUB_OUTPUT"
+        env:
+          NODEMAP_SALT: ${{ secrets.NODEMAP_SALT }}
+
+      - name: commit the data branch
+        run: |
+          set -euo pipefail
+          cd data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet && git rev-parse --verify HEAD > /dev/null 2>&1; then
+            echo "nothing to commit"
+          else
+            # --allow-empty only matters on the first run, when the branch is
+            # unborn and every chain may have failed; the branch must still exist.
+            git commit --allow-empty -m "chore: crawl"
+            git push origin HEAD:data
+          fi
+
+      - name: assemble the site
+        run: |
+          set -euo pipefail
+          rm -rf _site && mkdir _site
+          cp -r site/. _site/
+          cp instance/delist.asc _site/delist.asc
+          chains='[]'
+          for d in data/*/; do
+            chain=$(basename "$d")
+            [ -f "$d/current.json" ] || continue
+            mkdir -p "_site/$chain"
+            cp "$d"/current.json "$d"/history.jsonl "$d"/directory-state.json "_site/$chain/" 2>/dev/null || true
+            chains=$(jq -c --arg c "$chain" '. + [$c]' <<< "$chains")
+          done
+          echo "$chains" > _site/chains.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: report hard errors
+        if: steps.crawl.outputs.hard == '1'
+        run: |
+          echo "at least one chain hit a hard error (exit 2); see the crawl step"
+          exit 1

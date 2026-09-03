@@ -1,0 +1,35 @@
+name: takedown
+
+# Kill switch, second lever: replaces the whole published site with a notice.
+# Set the NODEMAP_PAUSED repository variable to 1 as well, or the next hourly
+# crawl deploys the map again.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  takedown:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - run: |
+          set -euo pipefail
+          rm -rf _site && mkdir _site
+          cp site/takedown.html _site/index.html
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

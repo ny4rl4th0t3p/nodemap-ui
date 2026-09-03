@@ -1,0 +1,104 @@
+name: delist
+
+# Automated opt-out intake. A discussion in the "delist" category titled
+# exactly "delist" carries an encrypted proof in its body. The proof is
+# decrypted, verified, and reduced to a list entry inside one pipeline; the
+# plaintext exists only in pipes, never on a command line, never in the log.
+# Every submission gets the same reply and is then deleted, whatever the
+# outcome, so nothing here can be used to learn which proofs verified.
+on:
+  discussion:
+    types: [created]
+
+permissions:
+  contents: write
+  discussions: write
+
+concurrency:
+  group: delist
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: >-
+      github.event.discussion.category.slug == 'delist' &&
+      github.event.discussion.title == 'delist'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: tools/go.mod
+
+      - name: build the verifier and install the pinned crawler
+        run: |
+          set -euo pipefail
+          (cd tools && go build -o "$RUNNER_TEMP/verify" ./verify)
+          go install github.com/ny4rl4th0t3p/nodemap@v0.2.0
+
+      - name: import the delisting key into a throwaway keyring
+        env:
+          DELIST_GPG_KEY: ${{ secrets.DELIST_GPG_KEY }}
+        run: |
+          set -euo pipefail
+          export GNUPGHOME="$RUNNER_TEMP/gnupg"
+          mkdir -p "$GNUPGHOME" && chmod 700 "$GNUPGHOME"
+          printf '%s' "$DELIST_GPG_KEY" | gpg --batch --quiet --import 2>/dev/null
+          echo "GNUPGHOME=$GNUPGHOME" >> "$GITHUB_ENV"
+
+      - name: process the proof
+        id: proof
+        env:
+          BODY: ${{ github.event.discussion.body }}
+          NODEMAP_SALT: ${{ secrets.NODEMAP_SALT }}
+        run: |
+          # One pipeline, trace off, stderr discarded: the decrypted proof
+          # and the node id never appear anywhere but the pipe between the
+          # three programs. The only thing logged is the outcome.
+          set +x
+          set -o pipefail
+          outcome=rejected
+          if printf '%s' "$BODY" \
+              | gpg --batch --quiet --no-tty --decrypt 2>/dev/null \
+              | "$RUNNER_TEMP/verify" 2>/dev/null \
+              | nodemap -hash 2>/dev/null >> instance/suppression.txt; then
+            outcome=accepted
+          fi
+          echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
+          echo "$outcome"
+
+      - name: commit the list if it changed
+        if: steps.proof.outputs.outcome == 'accepted'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add instance/suppression.txt
+          git diff --cached --quiet || git commit -m "chore: update suppression list"
+          git push
+
+      - name: reply with the constant message
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCUSSION: ${{ github.event.discussion.node_id }}
+        run: |
+          set -euo pipefail
+          gh api graphql -f query='
+            mutation($id: ID!, $body: String!) {
+              addDiscussionComment(input: {discussionId: $id, body: $body}) { comment { id } }
+            }' -f id="$DISCUSSION" \
+            -f body="Received. If the proof verifies, the record is gone after the next hourly run. This thread is deleted automatically." \
+            > /dev/null
+
+      - name: delete the discussion
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISCUSSION: ${{ github.event.discussion.node_id }}
+        run: |
+          set -euo pipefail
+          gh api graphql -f query='
+            mutation($id: ID!) { deleteDiscussion(input: {id: $id}) { clientMutationId } }' \
+            -f id="$DISCUSSION" > /dev/null
