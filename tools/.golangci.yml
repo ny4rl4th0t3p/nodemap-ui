@@ -1,0 +1,40 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - bodyclose
+    - copyloopvar
+    - errcheck
+    - errorlint
+    - gocritic
+    - gosec
+    - govet
+    - intrange
+    - ineffassign
+    - misspell
+    - nolintlint
+    - revive
+    - staticcheck
+    - unconvert
+    - unparam
+    - unused
+  settings:
+    gocritic:
+      enabled-tags: [diagnostic, experimental, opinionated, performance, style]
+      disabled-checks: [dupImport, ifElseChain, octalLiteral, whyNoLint, commentedOutCode, hugeParam]
+    misspell:
+      locale: US
+    nolintlint:
+      allow-unused: false
+      require-explanation: true
+      require-specific: true
+  exclusions:
+    presets: [comments, std-error-handling, common-false-positives, legacy]
+
+formatters:
+  enable: [gofmt, goimports]
+  settings:
+    goimports:
+      local-prefixes:
+        - github.com/ny4rl4th0t3p/nodemap-ui

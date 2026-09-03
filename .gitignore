@@ -1,0 +1,22 @@
+# Local crawl runs and geolocation databases
+/out/
+/data/
+/db-ip/
+*.mmdb
+run*.log
+
+# Go
+*.test
+*.out
+
+# Secrets never live here
+*.key
+*.sec
+proof*.json
+proof*.asc
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
