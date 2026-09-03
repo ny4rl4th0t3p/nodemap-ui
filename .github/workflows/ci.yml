@@ -1,0 +1,75 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  instance-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: seeds files carry a chain_id and at least one rpc address
+        run: |
+          set -euo pipefail
+          for f in instance/seeds/*.json; do
+            jq -e '(.chain_id | type == "string" and length > 0)
+                   and ([.apis.rpc[]?.address | select(type == "string" and length > 0)] | length > 0)' "$f" \
+              > /dev/null || { echo "invalid seeds file: $f"; exit 1; }
+          done
+      - name: suppression list holds only comments and 64-hex entries
+        run: |
+          set -euo pipefail
+          if grep -vE '^(#.*|[0-9a-f]{64}|[[:space:]]*)$' instance/suppression.txt; then
+            echo "malformed suppression entry"; exit 1
+          fi
+      - name: delisting key is an armored public key
+        run: |
+          set -euo pipefail
+          test -f instance/delist.asc
+          gpg --show-keys instance/delist.asc > /dev/null
+      - name: site assets referenced by the pages exist
+        run: |
+          set -euo pipefail
+          for page in site/index.html site/delist.html; do
+            for ref in $(grep -oE '(src|href)="[^"]+"' "$page" | sed -E 's/^[a-z]+="//; s/"$//' | grep -vE '^(https?:|#|mailto:|\./$)'); do
+              test -f "site/$ref" || { echo "$page: missing asset $ref"; exit 1; }
+            done
+          done
+          for f in world.topo.json iso-a2.json app.js style.css takedown.html; do
+            test -f "site/$f" || { echo "missing site/$f"; exit 1; }
+          done
+      - name: report atlas coverage (small territories are absent at 110m; informational)
+        run: |
+          set -euo pipefail
+          jq -r --slurpfile atlas site/world.topo.json '
+            . as $iso
+            | ($atlas[0].objects.countries.geometries | map(.id | tostring)) as $ids
+            | ([$iso | to_entries[] | .value]) as $vals
+            | "iso-a2 entries without an atlas feature: "
+              + ([$iso | to_entries[] | select(.value as $v | $ids | index($v) | not) | .key] | join(" ")),
+              "atlas features without an iso-a2 entry: "
+              + ([$ids[] | select(. as $id | $vals | index($id) | not)] | join(" "))
+          ' site/iso-a2.json
+
+  tools:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: tools/go.mod
+      - run: go vet ./...
+      - run: go test -race -count=1 ./...
+      - name: golangci-lint
+        uses: golangci/golangci-lint-action@v9
+        with:
+          version: v2.11
+          working-directory: tools
