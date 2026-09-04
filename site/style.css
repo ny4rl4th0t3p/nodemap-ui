@@ -94,4 +94,6 @@ a { color: var(--blue); }
   .card { padding: 16px; }
   .endpoints { font-size: 13px; }
   .endpoints td:first-child { font-size: 12px; }
+  .card-foot { flex-direction: column; gap: 6px; }
+  .delist { margin-left: 0; }
 }
