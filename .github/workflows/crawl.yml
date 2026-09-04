@@ -1,8 +1,10 @@
 name: crawl
 
 on:
+  # Every four hours, off the top of the hour: GitHub's scheduler is best
+  # effort and drops runs under load, worst at the busiest minutes.
   schedule:
-    - cron: "7 * * * *"
+    - cron: "23 */4 * * *"
   workflow_dispatch:
 
 permissions:
