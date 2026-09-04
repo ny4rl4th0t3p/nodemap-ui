@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nodemap · request delisting</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .doc { max-width: 760px; margin: 0 auto; padding: 24px 20px 60px; }
+    .doc pre { background: #f1f3f6; padding: 12px 14px; border-radius: 10px; overflow-x: auto; font-size: 13px; }
+    .doc ol li { margin-bottom: 14px; }
+    .doc h2 { font-size: 20px; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <article class="doc">
+    <p><a href="./">← back to the map</a></p>
+    <h1>Request delisting</h1>
+    <p>Operators of a self-advertised public RPC node can have its individual record removed from this map. The node
+      keeps counting in the anonymous aggregates; only the endpoint row disappears. This hides the node from this map,
+      not from anyone running their own crawler.</p>
+    <p>Removal requires proof of control of the node's <code>node_key</code>: the P2P identity key, not the consensus
+      key. It cannot sign blocks. Producing the proof reads the key; nothing restarts, nothing is written, nothing is
+      gossiped, and nothing from this project runs on your node.</p>
+
+    <h2>Procedure</h2>
+    <ol>
+      <li>
+        Sign, with the node's <code>node_key</code>, the exact text
+        <pre>delist &lt;node_id&gt; from nodemap &lt;YYYY-MM&gt;</pre>
+        where <code>&lt;node_id&gt;</code> is your node id in lower-case hex and <code>&lt;YYYY-MM&gt;</code> the
+        current UTC month. The signature is a plain ed25519 signature over those bytes: no hashing, no framing.
+        Package it as
+        <pre>{"node_id":"&lt;hex&gt;","pubkey":"&lt;base64 of the 32-byte public key&gt;","signature":"&lt;base64 of the 64-byte signature&gt;"}</pre>
+      </li>
+      <li>
+        Encrypt that object to this instance's key, <a href="delist.asc">delist.asc</a>. The public key alone
+        identifies your node, so the proof must never travel in the clear:
+        <pre>gpg --import delist.asc
+gpg --encrypt --armor --recipient &lt;the key's id&gt; proof.json</pre>
+      </li>
+      <li>
+        Open a <a href="https://github.com/ny4rl4th0t3p/nodemap-ui/discussions/new?category=delist">new discussion in
+        the <em>delist</em> category</a>, titled exactly <code>delist</code>, with the armored text as the whole body.
+        A workflow picks it up within minutes, posts one reply, and deletes the thread.
+      </li>
+    </ol>
+
+    <h2>What happens then</h2>
+    <p>The reply is the same whether the proof verified or not. A valid proof shows as your endpoint disappearing after
+      the next hourly run, and in nothing else. The proof is valid for the month it names and the month after. The list
+      the crawler reads holds only a salted hash of your node id; the salt is never published, and nothing in this
+      repository identifies a delisted node.</p>
+    <p>The discussion names the account that opened it for as long as it exists. If you need to be unlinkable even from
+      the maintainer, use a throwaway account; the proof verifies on its own, so a relay through someone else works
+      too.</p>
+  </article>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>nodemap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true">❄</span>
+      <h1>nodemap</h1>
+      <span class="badge badge-blue">public · aggregate</span>
+    </div>
+    <p class="tagline">Observed node distribution across Cosmos SDK chains</p>
+    <select id="chain" class="chain" aria-label="chain"></select>
+  </header>
+
+  <main id="app" hidden>
+    <section class="tiles">
+      <div class="tile"><span class="label">Observed nodes</span><strong id="t-nodes">—</strong><span id="t-nodes-sub" class="sub"></span></div>
+      <div class="tile"><span class="label">Countries</span><strong id="t-countries">—</strong><span class="sub">country level only</span></div>
+      <div class="tile"><span class="label">Largest component</span><strong id="t-lcc">—</strong><span id="t-lcc-sub" class="sub"></span></div>
+      <div class="tile"><span class="label" id="t-top-label">Top-5 peer share</span><strong id="t-top">—</strong><span id="t-top-sub" class="sub"></span></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <div><h2>Nodes by country</h2><p>Country granularity only — no city-level data is collected</p></div>
+        <span class="note">approximate · IP geolocation</span>
+      </div>
+      <div class="map-wrap"><svg id="map" viewBox="0 0 900 355" role="img" aria-label="nodes by country"></svg></div>
+      <div class="legend"><span>0</span><span class="legend-bar"></span><span id="legend-max"></span></div>
+    </section>
+
+    <section class="two">
+      <div class="card">
+        <div class="card-head"><div><h2>Top countries</h2><p>Share of observed nodes</p></div></div>
+        <ol id="countries" class="bars blue"></ol>
+      </div>
+      <div class="card">
+        <div class="card-head"><div><h2>Hosting concentration</h2><p>Nodes per ASN · share of reported connections</p></div></div>
+        <ol id="asns" class="bars green"></ol>
+        <p id="asn-callout" class="callout"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <div><h2>Client version adoption</h2><p>Not joinable with country, ASN, or endpoint</p></div>
+        <span class="badge badge-amber">network-wide only</span>
+      </div>
+      <div id="adoption"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-head">
+        <div><h2>Public RPC endpoints</h2><p>No version tags — endpoint and build are never shown together.</p></div>
+        <span class="note">Tier A · self-advertised</span>
+      </div>
+      <table class="endpoints">
+        <thead><tr><th>Endpoint</th><th>Country</th><th>Mode</th><th>Status</th></tr></thead>
+        <tbody id="endpoints"></tbody>
+      </table>
+      <footer class="card-foot">
+        <span id="crawled"></span>
+        <span><a href="https://github.com/ny4rl4th0t3p/nodemap#what-it-publishes">methodology</a> · IP Geolocation by <a href="https://db-ip.com">DB-IP</a></span>
+        <a class="delist" href="delist.html">Request delisting</a>
+      </footer>
+    </section>
+  </main>
+
+  <section id="empty" class="empty" hidden>
+    <h2>Gathering data</h2>
+    <p id="empty-why">The first crawl has not published yet. This page fills itself in once it has.</p>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
