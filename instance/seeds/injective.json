@@ -1,0 +1,13 @@
+{
+  "chain_id": "injective-1",
+  "apis": {
+    "rpc": [
+      { "address": "https://injective-rpc.highstakes.ch" },
+      { "address": "https://rpc.lavenderfive.com:443/injective" },
+      { "address": "https://injective-rpc.publicnode.com:443" },
+      { "address": "https://public.stakewolle.com/cosmos/injective/rpc" },
+      { "address": "https://injective.rpc.uquad.org:443" },
+      { "address": "https://injective-rpc.polkachu.com:443" }
+    ]
+  }
+}

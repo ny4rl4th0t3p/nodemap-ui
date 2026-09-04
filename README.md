@@ -2,7 +2,7 @@
 
 A running instance of [nodemap](https://github.com/ny4rl4th0t3p/nodemap): an aggregate, public map of the reachable node
 population of Cosmos SDK / CometBFT chains. This repository holds everything that makes one map: which chains, the
-opt-out list, the delisting key, the page, the workflow that crawls hourly and publishes. The crawler itself is consumed
+opt-out list, the delisting key, the page, the workflow that crawls every four hours and publishes. The crawler itself is consumed
 as a pinned release and carries no data of its own.
 
 ## Chains
@@ -10,9 +10,10 @@ as a pinned release and carries no data of its own.
 | Chain                      | Seeds                           |
 |----------------------------|---------------------------------|
 | Cosmos Hub (`cosmoshub-4`) | `instance/seeds/cosmoshub.json` |
+| Injective (`injective-1`)  | `instance/seeds/injective.json` |
 
 Adding a chain is one file: `instance/seeds/<name>.json` in the chain-registry `chain.json` shape with its
-`chain_id` and its `apis.rpc[].address` list. The next hourly run picks it up.
+`chain_id` and its `apis.rpc[].address` list. The next run picks it up.
 
 ## What is published
 
@@ -56,7 +57,7 @@ control of the node's `node_key`: the P2P identity key, not the consensus key. I
    Pasting is the point: an attached file is not read; a code fence around the block is fine. A workflow picks it up
    within minutes, posts one reply, and deletes the thread.
    The reply is the same whether the proof verified or not; a valid proof shows as the record disappearing after the
-   next hourly run, and nothing else.
+   next run, and nothing else.
 
    The thread names the account that opened it for as long as it exists. An operator who needs to be unlinkable even
    from the maintainer can use a throwaway account; the proof verifies on its own, so a relay through someone else
@@ -73,12 +74,13 @@ from anyone running their own crawler.
 
 ## Operations
 
-- `crawl.yml` runs hourly: installs the pinned crawler, crawls every chain in `instance/seeds/`, commits the three
-  output files per chain to the `data` branch, and deploys the page. A chain that fails keeps its last good files.
-- Kill switch, in this order: set the repository variable `NODEMAP_PAUSED` to `1` (the hourly crawl then exits before
-  any dial), then run `takedown.yml` (the site becomes a notice). Without the first step the next hourly run puts the
-  map back. Nothing is deleted: the `data` branch keeps every snapshot and the history. To come back: remove the
-  variable, then dispatch `crawl` or wait for the hour. The history shows a gap for the paused period.
+- `crawl.yml` runs every four hours (GitHub's scheduler is best effort; runs can be late or missing under load):
+  installs the pinned crawler, crawls every chain in `instance/seeds/`, commits the three output files per chain to the
+  `data` branch, and deploys the page. A chain that fails keeps its last good files.
+- Kill switch, in this order: set the repository variable `NODEMAP_PAUSED` to `1` (the scheduled crawl then exits
+  before any dial), then run `takedown.yml` (the site becomes a notice). Without the first step the next scheduled run
+  puts the map back. Nothing is deleted: the `data` branch keeps every snapshot and the history. To come back: remove
+  the variable, then dispatch `crawl` or wait for the next slot. The history shows a gap for the paused period.
 - `delist.yml` runs on every new discussion in the `delist` category with the title `delist`, and only on those.
 - Secrets: `NODEMAP_SALT`, the opt-out list salt; `DELIST_GPG_KEY`, the armored private half of `instance/delist.asc`,
   used only inside `delist.yml`. It can decrypt proofs and nothing else.
