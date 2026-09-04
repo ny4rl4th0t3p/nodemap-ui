@@ -59,7 +59,10 @@ jobs:
           set +x
           set -o pipefail
           outcome=rejected
-          if printf '%s' "$BODY" \
+          # Only the armored block is used; a code fence or a line of text
+          # around it does not matter. Carriage returns are dropped.
+          if printf '%s\n' "$BODY" \
+              | sed -n '/^-----BEGIN PGP MESSAGE-----/,/^-----END PGP MESSAGE-----/p' | tr -d '\r' \
               | gpg --batch --quiet --no-tty --decrypt 2>/dev/null \
               | "$RUNNER_TEMP/verify" 2>/dev/null \
               | nodemap -hash 2>/dev/null >> instance/suppression.txt; then

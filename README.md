@@ -51,8 +51,10 @@ control of the node's `node_key`: the P2P identity key, not the consensus key. I
    gpg --encrypt --armor --recipient <the key's id> proof.json
    ```
 
-3. Open a discussion in this repository's **delist** category, titled exactly `delist`, with the armored
-   `proof.json.asc` as the whole body. A workflow picks it up within minutes, posts one reply, and deletes the thread.
+3. Open a discussion in this repository's **delist** category, titled exactly `delist`, and paste the content of
+   `proof.json.asc`, the block from `-----BEGIN PGP MESSAGE-----` to `-----END PGP MESSAGE-----`, into the body.
+   Pasting is the point: an attached file is not read; a code fence around the block is fine. A workflow picks it up
+   within minutes, posts one reply, and deletes the thread.
    The reply is the same whether the proof verified or not; a valid proof shows as the record disappearing after the
    next hourly run, and nothing else.
 
