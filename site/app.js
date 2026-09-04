@@ -288,7 +288,7 @@ function renderAdoptionBlock(box, title, adoption, history, key) {
   if (series.length < 2) { note("Gathering data — first points appear after a few cycles."); return; }
   const span = series[series.length - 1].t - series[0].t;
   const win = windowFor(span);
-  if (!win) { note(`Gathering data — ${Math.round(span / HOUR)} h of history, the chart starts at 12 h.`); return; }
+  if (!win) { note(`Gathering data — ${Math.floor(span / HOUR)} h of history, the chart starts at 12 h.`); return; }
   const end = series[series.length - 1].t;
   const start = end - win.window;
   const buckets = new Map();
