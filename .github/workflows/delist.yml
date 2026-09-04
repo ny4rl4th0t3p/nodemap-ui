@@ -35,7 +35,7 @@ jobs:
         run: |
           set -euo pipefail
           (cd tools && go build -o "$RUNNER_TEMP/verify" ./verify)
-          go install github.com/ny4rl4th0t3p/nodemap@v0.2.0
+          go install github.com/ny4rl4th0t3p/nodemap@v0.2.1
 
       - name: import the delisting key into a throwaway keyring
         env:
