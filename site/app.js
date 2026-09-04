@@ -218,10 +218,12 @@ function renderASNs(cur) {
   const observed = cur.public_nodes + cur.non_public_nodes;
   const list = $("asns");
   list.innerHTML = "";
+  // "Other" is everything outside the rows drawn, not outside the rows
+  // published: the crawler may publish more than the five shown here.
   const rows = cur.asns.slice(0, 5);
   const hasConn = cur.asns.some((r) => typeof r.connection_share === "number");
-  const listed = cur.asns.reduce((s, r) => s + r.nodes, 0);
-  const listedConn = cur.asns.reduce((s, r) => s + (r.connection_share || 0), 0);
+  const listed = rows.reduce((s, r) => s + r.nodes, 0);
+  const listedConn = rows.reduce((s, r) => s + (r.connection_share || 0), 0);
   const top = rows.length ? rows[0].nodes : 1;
   const value = (nodes, conn) => hasConn ? `${fmt(nodes)} · ${pct(conn)}` : fmt(nodes);
   for (const r of rows) {
