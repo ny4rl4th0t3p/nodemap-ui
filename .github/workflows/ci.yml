@@ -28,11 +28,10 @@ jobs:
             echo "malformed suppression entry"; exit 1
           fi
           # A hash glued to a comment would be read as a comment and lost.
+          # (A missing final newline is fine: the delist workflow adds one
+          # before it appends.)
           if grep -E '[0-9a-f]{64}' instance/suppression.txt | grep -vE '^[0-9a-f]{64}$'; then
             echo "a hash is not on its own line"; exit 1
-          fi
-          if [ "$(tail -c1 instance/suppression.txt | wc -l)" -eq 0 ]; then
-            echo "suppression list must end with a newline"; exit 1
           fi
       - name: delisting key is an armored public key
         run: |
