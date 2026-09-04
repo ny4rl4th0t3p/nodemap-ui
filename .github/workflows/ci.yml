@@ -21,11 +21,18 @@ jobs:
                    and ([.apis.rpc[]?.address | select(type == "string" and length > 0)] | length > 0)' "$f" \
               > /dev/null || { echo "invalid seeds file: $f"; exit 1; }
           done
-      - name: suppression list holds only comments and 64-hex entries
+      - name: suppression list holds only comments and 64-hex entries, one per line
         run: |
           set -euo pipefail
           if grep -vE '^(#.*|[0-9a-f]{64}|[[:space:]]*)$' instance/suppression.txt; then
             echo "malformed suppression entry"; exit 1
+          fi
+          # A hash glued to a comment would be read as a comment and lost.
+          if grep -E '[0-9a-f]{64}' instance/suppression.txt | grep -vE '^[0-9a-f]{64}$'; then
+            echo "a hash is not on its own line"; exit 1
+          fi
+          if [ "$(tail -c1 instance/suppression.txt | wc -l)" -eq 0 ]; then
+            echo "suppression list must end with a newline"; exit 1
           fi
       - name: delisting key is an armored public key
         run: |

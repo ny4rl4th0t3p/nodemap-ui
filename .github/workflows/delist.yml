@@ -59,13 +59,17 @@ jobs:
           set +x
           set -o pipefail
           outcome=rejected
+          # An entry must start on its own line: if the list does not end
+          # with a newline, add one before appending.
+          list=instance/suppression.txt
+          if [ -s "$list" ] && [ "$(tail -c1 "$list" | wc -l)" -eq 0 ]; then echo >> "$list"; fi
           # Only the armored block is used; a code fence or a line of text
           # around it does not matter. Carriage returns are dropped.
           if printf '%s\n' "$BODY" \
               | sed -n '/^-----BEGIN PGP MESSAGE-----/,/^-----END PGP MESSAGE-----/p' | tr -d '\r' \
               | gpg --batch --quiet --no-tty --decrypt 2>/dev/null \
               | "$RUNNER_TEMP/verify" 2>/dev/null \
-              | nodemap -hash 2>/dev/null >> instance/suppression.txt; then
+              | nodemap -hash 2>/dev/null >> "$list"; then
             outcome=accepted
           fi
           echo "outcome=$outcome" >> "$GITHUB_OUTPUT"
