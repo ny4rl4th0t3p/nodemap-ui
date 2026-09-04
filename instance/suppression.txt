@@ -1,3 +1,4 @@
 # Opt-out list for this instance: one salted SHA-256 hash of a node id per line.
 # Entries come from `nodemap -hash` after a proof has passed `tools/verify`.
 # The salt is never committed. Nothing here identifies a node.
+fc4c0ee7f0563ed632606f764ee0dc452067da6808ee35c99ae0ab96049822a7
