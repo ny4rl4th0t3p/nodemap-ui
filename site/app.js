@@ -253,30 +253,42 @@ function windowFor(spanMs) {
   return { window: 365 * DAY, bucket: DAY };
 }
 
+// renderAdoption draws one block per version panel the crawler published:
+// the client (CometBFT) version always, the application version when the
+// data carries it. Each block is the dominant version's share over time.
 function renderAdoption(cur, history) {
   const box = $("adoption");
   box.innerHTML = "";
-  const shares = cur.versions && cur.versions.shares;
-  if (!shares) {
-    box.innerHTML = `<p class="gathering">Withheld: population below the floor.</p>`;
-    return;
+  renderAdoptionBlock(box, "Client (CometBFT)", cur.versions, history, "version_shares");
+  if (cur.app_versions || history.some((l) => l.app_version_shares)) {
+    renderAdoptionBlock(box, "Application", cur.app_versions, history, "app_version_shares");
   }
+}
+
+function renderAdoptionBlock(box, title, adoption, history, key) {
+  const block = document.createElement("section");
+  block.className = "adoption-block";
+  block.innerHTML = `<h3></h3>`;
+  block.firstChild.textContent = title;
+  box.appendChild(block);
+  const note = (text) => {
+    const p = document.createElement("p");
+    p.className = "gathering";
+    p.textContent = text;
+    block.appendChild(p);
+  };
+  const shares = adoption && adoption.shares;
+  if (!shares) { note("Withheld: population below the floor."); return; }
   const dominant = Object.entries(shares).filter(([v]) => v !== "other").sort((a, b) => b[1] - a[1])[0];
-  if (!dominant) { box.innerHTML = `<p class="gathering">No release version reported.</p>`; return; }
+  if (!dominant) { note("No release version reported by enough nodes."); return; }
   const [version] = dominant;
   const series = history
-    .filter((l) => l.version_shares && version in l.version_shares)
-    .map((l) => ({ t: new Date(l.at).getTime(), v: l.version_shares[version] }));
-  if (series.length < 2) {
-    box.innerHTML = `<p class="gathering">Gathering data — first points appear after a few cycles.</p>`;
-    return;
-  }
+    .filter((l) => l[key] && version in l[key])
+    .map((l) => ({ t: new Date(l.at).getTime(), v: l[key][version] }));
+  if (series.length < 2) { note("Gathering data — first points appear after a few cycles."); return; }
   const span = series[series.length - 1].t - series[0].t;
   const win = windowFor(span);
-  if (!win) {
-    box.innerHTML = `<p class="gathering">Gathering data — ${Math.round(span / HOUR)} h of history, the chart starts at 12 h.</p>`;
-    return;
-  }
+  if (!win) { note(`Gathering data — ${Math.round(span / HOUR)} h of history, the chart starts at 12 h.`); return; }
   const end = series[series.length - 1].t;
   const start = end - win.window;
   const buckets = new Map();
@@ -288,7 +300,7 @@ function renderAdoption(cur, history) {
     buckets.set(k, b);
   }
   const pts = [...buckets.entries()].sort((a, b) => a[0] - b[0]).map(([t, b]) => ({ t, v: b.sum / b.n }));
-  box.appendChild(chart(pts, version, win));
+  block.appendChild(chart(pts, version, win));
 }
 
 function chart(pts, version, win) {

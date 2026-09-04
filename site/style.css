@@ -64,6 +64,8 @@ a { color: var(--blue); }
 .bars .value { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
 .callout { margin: 10px 0 0; padding-top: 10px; border-top: 1px solid var(--line); color: var(--amber); font-size: 14px; }
 
+.adoption-block + .adoption-block { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--line); }
+.adoption-block h3 { margin: 0 0 6px; font-size: 14px; font-weight: 500; color: var(--muted); }
 #adoption svg { width: 100%; height: auto; display: block; }
 #adoption .axis { stroke: var(--line); }
 #adoption text { font-size: 11px; fill: var(--muted); }
