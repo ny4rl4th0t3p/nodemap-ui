@@ -35,8 +35,11 @@ jobs:
       - name: site assets referenced by the pages exist
         run: |
           set -euo pipefail
+          # delist.asc is deployed from instance/ by the crawl workflow, so it
+          # is checked there, not under site/.
           for page in site/index.html site/delist.html; do
             for ref in $(grep -oE '(src|href)="[^"]+"' "$page" | sed -E 's/^[a-z]+="//; s/"$//' | grep -vE '^(https?:|#|mailto:|\./$)'); do
+              if [ "$ref" = "delist.asc" ]; then test -f instance/delist.asc; continue; fi
               test -f "site/$ref" || { echo "$page: missing asset $ref"; exit 1; }
             done
           done
