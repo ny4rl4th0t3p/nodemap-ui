@@ -64,10 +64,12 @@ jobs:
           list=instance/suppression.txt
           if [ -s "$list" ] && [ "$(tail -c1 "$list" | wc -l)" -eq 0 ]; then echo >> "$list"; fi
           # Only the armored block is used; a code fence or a line of text
-          # around it does not matter. Carriage returns are dropped.
+          # around it does not matter. Carriage returns are dropped. The
+          # decrypt is bounded: a message built to hang or inflate must not
+          # hold the job until the runner's limit.
           if printf '%s\n' "$BODY" \
               | sed -n '/^-----BEGIN PGP MESSAGE-----/,/^-----END PGP MESSAGE-----/p' | tr -d '\r' \
-              | gpg --batch --quiet --no-tty --decrypt 2>/dev/null \
+              | timeout 30s gpg --batch --quiet --no-tty --decrypt 2>/dev/null \
               | "$RUNNER_TEMP/verify" 2>/dev/null \
               | nodemap -hash 2>/dev/null >> "$list"; then
             outcome=accepted
@@ -96,7 +98,7 @@ jobs:
             mutation($id: ID!, $body: String!) {
               addDiscussionComment(input: {discussionId: $id, body: $body}) { comment { id } }
             }' -f id="$DISCUSSION" \
-            -f body="Received. If the proof verifies, the record is gone after the next hourly run. This thread is deleted automatically." \
+            -f body="Received. If the proof verifies, the record is gone after the next run. This thread is deleted automatically." \
             > /dev/null
 
       - name: delete the discussion

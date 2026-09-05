@@ -74,6 +74,15 @@ month after. There is no manual path: if the workflow is unavailable for long, t
 Opt-out removes the endpoint record; the node still counts in anonymous aggregates. It hides the node from this map, not
 from anyone running their own crawler.
 
+What the intake trusts, and what it does not. Decryption is not authentication: anyone can encrypt anything to the
+instance key, so the plaintext is treated as hostile and only the signature decides. The id that reaches the list is
+byte-equal to the derivation from the public key in the proof, the list only ever receives hash digests, and the crawler
+refuses a list with any other line. The stated residual risk is `gpg` itself: it parses attacker-chosen input on a
+runner that holds, for the life of the job, a token with write access to this repository, the salt, and the delisting
+key. A code-execution bug in that parser would expose all three. It is accepted: the exploit needs a bug that is not
+known to exist, the repository holds nothing of value to take, and an instance with users to protect belongs on a
+machine of its own rather than in a hosted workflow.
+
 ## Operations
 
 - `crawl.yml` runs every four hours (GitHub's scheduler is best effort; runs can be late or missing under load):
