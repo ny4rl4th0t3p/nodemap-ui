@@ -1,0 +1,31 @@
+{
+  "chain_id": "dydx-mainnet-1",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://dydx-rpc.kingnodes.com:443"
+      },
+      {
+        "address": "https://rpc.lavenderfive.com:443/dydx"
+      },
+      {
+        "address": "https://dydx-mainnet-rpc.autostake.com:443"
+      },
+      {
+        "address": "https://dydx-rpc.publicnode.com:443"
+      },
+      {
+        "address": "https://dydx-rpc.enigma-validator.com"
+      },
+      {
+        "address": "https://dydx-rpc.noders.services"
+      },
+      {
+        "address": "https://dydx.rpc.uquad.org:443"
+      },
+      {
+        "address": "https://dydx-rpc.polkachu.com:443"
+      }
+    ]
+  }
+}

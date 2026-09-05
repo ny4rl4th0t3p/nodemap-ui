@@ -1,0 +1,85 @@
+{
+  "chain_id": "celestia",
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://celestia.rpc.uquad.org:443"
+      },
+      {
+        "address": "https://public-celestia-rpc.numia.xyz"
+      },
+      {
+        "address": "https://rpc.lunaroasis.net"
+      },
+      {
+        "address": "https://rpc.celestia.nodestake.org"
+      },
+      {
+        "address": "https://rpc.lavenderfive.com:443/celestia"
+      },
+      {
+        "address": "https://celestia.rpc.interchain.validao.xyz"
+      },
+      {
+        "address": "https://celestia-rpc.publicnode.com:443"
+      },
+      {
+        "address": "https://celestia.rpc.stakin-nodes.com"
+      },
+      {
+        "address": "https://celestia.rpc.kjnodes.com"
+      },
+      {
+        "address": "https://rpc-celestia.mzonder.com"
+      },
+      {
+        "address": "https://celestia-rpc.enigma-validator.com"
+      },
+      {
+        "address": "https://rpc-celestia.theamsolutions.info"
+      },
+      {
+        "address": "https://celestia-mainnet-rpc.autostake.com:443"
+      },
+      {
+        "address": "https://rpc.celestia.validatus.com"
+      },
+      {
+        "address": "https://rpc.freshstaking.com/celestia"
+      },
+      {
+        "address": "https://rpc.celestia-app.bronbro.io"
+      },
+      {
+        "address": "https://celestia-rpc.noders.services"
+      },
+      {
+        "address": "https://rpc.celestia.citizenweb3.com"
+      },
+      {
+        "address": "https://celestia-mainnet-rpc.itrocket.net"
+      },
+      {
+        "address": "https://rpc.celestia.mainnet.dteam.tech:443"
+      },
+      {
+        "address": "https://celestia-rpc.stakeandrelax.net"
+      },
+      {
+        "address": "https://rpc.celestia.node75.org"
+      },
+      {
+        "address": "https://rpc.archive.celestia.validatus.com"
+      },
+      {
+        "address": "https://celestia-rpc.polkachu.com:443"
+      },
+      {
+        "address": "https://celestia.cumulo.org.es"
+      },
+      {
+        "address": "https://celestia-rpc.cogwheel.zone"
+      }
+    ]
+  }
+}

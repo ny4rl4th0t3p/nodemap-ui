@@ -11,6 +11,8 @@ as a pinned release and carries no data of its own.
 |----------------------------|---------------------------------|
 | Cosmos Hub (`cosmoshub-4`) | `instance/seeds/cosmoshub.json` |
 | Injective (`injective-1`)  | `instance/seeds/injective.json` |
+| Celestia (`celestia`)      | `instance/seeds/celestia.json`  |
+| dYdX (`dydx-mainnet-1`)    | `instance/seeds/dydx.json`      |
 
 Adding a chain is one file: `instance/seeds/<name>.json` in the chain-registry `chain.json` shape with its
 `chain_id` and its `apis.rpc[].address` list. The next run picks it up.
