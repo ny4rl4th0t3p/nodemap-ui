@@ -319,11 +319,13 @@ function chart(pts, version, win) {
     : win.bucket >= 6 * HOUR
       ? (t) => new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric" })
       : (t) => new Date(t).toLocaleTimeString("en-US", { hour: "numeric" });
+  // Labels at even intervals of time, not of points: runs bunch up around
+  // dispatches and thin out overnight, and the labels must not follow that.
   const n = Math.min(6, pts.length);
   const xt = [];
   for (let i = 0; i < n; i++) {
-    const p = pts[Math.round((i * (pts.length - 1)) / Math.max(1, n - 1))];
-    xt.push(`<text x="${sx(p.t).toFixed(1)}" y="${H - 8}" text-anchor="middle">${labelFmt(p.t)}</text>`);
+    const t = x0 + ((x1 - x0) * i) / Math.max(1, n - 1);
+    xt.push(`<text x="${sx(t).toFixed(1)}" y="${H - 8}" text-anchor="middle">${labelFmt(t)}</text>`);
   }
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
@@ -332,7 +334,49 @@ function chart(pts, version, win) {
   const latest = pts[pts.length - 1].v;
   svg.innerHTML = `${ticks}<path class="area" d="${area}"/><path class="line" d="${line}"/>${xt.join("")}` +
     `<text x="${W - R}" y="${T}" text-anchor="end">${version} · ${pct(latest, 1)}</text>`;
+  hoverable(svg, pts, sx, sy, win, { W, H, L, R, T, B });
   return svg;
+}
+
+// hoverable adds a read-out that follows the pointer: the nearest bucket's
+// time and share. A transparent rectangle over the plot takes the events, so
+// the line itself needs no hit target; the marker sits above it and ignores
+// the pointer.
+function hoverable(svg, pts, sx, sy, win, g) {
+  const ns = "http://www.w3.org/2000/svg";
+  const pad = document.createElementNS(ns, "rect");
+  pad.setAttribute("x", g.L); pad.setAttribute("y", g.T);
+  pad.setAttribute("width", g.W - g.L - g.R); pad.setAttribute("height", g.H - g.T - g.B);
+  pad.setAttribute("fill", "transparent");
+  const mark = document.createElementNS(ns, "g");
+  mark.setAttribute("class", "hover");
+  mark.style.pointerEvents = "none";
+  mark.style.display = "none";
+  mark.innerHTML = `<line y1="${g.T}" y2="${g.H - g.B}"/><circle r="4"/><text y="${g.T + 12}"></text>`;
+  const [line, dot, text] = mark.children;
+  const when = win.bucket >= DAY
+    ? (t) => new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric" })
+    : (t) => new Date(t).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric" });
+  const show = (clientX) => {
+    const box = svg.getBoundingClientRect();
+    const x = ((clientX - box.left) / box.width) * g.W;
+    let best = pts[0];
+    for (const p of pts) if (Math.abs(sx(p.t) - x) < Math.abs(sx(best.t) - x)) best = p;
+    const px = sx(best.t);
+    line.setAttribute("x1", px); line.setAttribute("x2", px);
+    dot.setAttribute("cx", px); dot.setAttribute("cy", sy(best.v));
+    const flip = px > g.W / 2;
+    text.setAttribute("x", flip ? px - 8 : px + 8);
+    text.setAttribute("text-anchor", flip ? "end" : "start");
+    text.textContent = `${when(best.t)} · ${pct(best.v, 1)}`;
+    mark.style.display = "";
+  };
+  pad.addEventListener("mousemove", (e) => show(e.clientX));
+  pad.addEventListener("mouseleave", () => { mark.style.display = "none"; });
+  pad.addEventListener("touchstart", (e) => show(e.touches[0].clientX), { passive: true });
+  pad.addEventListener("touchmove", (e) => show(e.touches[0].clientX), { passive: true });
+  svg.appendChild(pad);
+  svg.appendChild(mark);
 }
 
 // ---- endpoints -------------------------------------------------------------

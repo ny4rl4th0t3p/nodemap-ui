@@ -71,6 +71,9 @@ a { color: var(--blue); }
 #adoption text { font-size: 11px; fill: var(--muted); }
 #adoption .area { fill: var(--blue-soft); }
 #adoption .line { fill: none; stroke: var(--blue); stroke-width: 2; }
+#adoption .hover line { stroke: var(--muted); stroke-dasharray: 3 3; }
+#adoption .hover circle { fill: var(--blue); stroke: var(--card); stroke-width: 1.5; }
+#adoption .hover text { fill: var(--text); font-weight: 500; }
 .gathering { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
 
 .endpoints { width: 100%; border-collapse: collapse; font-size: 14px; }
