@@ -92,6 +92,10 @@ machine of its own rather than in a hosted workflow.
   before any dial), then run `takedown.yml` (the site becomes a notice). Without the first step the next scheduled run
   puts the map back. Nothing is deleted: the `data` branch keeps every snapshot and the history. To come back: remove
   the variable, then dispatch `crawl` or wait for the next slot. The history shows a gap for the paused period.
+- Withholding one panel: with the repository variable `NODEMAP_WITHHOLD_APP_VERSIONS` set to `1`, the application
+  version split is stripped from `current.json` and from every line of `history.jsonl` before they reach the `data`
+  branch and the page. The rest of the map is unaffected. Removing the variable republishes the split from the next
+  run on; lines written while it was set stay without it.
 - `delist.yml` runs on every new discussion in the `delist` category with the title `delist`, and only on those.
 - Secrets: `NODEMAP_SALT`, the opt-out list salt; `DELIST_GPG_KEY`, the armored private half of `instance/delist.asc`,
   used only inside `delist.yml`. It can decrypt proofs and nothing else.

@@ -255,15 +255,17 @@ function windowFor(spanMs) {
   return { window: 365 * DAY, bucket: DAY };
 }
 
-// renderAdoption draws the two version panels, each the dominant version's
-// share over time. A panel the crawler withheld says so: a chain with few
-// responders never reaches the application panel's floor, and that is a
-// fact about the chain worth showing.
+// renderAdoption draws the version panels, each the dominant version's
+// share over time. The application panel exists only when the data carries
+// it at all; when the instance withholds it, the block is absent rather
+// than explained.
 function renderAdoption(cur, history) {
   const box = $("adoption");
   box.innerHTML = "";
   renderAdoptionBlock(box, "Client (CometBFT)", cur.versions, history, "version_shares");
-  renderAdoptionBlock(box, "Application", cur.app_versions, history, "app_version_shares");
+  if (cur.app_versions || history.some((l) => l.app_version_shares)) {
+    renderAdoptionBlock(box, "Application", cur.app_versions, history, "app_version_shares");
+  }
 }
 
 function renderAdoptionBlock(box, title, adoption, history, key) {

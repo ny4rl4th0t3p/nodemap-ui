@@ -87,6 +87,23 @@ jobs:
         env:
           NODEMAP_SALT: ${{ secrets.NODEMAP_SALT }}
 
+      - name: withhold application versions
+        # Second lever, narrower than the kill switch: while the variable is
+        # set, the application-version split leaves neither the data branch
+        # nor the page. Both files are regenerated every run, so the
+        # redaction holds run after run and lifting it is a variable change.
+        if: vars.NODEMAP_WITHHOLD_APP_VERSIONS == '1'
+        run: |
+          set -euo pipefail
+          for d in data/*/; do
+            if [ -f "$d/current.json" ]; then
+              jq 'del(.app_versions)' "$d/current.json" > "$d/current.json.tmp" && mv "$d/current.json.tmp" "$d/current.json"
+            fi
+            if [ -f "$d/history.jsonl" ]; then
+              jq -c 'del(.app_version_shares)' "$d/history.jsonl" > "$d/history.jsonl.tmp" && mv "$d/history.jsonl.tmp" "$d/history.jsonl"
+            fi
+          done
+
       - name: commit the data branch
         run: |
           set -euo pipefail
