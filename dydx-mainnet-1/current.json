@@ -1,24 +1,23 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-06T15:37:29.986989258Z",
-  "public_nodes": 11,
-  "non_public_nodes": 128,
+  "crawled_at": "2026-09-06T17:04:26.577322036Z",
+  "public_nodes": 9,
+  "non_public_nodes": 122,
   "countries": {
     "AU": 1,
     "CA": 1,
-    "DE": 25,
-    "FI": 9,
+    "DE": 23,
+    "FI": 8,
     "FR": 10,
     "GB": 1,
-    "HK": 1,
+    "HK": 2,
     "IE": 1,
-    "JP": 51,
-    "KR": 2,
+    "JP": 49,
     "NL": 4,
     "PL": 1,
     "SE": 1,
-    "SG": 10,
+    "SG": 8,
     "TR": 1,
     "UA": 1,
     "US": 18
@@ -27,76 +26,67 @@
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 24,
-      "share": 0.17266187050359713,
-      "connection_share": 0.04826732673267327
+      "nodes": 21,
+      "share": 0.16030534351145037,
+      "connection_share": 0.0423728813559322
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 21,
-      "share": 0.1510791366906475,
-      "connection_share": 0.2698019801980198
+      "nodes": 20,
+      "share": 0.15267175572519084,
+      "connection_share": 0.2951977401129944
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 17,
-      "share": 0.1223021582733813,
-      "connection_share": 0.04579207920792079
+      "nodes": 14,
+      "share": 0.10687022900763359,
+      "connection_share": 0.04519774011299435
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 15,
-      "share": 0.1079136690647482,
-      "connection_share": 0.0891089108910891
+      "nodes": 14,
+      "share": 0.10687022900763359,
+      "connection_share": 0.07909604519774012
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 14,
-      "share": 0.10071942446043165,
-      "connection_share": 0.11014851485148515
+      "nodes": 11,
+      "share": 0.08396946564885496,
+      "connection_share": 0.029661016949152543
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 8,
-      "share": 0.05755395683453238,
-      "connection_share": 0.012376237623762377
+      "share": 0.061068702290076333,
+      "connection_share": 0.014124293785310734
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.03597122302158273,
-      "connection_share": 0.01608910891089109
+      "share": 0.03816793893129771,
+      "connection_share": 0.0211864406779661
     }
   ],
   "versions": {
-    "population": 139,
+    "population": 131,
     "shares": {
-      "0.38.5": 0.9928057553956835,
-      "other": 0.007194244604316547
+      "0.38.5": 0.9923664122137404,
+      "other": 0.007633587786259542
     }
   },
   "graph": {
-    "population": 139,
-    "largest_component_fraction": 0.9856115107913669,
+    "population": 131,
+    "largest_component_fraction": 0.9847328244274809,
     "top_n": 5,
-    "top_n_share": 0.4467821782178218
+    "top_n_share": 0.519774011299435
   },
   "directory": [
-    {
-      "endpoint": "http://152.236.16.107:26657",
-      "country": "JP",
-      "asn": 396356,
-      "as_org": "Latitude.sh",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
     {
       "endpoint": "http://172.237.6.69:26657",
       "country": "JP",
@@ -129,7 +119,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 104268784,
+      "earliest_block_height": 104276535,
       "tx_index": false,
       "catching_up": false
     },
@@ -156,7 +146,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 83052319,
+      "earliest_block_height": 83090873,
       "tx_index": true,
       "catching_up": false
     },
@@ -165,7 +155,7 @@
       "country": "UA",
       "asn": 6698,
       "as_org": "Virtual Systems LLC",
-      "earliest_block_height": 104268747,
+      "earliest_block_height": 104276500,
       "tx_index": true,
       "catching_up": false
     },
