@@ -280,37 +280,56 @@ function renderAdoptionBlock(box, title, adoption, history, key) {
   };
   const shares = adoption && adoption.shares;
   if (!shares) { note("Withheld: population below the floor."); return; }
-  const dominant = Object.entries(shares).filter(([v]) => v !== "other").sort((a, b) => b[1] - a[1])[0];
-  if (!dominant) { note("No release version reported by enough nodes."); return; }
-  const [version] = dominant;
-  const series = history
-    .filter((l) => l[key] && version in l[key])
-    .map((l) => ({ t: new Date(l.at).getTime(), v: l[key][version] }));
-  if (series.length < 2) { note("Gathering data — first points appear after a few cycles."); return; }
-  const span = series[series.length - 1].t - series[0].t;
+  // The two largest named versions: during a rollout the runner-up is the
+  // one arriving or the one leaving, and the crossover is the picture.
+  const named = Object.entries(shares).filter(([v]) => v !== "other").sort((a, b) => b[1] - a[1]);
+  if (!named.length) { note("No release version reported by enough nodes."); return; }
+  // The window is sized by the panel's whole history, not by one version's:
+  // a version that just took the lead has a short series and a long context.
+  const lines = history.filter((l) => l[key]).map((l) => ({ t: new Date(l.at).getTime(), shares: l[key] }));
+  if (lines.length < 2) { note("Gathering data — first points appear after a few cycles."); return; }
+  const span = lines[lines.length - 1].t - lines[0].t;
   const win = windowFor(span);
   if (!win) { note(`Gathering data — ${Math.floor(span / HOUR)} h of history, the chart starts at 12 h.`); return; }
-  const end = series[series.length - 1].t;
-  const start = end - win.window;
-  const buckets = new Map();
-  for (const p of series) {
-    if (p.t < start) continue;
-    const k = Math.floor(p.t / win.bucket) * win.bucket;
-    const b = buckets.get(k) || { sum: 0, n: 0 };
-    b.sum += p.v; b.n += 1;
-    buckets.set(k, b);
-  }
-  const pts = [...buckets.entries()].sort((a, b) => a[0] - b[0]).map(([t, b]) => ({ t, v: b.sum / b.n }));
-  block.appendChild(chart(pts, version, win));
+  const end = lines[lines.length - 1].t;
+  const main = { version: named[0][0], pts: bucketize(lines, named[0][0], win, end) };
+  const other = named.length > 1 ? { version: named[1][0], pts: bucketize(lines, named[1][0], win, end) } : null;
+  if (!main.pts.length) { note("Gathering data — first points appear after a few cycles."); return; }
+  block.appendChild(chart(main, other && other.pts.length ? other : null, win));
 }
 
-function chart(pts, version, win) {
+// bucketize averages one version's share per bucket inside the window. A
+// line that does not name the version (below k that run, or before it
+// existed) contributes nothing: the line starts where the version was
+// first named, rather than at a zero it never reported.
+function bucketize(lines, version, win, end) {
+  const start = end - win.window;
+  const buckets = new Map();
+  for (const l of lines) {
+    if (l.t < start || !(version in l.shares)) continue;
+    const k = Math.floor(l.t / win.bucket) * win.bucket;
+    const b = buckets.get(k) || { sum: 0, n: 0 };
+    b.sum += l.shares[version]; b.n += 1;
+    buckets.set(k, b);
+  }
+  return [...buckets.entries()].sort((a, b) => a[0] - b[0]).map(([t, b]) => ({ t, v: b.sum / b.n }));
+}
+
+// chart draws the leading version as a filled line and, when there is one,
+// the runner-up as a thin dashed line on the same axes. The time axis spans
+// both series, so a version that just took the lead does not clip the
+// history of the one it replaced.
+function chart(main, other, win) {
   const W = 880, H = 220, L = 44, R = 12, T = 14, B = 30;
-  const x0 = pts[0].t, x1 = pts[pts.length - 1].t;
+  const pts = main.pts;
+  const all = other ? pts.concat(other.pts) : pts;
+  const x0 = Math.min(...all.map((p) => p.t)), x1 = Math.max(...all.map((p) => p.t));
   const sx = (t) => L + ((t - x0) / Math.max(1, x1 - x0)) * (W - L - R);
   const sy = (v) => T + (1 - v) * (H - T - B);
-  const line = pts.map((p, i) => `${i ? "L" : "M"}${sx(p.t).toFixed(1)},${sy(p.v).toFixed(1)}`).join("");
-  const area = `${line}L${sx(x1).toFixed(1)},${sy(0)}L${sx(x0).toFixed(1)},${sy(0)}Z`;
+  const path = (ps) => ps.map((p, i) => `${i ? "L" : "M"}${sx(p.t).toFixed(1)},${sy(p.v).toFixed(1)}`).join("");
+  const line = path(pts);
+  const area = `${line}L${sx(pts[pts.length - 1].t).toFixed(1)},${sy(0)}L${sx(pts[0].t).toFixed(1)},${sy(0)}Z`;
+  const alt = other ? `<path class="line alt" d="${path(other.pts)}"/>` : "";
   const ticks = [0, 0.2, 0.4, 0.6, 0.8, 1].map((v) =>
     `<line class="axis" x1="${L}" x2="${W - R}" y1="${sy(v)}" y2="${sy(v)}"/><text x="${L - 6}" y="${sy(v) + 4}" text-anchor="end">${pct(v)}</text>`).join("");
   const labelFmt = win.bucket >= DAY
@@ -320,7 +339,7 @@ function chart(pts, version, win) {
       : (t) => new Date(t).toLocaleTimeString("en-US", { hour: "numeric" });
   // Labels at even intervals of time, not of points: runs bunch up around
   // dispatches and thin out overnight, and the labels must not follow that.
-  const n = Math.min(6, pts.length);
+  const n = Math.min(6, all.length);
   const xt = [];
   for (let i = 0; i < n; i++) {
     const t = x0 + ((x1 - x0) * i) / Math.max(1, n - 1);
@@ -329,19 +348,21 @@ function chart(pts, version, win) {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
   svg.setAttribute("role", "img");
-  svg.setAttribute("aria-label", `share of nodes on ${version} over time`);
-  const latest = pts[pts.length - 1].v;
-  svg.innerHTML = `${ticks}<path class="area" d="${area}"/><path class="line" d="${line}"/>${xt.join("")}` +
-    `<text x="${W - R}" y="${T}" text-anchor="end">${version} · ${pct(latest, 1)}</text>`;
-  hoverable(svg, pts, sx, sy, win, { W, H, L, R, T, B });
+  svg.setAttribute("aria-label", other
+    ? `share of nodes on ${main.version} and ${other.version} over time`
+    : `share of nodes on ${main.version} over time`);
+  const legend = (s, y) => `<text x="${W - R}" y="${y}" text-anchor="end">${s.version} · ${pct(s.pts[s.pts.length - 1].v, 1)}</text>`;
+  svg.innerHTML = `${ticks}<path class="area" d="${area}"/>${alt}<path class="line" d="${line}"/>${xt.join("")}` +
+    legend(main, T) + (other ? legend(other, T + 13) : "");
+  hoverable(svg, main, other, sx, sy, win, { W, H, L, R, T, B });
   return svg;
 }
 
 // hoverable adds a read-out that follows the pointer: the nearest bucket's
-// time and share. A transparent rectangle over the plot takes the events, so
-// the line itself needs no hit target; the marker sits above it and ignores
-// the pointer.
-function hoverable(svg, pts, sx, sy, win, g) {
+// time and the share of each drawn version at it. A transparent rectangle
+// over the plot takes the events, so the lines need no hit target; the
+// marker sits above it and ignores the pointer.
+function hoverable(svg, main, other, sx, sy, win, g) {
   const ns = "http://www.w3.org/2000/svg";
   const pad = document.createElementNS(ns, "rect");
   pad.setAttribute("x", g.L); pad.setAttribute("y", g.T);
@@ -351,23 +372,36 @@ function hoverable(svg, pts, sx, sy, win, g) {
   mark.setAttribute("class", "hover");
   mark.style.pointerEvents = "none";
   mark.style.display = "none";
-  mark.innerHTML = `<line y1="${g.T}" y2="${g.H - g.B}"/><circle r="4"/><text y="${g.T + 12}"></text>`;
-  const [line, dot, text] = mark.children;
+  mark.innerHTML = `<line y1="${g.T}" y2="${g.H - g.B}"/><circle r="4"/><circle r="3" class="alt"/><text y="${g.H - g.B - 8}"></text>`;
+  const [line, dot, dot2, text] = mark.children;
   const when = win.bucket >= DAY
     ? (t) => new Date(t).toLocaleDateString("en-US", { month: "short", day: "numeric" })
     : (t) => new Date(t).toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric" });
+  // Every bucket either series has, so the guide can rest on a runner-up
+  // point from before the leader existed.
+  const at = new Map();
+  for (const p of main.pts) at.set(p.t, { main: p.v });
+  if (other) for (const p of other.pts) at.set(p.t, { ...(at.get(p.t) || {}), other: p.v });
+  const times = [...at.keys()].sort((a, b) => a - b);
   const show = (clientX) => {
     const box = svg.getBoundingClientRect();
     const x = ((clientX - box.left) / box.width) * g.W;
-    let best = pts[0];
-    for (const p of pts) if (Math.abs(sx(p.t) - x) < Math.abs(sx(best.t) - x)) best = p;
-    const px = sx(best.t);
+    let t = times[0];
+    for (const c of times) if (Math.abs(sx(c) - x) < Math.abs(sx(t) - x)) t = c;
+    const v = at.get(t);
+    const px = sx(t);
     line.setAttribute("x1", px); line.setAttribute("x2", px);
-    dot.setAttribute("cx", px); dot.setAttribute("cy", sy(best.v));
+    dot.style.display = v.main === undefined ? "none" : "";
+    dot2.style.display = v.other === undefined ? "none" : "";
+    if (v.main !== undefined) { dot.setAttribute("cx", px); dot.setAttribute("cy", sy(v.main)); }
+    if (v.other !== undefined) { dot2.setAttribute("cx", px); dot2.setAttribute("cy", sy(v.other)); }
     const flip = px > g.W / 2;
     text.setAttribute("x", flip ? px - 8 : px + 8);
     text.setAttribute("text-anchor", flip ? "end" : "start");
-    text.textContent = `${when(best.t)} · ${pct(best.v, 1)}`;
+    const parts = [when(t)];
+    if (v.main !== undefined) parts.push(`${main.version} ${pct(v.main, 1)}`);
+    if (other && v.other !== undefined) parts.push(`${other.version} ${pct(v.other, 1)}`);
+    text.textContent = parts.join(" · ");
     mark.style.display = "";
   };
   pad.addEventListener("mousemove", (e) => show(e.clientX));
