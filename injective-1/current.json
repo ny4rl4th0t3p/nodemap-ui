@@ -1,21 +1,21 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-09-06T17:05:25.073505704Z",
+  "crawled_at": "2026-09-06T18:29:23.256724198Z",
   "public_nodes": 19,
-  "non_public_nodes": 295,
+  "non_public_nodes": 297,
   "countries": {
     "BE": 1,
-    "CA": 14,
+    "CA": 15,
     "CZ": 2,
-    "DE": 74,
-    "FI": 24,
+    "DE": 69,
+    "FI": 25,
     "FR": 35,
     "GB": 6,
     "HK": 4,
-    "IE": 3,
-    "JP": 77,
-    "KR": 9,
+    "IE": 4,
+    "JP": 82,
+    "KR": 8,
     "PL": 1,
     "RO": 2,
     "SE": 1,
@@ -28,84 +28,84 @@
       "asn": 16276,
       "org": "OVH SAS",
       "nodes": 76,
-      "share": 0.24203821656050956,
-      "connection_share": 0.2551219512195122
+      "share": 0.24050632911392406,
+      "connection_share": 0.23994252873563218
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 54,
-      "share": 0.17197452229299362,
-      "connection_share": 0.28585365853658534
+      "nodes": 53,
+      "share": 0.16772151898734178,
+      "connection_share": 0.27011494252873564
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 34,
-      "share": 0.10828025477707007,
-      "connection_share": 0.033658536585365856
+      "nodes": 32,
+      "share": 0.10126582278481013,
+      "connection_share": 0.029693486590038315
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 28,
-      "share": 0.08917197452229299,
-      "connection_share": 0.06048780487804878
+      "nodes": 31,
+      "share": 0.0981012658227848,
+      "connection_share": 0.05890804597701149
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 15,
-      "share": 0.04777070063694268,
-      "connection_share": 0.03024390243902439
+      "nodes": 17,
+      "share": 0.05379746835443038,
+      "connection_share": 0.03017241379310345
+    },
+    {
+      "asn": 396982,
+      "org": "Google LLC",
+      "nodes": 12,
+      "share": 0.0379746835443038,
+      "connection_share": 0.02346743295019157
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 10,
-      "share": 0.03184713375796178,
-      "connection_share": 0.01121951219512195
-    },
-    {
-      "asn": 396982,
-      "org": "Google LLC",
-      "nodes": 10,
-      "share": 0.03184713375796178,
-      "connection_share": 0.02195121951219512
+      "share": 0.03164556962025317,
+      "connection_share": 0.01053639846743295
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
       "nodes": 9,
-      "share": 0.028662420382165606,
-      "connection_share": 0.025365853658536587
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 8,
-      "share": 0.025477707006369428,
-      "connection_share": 0.042439024390243905
+      "share": 0.028481012658227847,
+      "connection_share": 0.02442528735632184
     },
     {
       "asn": 60068,
       "org": "Datacamp Limited",
       "nodes": 7,
-      "share": 0.022292993630573247,
-      "connection_share": 0.08146341463414634
+      "share": 0.022151898734177215,
+      "connection_share": 0.07950191570881227
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
+      "nodes": 7,
+      "share": 0.022151898734177215,
+      "connection_share": 0.040708812260536395
     }
   ],
   "versions": {
-    "population": 314,
+    "population": 316,
     "shares": {
       "1.0.1": 1
     }
   },
   "graph": {
-    "population": 314,
-    "largest_component_fraction": 0.8184713375796179,
+    "population": 316,
+    "largest_component_fraction": 0.8259493670886076,
     "top_n": 5,
-    "top_n_share": 0.18341463414634146
+    "top_n_share": 0.20162835249042146
   },
   "directory": [
     {
@@ -248,7 +248,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 181755641,
+      "earliest_block_height": 181763691,
       "tx_index": true,
       "catching_up": false
     },
