@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "chain": "cosmoshub-4",
+  "crawled_at": "2026-09-06T15:36:58.050596406Z",
+  "public_nodes": 36,
+  "non_public_nodes": 504,
+  "countries": {
+    "AT": 7,
+    "AU": 7,
+    "BE": 2,
+    "BG": 3,
+    "CA": 26,
+    "CH": 1,
+    "DE": 138,
+    "EE": 1,
+    "ES": 3,
+    "FI": 76,
+    "FR": 29,
+    "GB": 10,
+    "HK": 12,
+    "IE": 9,
+    "IN": 3,
+    "IT": 1,
+    "JP": 18,
+    "KR": 18,
+    "LT": 2,
+    "LV": 3,
+    "MC": 3,
+    "MT": 2,
+    "MX": 1,
+    "NL": 21,
+    "PA": 1,
+    "PL": 10,
+    "PT": 4,
+    "RO": 12,
+    "RU": 4,
+    "SE": 3,
+    "SG": 21,
+    "TR": 1,
+    "TW": 4,
+    "US": 79,
+    "VN": 4
+  },
+  "asns": [
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 158,
+      "share": 0.29259259259259257,
+      "connection_share": 0.4276369582992641
+    },
+    {
+      "asn": 16276,
+      "org": "OVH SAS",
+      "nodes": 60,
+      "share": 0.1111111111111111,
+      "connection_share": 0.06643499591169257
+    },
+    {
+      "asn": 16509,
+      "org": "Amazon.com, Inc.",
+      "nodes": 40,
+      "share": 0.07407407407407407,
+      "connection_share": 0.040474243663123466
+    },
+    {
+      "asn": 395201,
+      "org": "Allnodes Inc",
+      "nodes": 16,
+      "share": 0.02962962962962963,
+      "connection_share": 0.020032706459525755
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
+      "nodes": 12,
+      "share": 0.022222222222222223,
+      "connection_share": 0.011038430089942763
+    },
+    {
+      "asn": 9009,
+      "org": "M247 Europe SRL",
+      "nodes": 11,
+      "share": 0.020370370370370372,
+      "connection_share": 0.030866721177432544
+    },
+    {
+      "asn": 45102,
+      "org": "Alibaba (US) Technology Co., Ltd.",
+      "nodes": 10,
+      "share": 0.018518518518518517,
+      "connection_share": 0.003679476696647588
+    },
+    {
+      "asn": 396982,
+      "org": "Google LLC",
+      "nodes": 9,
+      "share": 0.016666666666666666,
+      "connection_share": 0.013900245298446443
+    },
+    {
+      "asn": 20326,
+      "org": "TeraSwitch Networks Inc.",
+      "nodes": 8,
+      "share": 0.014814814814814815,
+      "connection_share": 0.007154538021259199
+    },
+    {
+      "asn": 3786,
+      "org": "LG DACOM Corporation",
+      "nodes": 7,
+      "share": 0.012962962962962963,
+      "connection_share": 0.007358953393295176
+    }
+  ],
+  "versions": {
+    "population": 539,
+    "shares": {
+      "0.38.22": 0.9666048237476809,
+      "other": 0.03339517625231911
+    }
+  },
+  "graph": {
+    "population": 540,
+    "largest_component_fraction": 0.9314814814814815,
+    "top_n": 5,
+    "top_n_share": 0.18990188062142274
+  },
+  "directory": [
+    {
+      "endpoint": "http://13.56.132.224:26657",
+      "country": "US",
+      "asn": 16509,
+      "as_org": "Amazon.com, Inc.",
+      "earliest_block_height": 32247036,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://140.235.158.24:26657",
+      "country": "CA",
+      "asn": 32001,
+      "as_org": "Hypha Worker Co-operative Inc.",
+      "earliest_block_height": 28830001,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://148.113.49.61:26657",
+      "country": "IN",
+      "asn": 16276,
+      "as_org": "OVH SAS",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://148.251.53.56:26657",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://216.106.184.11:26657",
+      "country": "US",
+      "asn": 63023,
+      "as_org": "GTHost",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://221.255.180.106:26657",
+      "country": "JP",
+      "asn": 17506,
+      "as_org": "ARTERIA Networks Corporation",
+      "earliest_block_height": 31846907,
+      "tx_index": false,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://37.120.245.41:26657",
+      "country": "RO",
+      "asn": 9009,
+      "as_org": "M247 Europe SRL",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://49.12.92.82:37657",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://51.161.216.176:26657",
+      "country": "AU",
+      "asn": 16276,
+      "as_org": "OVH SAS",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://64.34.93.51:26657",
+      "country": "US",
+      "asn": 262287,
+      "as_org": "Maxihost LTDA",
+      "earliest_block_height": 31846907,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://65.108.197.163:29657",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://93.189.30.120:26657",
+      "country": "AT",
+      "asn": 44133,
+      "as_org": "IPAX GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://rpc-cosmoshub.freshstaking.com:26657",
+      "country": "ES",
+      "asn": 3352,
+      "as_org": "TELEFONICA DE ESPANA S.A.U.",
+      "earliest_block_height": 32785755,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.easy2stake.com",
+      "country": "CA",
+      "asn": 13335,
+      "as_org": "Cloudflare, Inc.",
+      "earliest_block_height": 31846894,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.highstakes.ch",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 32173999,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.polkachu.com:443",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.publicnode.com:443",
+      "country": "CA",
+      "asn": 13335,
+      "as_org": "Cloudflare, Inc.",
+      "earliest_block_height": 31846894,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.stakeandrelax.net",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos-rpc.w3coins.io",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmos.ibs.team:443/rpc",
+      "country": "DE",
+      "asn": 51167,
+      "as_org": "Contabo GmbH",
+      "earliest_block_height": 32356051,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmoshub-mainnet-rpc.itrocket.net",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 32767317,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmoshub-rpc.cosmosrescue.dev",
+      "country": "CA",
+      "asn": 13335,
+      "as_org": "Cloudflare, Inc.",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmoshub.api.pocket.network",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 31553263,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmoshub.rpc.kjnodes.com",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 32802480,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://cosmoshub.rpc.stakin-nodes.com",
+      "country": "US",
+      "asn": 18450,
+      "as_org": "WebNX, Inc.",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://public.stakewolle.com/cosmos/cosmoshub/rpc",
+      "country": "CA",
+      "asn": 13335,
+      "as_org": "Cloudflare, Inc.",
+      "earliest_block_height": 31846894,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc-cosmoshub.ecostake.com",
+      "country": "CA",
+      "asn": 13335,
+      "as_org": "Cloudflare, Inc.",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.cosmos.cumulo.com.es",
+      "country": "FR",
+      "asn": 29066,
+      "as_org": "velia.net Internetdienste GmbH",
+      "earliest_block_height": 32769937,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.cosmos.nodestake.org",
+      "country": "DE",
+      "asn": 215703,
+      "as_org": "FREAKHOSTING LTD",
+      "earliest_block_height": 32817000,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.cosmoshub-4-archive.citizenweb3.com:443",
+      "country": "PT",
+      "asn": 15457,
+      "as_org": "NOS Madeira Comunicacoes, S.A.",
+      "earliest_block_height": 5200791,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.cosmoshub-main.ccvalidators.com:443",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 5200791,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.lavenderfive.com:443/cosmoshub",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    }
+  ]
+}

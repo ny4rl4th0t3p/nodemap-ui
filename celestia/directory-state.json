@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "endpoints": {
+    "http://136.243.94.113:26667": "2026-09-06T15:35:17.746107747Z",
+    "http://157.180.10.38:40657": "2026-09-06T15:35:17.746107747Z",
+    "http://195.154.103.146:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://195.154.103.170:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://195.154.218.175:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://195.154.218.184:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://195.154.218.195:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://216.106.185.134:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://62.210.93.163:26657": "2026-09-06T15:35:17.746107747Z",
+    "http://95.217.192.250:26617": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia-mainnet-rpc.itrocket.net": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia-rpc.noders.services": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia-rpc.polkachu.com:443": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia-rpc.publicnode.com:443": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia.cumulo.org.es": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia.rpc.kjnodes.com": "2026-09-06T15:35:17.746107747Z",
+    "https://celestia.rpc.stakin-nodes.com": "2026-09-06T15:35:17.746107747Z",
+    "https://public-celestia-rpc.numia.xyz": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.archive.celestia.validatus.com": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.celestia.mainnet.dteam.tech:443": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.celestia.node75.org": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.celestia.nodestake.org": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.celestia.validatus.com": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.lavenderfive.com:443/celestia": "2026-09-06T15:35:17.746107747Z",
+    "https://rpc.lunaroasis.net": "2026-09-06T15:35:17.746107747Z"
+  }
+}
