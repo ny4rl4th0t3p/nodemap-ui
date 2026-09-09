@@ -1,89 +1,89 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-08T22:48:34.786297739Z",
-  "public_nodes": 12,
-  "non_public_nodes": 136,
+  "crawled_at": "2026-09-09T04:56:56.792111781Z",
+  "public_nodes": 13,
+  "non_public_nodes": 141,
   "countries": {
-    "AU": 2,
+    "AU": 1,
     "CA": 2,
-    "DE": 29,
+    "DE": 31,
     "ES": 1,
-    "FI": 10,
-    "FR": 12,
+    "FI": 8,
+    "FR": 10,
     "HK": 1,
-    "IE": 1,
-    "JP": 53,
+    "IE": 3,
+    "JP": 60,
     "KR": 2,
     "NL": 3,
     "SE": 1,
-    "SG": 8,
+    "SG": 10,
     "UA": 1,
-    "US": 21
+    "US": 19
   },
   "asns": [
     {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 25,
-      "share": 0.16891891891891891,
-      "connection_share": 0.29633401221995925
-    },
-    {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 23,
-      "share": 0.1554054054054054,
-      "connection_share": 0.04073319755600815
+      "nodes": 30,
+      "share": 0.19480519480519481,
+      "connection_share": 0.09719626168224299
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 24,
+      "share": 0.15584415584415584,
+      "connection_share": 0.2738317757009346
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.12162162162162163,
-      "connection_share": 0.10896130346232179
+      "share": 0.11688311688311688,
+      "connection_share": 0.10934579439252337
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 16,
-      "share": 0.10810810810810811,
-      "connection_share": 0.04378818737270876
+      "nodes": 17,
+      "share": 0.11038961038961038,
+      "connection_share": 0.04299065420560748
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
       "nodes": 12,
-      "share": 0.08108108108108109,
-      "connection_share": 0.10692464358452139
+      "share": 0.07792207792207792,
+      "connection_share": 0.08691588785046729
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 10,
-      "share": 0.06756756756756757,
-      "connection_share": 0.018329938900203666
+      "nodes": 7,
+      "share": 0.045454545454545456,
+      "connection_share": 0.011214953271028037
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.033783783783783786,
-      "connection_share": 0.013238289205702648
+      "share": 0.032467532467532464,
+      "connection_share": 0.014018691588785047
     }
   ],
   "versions": {
-    "population": 148,
+    "population": 154,
     "shares": {
-      "0.38.5": 0.972972972972973,
-      "other": 0.02702702702702703
+      "0.38.5": 0.9935064935064936,
+      "other": 0.006493506493506494
     }
   },
   "graph": {
-    "population": 148,
-    "largest_component_fraction": 0.9864864864864865,
+    "population": 154,
+    "largest_component_fraction": 0.987012987012987,
     "top_n": 5,
-    "top_n_share": 0.3971486761710794
+    "top_n_share": 0.3766355140186916
   },
   "directory": [
     {
@@ -105,11 +105,20 @@
       "catching_up": false
     },
     {
+      "endpoint": "http://18.177.172.207:26657",
+      "country": "JP",
+      "asn": 16509,
+      "as_org": "Amazon.com, Inc.",
+      "earliest_block_height": 59019001,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
       "endpoint": "http://213.133.111.156:26657",
       "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 104364219,
+      "earliest_block_height": 104398339,
       "tx_index": false,
       "catching_up": false
     },
@@ -136,7 +145,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 104564240,
+      "earliest_block_height": 104598353,
       "tx_index": false,
       "catching_up": false
     },
@@ -172,7 +181,7 @@
       "country": "UA",
       "asn": 6698,
       "as_org": "Virtual Systems LLC",
-      "earliest_block_height": 104564199,
+      "earliest_block_height": 104598317,
       "tx_index": true,
       "catching_up": false
     },
