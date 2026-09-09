@@ -1,97 +1,97 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-09T19:23:15.146517008Z",
-  "public_nodes": 12,
-  "non_public_nodes": 146,
+  "crawled_at": "2026-09-09T22:40:58.319317194Z",
+  "public_nodes": 13,
+  "non_public_nodes": 147,
   "countries": {
     "AU": 2,
     "CA": 2,
     "CN": 1,
-    "DE": 30,
+    "DE": 29,
     "FI": 8,
     "FR": 10,
     "GB": 1,
-    "HK": 3,
+    "HK": 1,
     "IE": 3,
-    "JP": 62,
-    "KR": 2,
-    "NL": 2,
+    "JP": 63,
+    "KR": 3,
+    "NL": 3,
     "SE": 1,
-    "SG": 9,
+    "SG": 10,
     "UA": 1,
-    "US": 20
+    "US": 21
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 31,
-      "share": 0.1962025316455696,
-      "connection_share": 0.10133843212237094
+      "nodes": 32,
+      "share": 0.2,
+      "connection_share": 0.09906542056074766
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
       "nodes": 23,
-      "share": 0.14556962025316456,
-      "connection_share": 0.2820267686424474
+      "share": 0.14375,
+      "connection_share": 0.2626168224299065
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.11392405063291139,
-      "connection_share": 0.09847036328871893
+      "share": 0.1125,
+      "connection_share": 0.10373831775700934
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 17,
-      "share": 0.10759493670886076,
-      "connection_share": 0.044933078393881457
+      "nodes": 16,
+      "share": 0.1,
+      "connection_share": 0.04205607476635514
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 14,
-      "share": 0.08860759493670886,
-      "connection_share": 0.0745697896749522
+      "nodes": 15,
+      "share": 0.09375,
+      "connection_share": 0.09906542056074766
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 8,
-      "share": 0.05063291139240506,
-      "connection_share": 0.0124282982791587
+      "nodes": 9,
+      "share": 0.05625,
+      "connection_share": 0.012149532710280374
     },
     {
-      "asn": 45102,
-      "org": "Alibaba (US) Technology Co., Ltd.",
+      "asn": 20473,
+      "org": "The Constant Company, LLC",
       "nodes": 5,
-      "share": 0.03164556962025317,
-      "connection_share": 0.004780114722753346
+      "share": 0.03125,
+      "connection_share": 0.008411214953271028
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.03164556962025317,
-      "connection_share": 0.0124282982791587
+      "share": 0.03125,
+      "connection_share": 0.014018691588785047
     }
   ],
   "versions": {
-    "population": 158,
+    "population": 160,
     "shares": {
-      "0.38.5": 0.9873417721518988,
-      "other": 0.012658227848101266
+      "0.38.5": 0.9875,
+      "other": 0.0125
     }
   },
   "graph": {
-    "population": 158,
-    "largest_component_fraction": 0.9873417721518988,
+    "population": 160,
+    "largest_component_fraction": 0.9875,
     "top_n": 5,
-    "top_n_share": 0.37858508604206503
+    "top_n_share": 0.36728971962616824
   },
   "directory": [
     {
@@ -126,7 +126,7 @@
       "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 104475525,
+      "earliest_block_height": 104493354,
       "tx_index": false,
       "catching_up": false
     },
@@ -153,7 +153,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 104675528,
+      "earliest_block_height": 104693367,
       "tx_index": false,
       "catching_up": false
     },
@@ -180,7 +180,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 83052319,
+      "earliest_block_height": 101793329,
       "tx_index": true,
       "catching_up": false
     },
@@ -189,7 +189,7 @@
       "country": "UA",
       "asn": 6698,
       "as_org": "Virtual Systems LLC",
-      "earliest_block_height": 104675494,
+      "earliest_block_height": 104693329,
       "tx_index": true,
       "catching_up": false
     },
