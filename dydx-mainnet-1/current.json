@@ -1,99 +1,91 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-10T04:58:05.761356435Z",
-  "public_nodes": 12,
-  "non_public_nodes": 137,
+  "crawled_at": "2026-09-10T13:01:45.841879398Z",
+  "public_nodes": 10,
+  "non_public_nodes": 126,
   "countries": {
     "AU": 1,
     "CA": 2,
-    "DE": 28,
-    "FI": 7,
-    "FR": 10,
+    "DE": 29,
+    "FI": 8,
+    "FR": 11,
     "GB": 1,
     "HK": 1,
-    "IE": 3,
-    "JP": 59,
-    "KR": 2,
-    "NL": 2,
+    "IE": 1,
+    "JP": 49,
+    "NL": 3,
+    "PL": 1,
     "SE": 1,
-    "SG": 9,
+    "SG": 6,
     "UA": 1,
-    "US": 21
+    "US": 20
   },
   "asns": [
     {
-      "asn": 16509,
-      "org": "Amazon.com, Inc.",
-      "nodes": 30,
-      "share": 0.20134228187919462,
-      "connection_share": 0.103
-    },
-    {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
+      "nodes": 22,
+      "share": 0.16176470588235295,
+      "connection_share": 0.32186732186732187
+    },
+    {
+      "asn": 16509,
+      "org": "Amazon.com, Inc.",
       "nodes": 21,
-      "share": 0.14093959731543623,
-      "connection_share": 0.274
+      "share": 0.15441176470588236,
+      "connection_share": 0.044226044226044224
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.12080536912751678,
-      "connection_share": 0.101
+      "share": 0.1323529411764706,
+      "connection_share": 0.09828009828009827
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
       "nodes": 16,
-      "share": 0.10738255033557047,
-      "connection_share": 0.044
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 12,
-      "share": 0.08053691275167785,
-      "connection_share": 0.068
+      "share": 0.11764705882352941,
+      "connection_share": 0.045454545454545456
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
+      "nodes": 8,
+      "share": 0.058823529411764705,
+      "connection_share": 0.013513513513513514
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
       "nodes": 7,
-      "share": 0.04697986577181208,
-      "connection_share": 0.01
+      "share": 0.051470588235294115,
+      "connection_share": 0.025798525798525797
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.03355704697986577,
-      "connection_share": 0.018
+      "share": 0.03676470588235294,
+      "connection_share": 0.020884520884520884
     }
   ],
   "versions": {
-    "population": 149,
+    "population": 136,
     "shares": {
-      "0.38.5": 1
+      "0.38.5": 0.9926470588235294,
+      "other": 0.007352941176470588
     }
   },
   "graph": {
-    "population": 149,
-    "largest_component_fraction": 0.9865771812080537,
+    "population": 136,
+    "largest_component_fraction": 0.9852941176470589,
     "top_n": 5,
-    "top_n_share": 0.391
+    "top_n_share": 0.45454545454545453
   },
   "directory": [
-    {
-      "endpoint": "http://152.236.16.107:26657",
-      "country": "JP",
-      "asn": 396356,
-      "as_org": "Latitude.sh",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
     {
       "endpoint": "http://172.237.6.69:26657",
       "country": "JP",
@@ -104,20 +96,11 @@
       "catching_up": false
     },
     {
-      "endpoint": "http://18.177.172.207:26657",
-      "country": "JP",
-      "asn": 16509,
-      "as_org": "Amazon.com, Inc.",
-      "earliest_block_height": 59019001,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
       "endpoint": "http://213.133.111.156:26657",
       "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 104527824,
+      "earliest_block_height": 104570776,
       "tx_index": false,
       "catching_up": false
     },
@@ -144,7 +127,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 104727824,
+      "earliest_block_height": 104770820,
       "tx_index": false,
       "catching_up": false
     },
@@ -171,7 +154,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 83052319,
+      "earliest_block_height": 83090873,
       "tx_index": true,
       "catching_up": false
     },
@@ -180,7 +163,7 @@
       "country": "UA",
       "asn": 6698,
       "as_org": "Virtual Systems LLC",
-      "earliest_block_height": 104727794,
+      "earliest_block_height": 104770780,
       "tx_index": true,
       "catching_up": false
     },
