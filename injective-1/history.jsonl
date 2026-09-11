@@ -29,3 +29,4 @@
 {"schema_version":1,"at":"2026-09-10T19:14:08.100829131Z","chain":"injective-1","public_nodes":17,"non_public_nodes":301,"version_shares":{"1.0.1":1},"largest_component_fraction":0.8301886792452831,"top_n_share":0.25761904761904764}
 {"schema_version":1,"at":"2026-09-10T22:44:59.700796092Z","chain":"injective-1","public_nodes":17,"non_public_nodes":310,"version_shares":{"1.0.1":0.9969418960244648,"other":0.0030581039755351682},"largest_component_fraction":0.8226299694189603,"top_n_share":0.2457777777777778}
 {"schema_version":1,"at":"2026-09-11T04:56:00.16608654Z","chain":"injective-1","public_nodes":17,"non_public_nodes":306,"version_shares":{"1.0.1":1},"largest_component_fraction":0.8173374613003096,"top_n_share":0.25445544554455446}
+{"schema_version":1,"at":"2026-09-11T12:57:04.672530567Z","chain":"injective-1","public_nodes":13,"non_public_nodes":286,"version_shares":{"1.0.1":1},"largest_component_fraction":0.9933110367892977,"top_n_share":0.26806083650190116}
