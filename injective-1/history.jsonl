@@ -31,3 +31,4 @@
 {"schema_version":1,"at":"2026-09-11T04:56:00.16608654Z","chain":"injective-1","public_nodes":17,"non_public_nodes":306,"version_shares":{"1.0.1":1},"largest_component_fraction":0.8173374613003096,"top_n_share":0.25445544554455446}
 {"schema_version":1,"at":"2026-09-11T12:57:04.672530567Z","chain":"injective-1","public_nodes":13,"non_public_nodes":286,"version_shares":{"1.0.1":1},"largest_component_fraction":0.9933110367892977,"top_n_share":0.26806083650190116}
 {"schema_version":1,"at":"2026-09-11T19:16:11.366048156Z","chain":"injective-1","public_nodes":17,"non_public_nodes":303,"version_shares":{"1.0.1":0.996875,"other":0.003125},"largest_component_fraction":0.8375,"top_n_share":0.23076923076923078}
+{"schema_version":1,"at":"2026-09-11T22:44:24.541937612Z","chain":"injective-1","public_nodes":17,"non_public_nodes":311,"version_shares":{"1.0.1":1},"largest_component_fraction":0.823170731707317,"top_n_share":0.22080979284369115}
