@@ -1,80 +1,87 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-12T22:27:25.181886185Z",
-  "public_nodes": 9,
-  "non_public_nodes": 114,
+  "crawled_at": "2026-09-13T05:01:48.897244491Z",
+  "public_nodes": 10,
+  "non_public_nodes": 126,
   "countries": {
     "AU": 1,
     "CA": 2,
-    "DE": 25,
-    "FI": 10,
+    "DE": 24,
+    "FI": 8,
     "FR": 10,
     "GB": 1,
     "HK": 2,
-    "IE": 1,
-    "JP": 45,
-    "KR": 2,
+    "IE": 2,
+    "JP": 54,
+    "KR": 3,
     "NL": 3,
-    "SG": 5,
-    "US": 15
+    "SG": 7,
+    "US": 18
   },
   "asns": [
     {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 21,
-      "share": 0.17073170731707318,
-      "connection_share": 0.31076923076923074
-    },
-    {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 18,
-      "share": 0.14634146341463414,
-      "connection_share": 0.033846153846153845
+      "nodes": 25,
+      "share": 0.18382352941176472,
+      "connection_share": 0.11864406779661017
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 19,
+      "share": 0.13970588235294118,
+      "connection_share": 0.2966101694915254
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 17,
-      "share": 0.13821138211382114,
-      "connection_share": 0.10923076923076923
+      "share": 0.125,
+      "connection_share": 0.1016949152542373
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 13,
-      "share": 0.10569105691056911,
-      "connection_share": 0.047692307692307694
+      "nodes": 14,
+      "share": 0.10294117647058823,
+      "connection_share": 0.038135593220338986
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 10,
-      "share": 0.08130081300813008,
-      "connection_share": 0.07846153846153846
+      "nodes": 12,
+      "share": 0.08823529411764706,
+      "connection_share": 0.0847457627118644
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 6,
-      "share": 0.04878048780487805,
-      "connection_share": 0.010769230769230769
+      "nodes": 8,
+      "share": 0.058823529411764705,
+      "connection_share": 0.011299435028248588
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
+      "nodes": 5,
+      "share": 0.03676470588235294,
+      "connection_share": 0.011299435028248588
     }
   ],
   "versions": {
-    "population": 123,
+    "population": 136,
     "shares": {
-      "0.38.5": 0.991869918699187,
-      "other": 0.008130081300813009
+      "0.38.5": 0.9926470588235294,
+      "other": 0.007352941176470588
     }
   },
   "graph": {
-    "population": 123,
-    "largest_component_fraction": 0.983739837398374,
+    "population": 136,
+    "largest_component_fraction": 0.9852941176470589,
     "top_n": 5,
-    "top_n_share": 0.5230769230769231
+    "top_n_share": 0.4745762711864407
   },
   "directory": [
     {
@@ -96,13 +103,22 @@
       "catching_up": false
     },
     {
+      "endpoint": "http://18.177.172.207:26657",
+      "country": "JP",
+      "asn": 16509,
+      "as_org": "Amazon.com, Inc.",
+      "earliest_block_height": 59019001,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
       "endpoint": "http://216.106.184.11:26667",
       "country": "US",
       "asn": 63023,
       "as_org": "GTHost",
       "earliest_block_height": 86781127,
       "tx_index": true,
-      "catching_up": true
+      "catching_up": false
     },
     {
       "endpoint": "http://37.27.48.4:2001",
@@ -118,7 +134,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 105086603,
+      "earliest_block_height": 105124231,
       "tx_index": false,
       "catching_up": false
     },
@@ -145,7 +161,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 101862601,
+      "earliest_block_height": 83090873,
       "tx_index": true,
       "catching_up": false
     },
