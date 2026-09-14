@@ -1,129 +1,129 @@
 {
   "schema_version": 1,
   "chain": "cosmoshub-4",
-  "crawled_at": "2026-09-14T15:07:56.335504147Z",
-  "public_nodes": 37,
-  "non_public_nodes": 507,
+  "crawled_at": "2026-09-14T20:23:46.126828473Z",
+  "public_nodes": 38,
+  "non_public_nodes": 497,
   "countries": {
     "AT": 8,
-    "AU": 7,
+    "AU": 8,
     "BG": 3,
     "BY": 1,
-    "CA": 26,
+    "CA": 24,
     "CH": 2,
-    "DE": 146,
-    "ES": 4,
-    "FI": 73,
-    "FR": 28,
-    "GB": 8,
+    "DE": 143,
+    "ES": 3,
+    "FI": 77,
+    "FR": 27,
+    "GB": 9,
     "HK": 10,
-    "IE": 6,
-    "IN": 3,
-    "IT": 2,
-    "JP": 19,
-    "KR": 17,
+    "IE": 7,
+    "IN": 2,
+    "IT": 1,
+    "JP": 22,
+    "KR": 18,
     "LT": 2,
     "LV": 3,
     "MC": 3,
-    "MT": 1,
-    "MX": 1,
-    "NL": 22,
-    "PL": 9,
+    "MT": 2,
+    "MX": 2,
+    "NL": 19,
+    "PL": 8,
     "PT": 4,
-    "RO": 9,
+    "RO": 6,
     "RU": 5,
-    "SE": 3,
-    "SG": 26,
+    "SE": 2,
+    "SG": 24,
     "TR": 1,
     "TW": 3,
-    "US": 83,
+    "US": 80,
     "VN": 2
   },
   "asns": [
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 155,
-      "share": 0.2849264705882353,
-      "connection_share": 0.4103551561831408
+      "nodes": 157,
+      "share": 0.29345794392523367,
+      "connection_share": 0.4108167770419426
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 56,
-      "share": 0.10294117647058823,
-      "connection_share": 0.08194266153187847
+      "nodes": 54,
+      "share": 0.10093457943925234,
+      "connection_share": 0.0847682119205298
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 40,
-      "share": 0.07352941176470588,
-      "connection_share": 0.051133932391955496
+      "nodes": 43,
+      "share": 0.08037383177570094,
+      "connection_share": 0.056291390728476824
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 19,
-      "share": 0.034926470588235295,
-      "connection_share": 0.02781343602909713
+      "nodes": 18,
+      "share": 0.03364485981308411,
+      "connection_share": 0.025827814569536423
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 17,
-      "share": 0.03125,
-      "connection_share": 0.017543859649122806
+      "nodes": 15,
+      "share": 0.028037383177570093,
+      "connection_share": 0.018101545253863136
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 15,
-      "share": 0.027573529411764705,
-      "connection_share": 0.008985879332477536
+      "nodes": 13,
+      "share": 0.024299065420560748,
+      "connection_share": 0.009713024282560706
     },
     {
       "asn": 45102,
       "org": "Alibaba (US) Technology Co., Ltd.",
       "nodes": 12,
-      "share": 0.022058823529411766,
-      "connection_share": 0.01069747539580659
-    },
-    {
-      "asn": 9009,
-      "org": "M247 Europe SRL",
-      "nodes": 10,
-      "share": 0.01838235294117647,
-      "connection_share": 0.0323063756953359
-    },
-    {
-      "asn": 132203,
-      "org": "Shenzhen Tencent Computer Systems Company Limited",
-      "nodes": 9,
-      "share": 0.016544117647058824,
-      "connection_share": 0.0034231921266581087
+      "share": 0.022429906542056073,
+      "connection_share": 0.010375275938189845
     },
     {
       "asn": 396982,
       "org": "Google LLC",
-      "nodes": 9,
-      "share": 0.016544117647058824,
-      "connection_share": 0.011553273427471117
+      "nodes": 10,
+      "share": 0.018691588785046728,
+      "connection_share": 0.012582781456953643
+    },
+    {
+      "asn": 9009,
+      "org": "M247 Europe SRL",
+      "nodes": 7,
+      "share": 0.013084112149532711,
+      "connection_share": 0.02097130242825607
+    },
+    {
+      "asn": 51167,
+      "org": "Contabo GmbH",
+      "nodes": 7,
+      "share": 0.013084112149532711,
+      "connection_share": 0.02052980132450331
     }
   ],
   "versions": {
-    "population": 544,
+    "population": 535,
     "shares": {
-      "0.38.19": 0.009191176470588236,
-      "0.38.22": 0.9650735294117647,
-      "other": 0.025735294117647058
+      "0.38.19": 0.011214953271028037,
+      "0.38.22": 0.9663551401869159,
+      "other": 0.022429906542056073
     }
   },
   "graph": {
-    "population": 544,
-    "largest_component_fraction": 0.9283088235294118,
+    "population": 535,
+    "largest_component_fraction": 0.9327102803738317,
     "top_n": 5,
-    "top_n_share": 0.1810012836970475
+    "top_n_share": 0.18498896247240618
   },
   "directory": [
     {
@@ -181,6 +181,15 @@
       "catching_up": false
     },
     {
+      "endpoint": "http://221.255.180.106:26657",
+      "country": "JP",
+      "asn": 17506,
+      "as_org": "ARTERIA Networks Corporation",
+      "earliest_block_height": 0,
+      "tx_index": false,
+      "catching_up": false
+    },
+    {
       "endpoint": "http://37.120.245.41:26657",
       "country": "RO",
       "asn": 9009,
@@ -212,7 +221,7 @@
       "country": "US",
       "asn": 262287,
       "as_org": "Maxihost LTDA",
-      "earliest_block_height": 31967712,
+      "earliest_block_height": 31971040,
       "tx_index": true,
       "catching_up": false
     },
@@ -275,7 +284,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 32904808,
+      "earliest_block_height": 32841442,
       "tx_index": true,
       "catching_up": false
     },
@@ -356,7 +365,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 32371885,
+      "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": false
     },
