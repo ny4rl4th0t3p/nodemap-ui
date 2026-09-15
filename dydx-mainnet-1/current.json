@@ -1,62 +1,62 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-15T19:46:56.503279362Z",
+  "crawled_at": "2026-09-15T23:01:13.265274545Z",
   "public_nodes": 7,
   "non_public_nodes": 82,
   "countries": {
     "AU": 1,
     "CA": 1,
-    "DE": 23,
+    "DE": 21,
     "FI": 9,
     "FR": 7,
-    "JP": 30,
-    "NL": 3,
-    "SG": 3,
-    "US": 11
+    "JP": 31,
+    "NL": 2,
+    "SG": 6,
+    "US": 10
   },
   "asns": [
-    {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 18,
-      "share": 0.20224719101123595,
-      "connection_share": 0.2700892857142857
-    },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
       "share": 0.20224719101123595,
-      "connection_share": 0.10267857142857142
+      "connection_share": 0.11038961038961038
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 16,
+      "share": 0.1797752808988764,
+      "connection_share": 0.24891774891774893
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 9,
-      "share": 0.10112359550561797,
-      "connection_share": 0.046875
+      "nodes": 11,
+      "share": 0.12359550561797752,
+      "connection_share": 0.05194805194805195
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 9,
-      "share": 0.10112359550561797,
-      "connection_share": 0.026785714285714284
+      "nodes": 10,
+      "share": 0.11235955056179775,
+      "connection_share": 0.023809523809523808
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
       "share": 0.056179775280898875,
-      "connection_share": 0.020089285714285716
+      "connection_share": 0.01948051948051948
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
       "nodes": 5,
       "share": 0.056179775280898875,
-      "connection_share": 0.046875
+      "connection_share": 0.06277056277056277
     }
   ],
   "versions": {
@@ -69,7 +69,7 @@
     "population": 89,
     "largest_component_fraction": 0.9775280898876404,
     "top_n": 5,
-    "top_n_share": 0.6160714285714286
+    "top_n_share": 0.5952380952380952
   },
   "directory": [
     {
@@ -86,7 +86,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 105469749,
+      "earliest_block_height": 105489602,
       "tx_index": false,
       "catching_up": false
     },
