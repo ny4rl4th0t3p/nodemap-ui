@@ -1,25 +1,26 @@
 {
   "schema_version": 1,
   "chain": "cosmoshub-4",
-  "crawled_at": "2026-09-16T19:39:02.994957444Z",
-  "public_nodes": 39,
-  "non_public_nodes": 526,
+  "crawled_at": "2026-09-16T23:05:15.559552115Z",
+  "public_nodes": 38,
+  "non_public_nodes": 540,
   "countries": {
-    "AT": 10,
+    "AT": 9,
     "AU": 8,
     "BG": 3,
     "BY": 1,
     "CA": 28,
     "CH": 1,
-    "DE": 149,
+    "DE": 154,
     "ES": 3,
-    "FI": 79,
-    "FR": 31,
+    "FI": 78,
+    "FR": 32,
     "GB": 8,
     "HK": 11,
-    "IE": 7,
+    "IE": 8,
     "IN": 2,
-    "JP": 22,
+    "IT": 1,
+    "JP": 23,
     "KR": 18,
     "LT": 2,
     "LV": 3,
@@ -28,102 +29,102 @@
     "MX": 2,
     "NL": 22,
     "PA": 1,
-    "PL": 8,
+    "PL": 9,
     "PT": 5,
     "RO": 12,
     "RU": 5,
     "SE": 3,
-    "SG": 24,
+    "SG": 25,
     "TR": 1,
     "TW": 3,
-    "US": 81,
-    "VN": 3
+    "US": 84,
+    "VN": 5
   },
   "asns": [
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 166,
-      "share": 0.2938053097345133,
-      "connection_share": 0.39532389532389534
+      "nodes": 167,
+      "share": 0.2889273356401384,
+      "connection_share": 0.3855328972681801
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 60,
-      "share": 0.10619469026548672,
-      "connection_share": 0.08923208923208924
+      "nodes": 61,
+      "share": 0.10553633217993079,
+      "connection_share": 0.08503270488649481
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 44,
-      "share": 0.07787610619469026,
-      "connection_share": 0.06606606606606606
+      "nodes": 45,
+      "share": 0.07785467128027682,
+      "connection_share": 0.06271642939592151
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.03185840707964602,
-      "connection_share": 0.02423852423852424
+      "share": 0.031141868512110725,
+      "connection_share": 0.026741054251635244
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 17,
-      "share": 0.03008849557522124,
-      "connection_share": 0.013299013299013299
+      "nodes": 16,
+      "share": 0.02768166089965398,
+      "connection_share": 0.01596767987687572
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 14,
-      "share": 0.024778761061946902,
-      "connection_share": 0.0075075075075075074
+      "nodes": 15,
+      "share": 0.025951557093425604,
+      "connection_share": 0.008849557522123894
     },
     {
       "asn": 45102,
       "org": "Alibaba (US) Technology Co., Ltd.",
       "nodes": 13,
-      "share": 0.023008849557522124,
-      "connection_share": 0.012441012441012441
+      "share": 0.02249134948096886,
+      "connection_share": 0.011350519430550212
     },
     {
       "asn": 9009,
       "org": "M247 Europe SRL",
-      "nodes": 10,
-      "share": 0.017699115044247787,
-      "connection_share": 0.031746031746031744
+      "nodes": 11,
+      "share": 0.01903114186851211,
+      "connection_share": 0.030973451327433628
+    },
+    {
+      "asn": 132203,
+      "org": "Shenzhen Tencent Computer Systems Company Limited",
+      "nodes": 8,
+      "share": 0.01384083044982699,
+      "connection_share": 0.0030781069642170067
     },
     {
       "asn": 396982,
       "org": "Google LLC",
       "nodes": 8,
-      "share": 0.01415929203539823,
-      "connection_share": 0.009652509652509652
-    },
-    {
-      "asn": 44133,
-      "org": "IPAX GmbH",
-      "nodes": 7,
-      "share": 0.012389380530973451,
-      "connection_share": 0.013513513513513514
+      "share": 0.01384083044982699,
+      "connection_share": 0.009811465948441709
     }
   ],
   "versions": {
-    "population": 565,
+    "population": 578,
     "shares": {
-      "0.38.19": 0.010619469026548672,
-      "0.38.22": 0.95929203539823,
-      "other": 0.03008849557522124
+      "0.38.19": 0.010380622837370242,
+      "0.38.22": 0.967128027681661,
+      "other": 0.02249134948096886
     }
   },
   "graph": {
-    "population": 565,
-    "largest_component_fraction": 0.9292035398230089,
+    "population": 578,
+    "largest_component_fraction": 0.9325259515570934,
     "top_n": 5,
-    "top_n_share": 0.17653367653367652
+    "top_n_share": 0.18430165448249328
   },
   "directory": [
     {
@@ -221,7 +222,7 @@
       "country": "US",
       "asn": 262287,
       "as_org": "Maxihost LTDA",
-      "earliest_block_height": 32001000,
+      "earliest_block_height": 32003177,
       "tx_index": true,
       "catching_up": false
     },
@@ -242,6 +243,15 @@
       "earliest_block_height": 32916123,
       "tx_index": true,
       "catching_up": false
+    },
+    {
+      "endpoint": "http://93.189.30.120:26657",
+      "country": "AT",
+      "asn": 44133,
+      "as_org": "IPAX GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": true
     },
     {
       "endpoint": "http://rpc-cosmoshub.freshstaking.com:26657",
@@ -284,7 +294,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 32904808,
+      "earliest_block_height": 32841442,
       "tx_index": true,
       "catching_up": false
     },
@@ -343,15 +353,6 @@
       "catching_up": false
     },
     {
-      "endpoint": "https://cosmoshub.api.pocket.network",
-      "country": "DE",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 31553263,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
       "endpoint": "https://cosmoshub.rpc.kjnodes.com",
       "country": "FI",
       "asn": 24940,
@@ -367,15 +368,6 @@
       "as_org": "WebNX, Inc.",
       "earliest_block_height": 0,
       "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "https://public.stakewolle.com/cosmos/cosmoshub/rpc",
-      "country": "CA",
-      "asn": 13335,
-      "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 0,
-      "tx_index": false,
       "catching_up": false
     },
     {
