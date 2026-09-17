@@ -1,79 +1,79 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-17T19:49:35.759493399Z",
+  "crawled_at": "2026-09-17T22:57:44.317585934Z",
   "public_nodes": 7,
-  "non_public_nodes": 113,
+  "non_public_nodes": 110,
   "countries": {
-    "AU": 2,
-    "CA": 2,
+    "AU": 1,
+    "CA": 1,
     "DE": 22,
-    "FI": 9,
+    "FI": 8,
     "FR": 7,
     "GB": 1,
-    "IE": 2,
-    "JP": 45,
+    "HK": 1,
+    "IE": 4,
+    "JP": 44,
     "KR": 3,
     "NL": 2,
-    "SG": 8,
-    "US": 16
+    "SG": 7,
+    "US": 15
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 22,
-      "share": 0.18333333333333332,
-      "connection_share": 0.14359861591695502
-    },
-    {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 18,
-      "share": 0.15,
-      "connection_share": 0.24567474048442905
+      "nodes": 23,
+      "share": 0.19658119658119658,
+      "connection_share": 0.14157706093189965
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.15,
-      "connection_share": 0.08650519031141868
+      "share": 0.15384615384615385,
+      "connection_share": 0.08781362007168458
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 17,
+      "share": 0.1452991452991453,
+      "connection_share": 0.25627240143369173
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 13,
-      "share": 0.10833333333333334,
-      "connection_share": 0.02422145328719723
+      "nodes": 11,
+      "share": 0.09401709401709402,
+      "connection_share": 0.023297491039426525
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 10,
-      "share": 0.08333333333333333,
-      "connection_share": 0.08823529411764706
+      "nodes": 9,
+      "share": 0.07692307692307693,
+      "connection_share": 0.06630824372759857
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.041666666666666664,
-      "connection_share": 0.012110726643598616
+      "share": 0.042735042735042736,
+      "connection_share": 0.012544802867383513
     }
   ],
   "versions": {
-    "population": 120,
+    "population": 117,
     "shares": {
-      "0.38.5": 0.9833333333333333,
-      "other": 0.016666666666666666
+      "0.38.5": 1
     }
   },
   "graph": {
-    "population": 120,
-    "largest_component_fraction": 0.9833333333333333,
+    "population": 117,
+    "largest_component_fraction": 0.9829059829059829,
     "top_n": 5,
-    "top_n_share": 0.5173010380622838
+    "top_n_share": 0.5340501792114696
   },
   "directory": [
     {
