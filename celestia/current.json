@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "chain": "celestia",
-  "crawled_at": "2026-09-17T05:02:18.201269704Z",
-  "public_nodes": 27,
-  "non_public_nodes": 257,
+  "crawled_at": "2026-09-17T13:37:06.012560143Z",
+  "public_nodes": 26,
+  "non_public_nodes": 253,
   "countries": {
     "AT": 2,
     "AU": 1,
@@ -11,28 +11,29 @@
     "CA": 8,
     "CH": 3,
     "CL": 3,
-    "DE": 53,
+    "DE": 52,
     "ES": 2,
-    "FI": 37,
-    "FR": 19,
+    "FI": 35,
+    "FR": 18,
     "GB": 4,
-    "HK": 5,
+    "HK": 7,
     "IE": 8,
     "IN": 1,
-    "JP": 21,
+    "JP": 19,
     "KR": 14,
     "LT": 1,
     "LV": 1,
-    "NL": 10,
+    "NL": 8,
     "NO": 1,
     "PL": 6,
     "PT": 1,
-    "RO": 5,
+    "RO": 6,
     "RU": 2,
     "SE": 1,
-    "SG": 20,
+    "SG": 22,
     "SI": 2,
-    "US": 45,
+    "TW": 1,
+    "US": 42,
     "VN": 1,
     "ZA": 3
   },
@@ -40,85 +41,85 @@
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 60,
-      "share": 0.2112676056338028,
-      "connection_share": 0.38580799045915326
+      "nodes": 57,
+      "share": 0.20430107526881722,
+      "connection_share": 0.3682673588578845
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 37,
-      "share": 0.13028169014084506,
-      "connection_share": 0.04979129397734049
+      "nodes": 36,
+      "share": 0.12903225806451613,
+      "connection_share": 0.04931862426995458
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 17,
-      "share": 0.05985915492957746,
-      "connection_share": 0.022361359570661897
+      "nodes": 18,
+      "share": 0.06451612903225806,
+      "connection_share": 0.023685918234912395
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 15,
-      "share": 0.0528169014084507,
-      "connection_share": 0.03130590339892665
+      "share": 0.053763440860215055,
+      "connection_share": 0.029850746268656716
     },
     {
       "asn": 12876,
       "org": "Scaleway SAS",
-      "nodes": 10,
-      "share": 0.035211267605633804,
-      "connection_share": 0.1282051282051282
+      "nodes": 9,
+      "share": 0.03225806451612903,
+      "connection_share": 0.13400389357560025
     },
     {
       "asn": 132203,
       "org": "Shenzhen Tencent Computer Systems Company Limited",
       "nodes": 9,
-      "share": 0.03169014084507042,
-      "connection_share": 0.005068574836016696
-    },
-    {
-      "asn": 29066,
-      "org": "velia.net Internetdienste GmbH",
-      "nodes": 8,
-      "share": 0.028169014084507043,
-      "connection_share": 0.011627906976744186
+      "share": 0.03225806451612903,
+      "connection_share": 0.004866969500324465
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
       "nodes": 8,
-      "share": 0.028169014084507043,
-      "connection_share": 0.018187239117471676
+      "share": 0.02867383512544803,
+      "connection_share": 0.019143413367942893
     },
     {
-      "asn": 7979,
-      "org": "Servers.com, Inc.",
+      "asn": 29066,
+      "org": "velia.net Internetdienste GmbH",
       "nodes": 7,
-      "share": 0.02464788732394366,
-      "connection_share": 0.00655933214072749
+      "share": 0.025089605734767026,
+      "connection_share": 0.012978585334198572
     },
     {
-      "asn": 14618,
-      "org": "Amazon.com, Inc.",
+      "asn": 63023,
+      "org": "GTHost",
       "nodes": 7,
-      "share": 0.02464788732394366,
-      "connection_share": 0.004472271914132379
+      "share": 0.025089605734767026,
+      "connection_share": 0.02855288773523686
+    },
+    {
+      "asn": 3786,
+      "org": "LG DACOM Corporation",
+      "nodes": 6,
+      "share": 0.021505376344086023,
+      "connection_share": 0.00681375730045425
     }
   ],
   "versions": {
-    "population": 284,
+    "population": 279,
     "shares": {
       "0.38.17": 1
     }
   },
   "graph": {
-    "population": 284,
-    "largest_component_fraction": 0.9929577464788732,
+    "population": 279,
+    "largest_component_fraction": 0.992831541218638,
     "top_n": 5,
-    "top_n_share": 0.2060226595110316
+    "top_n_share": 0.2034393251135626
   },
   "directory": [
     {
@@ -144,16 +145,7 @@
       "country": "FR",
       "asn": 12876,
       "as_org": "Scaleway SAS",
-      "earliest_block_height": 14120920,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "http://195.154.103.156:26657",
-      "country": "FR",
-      "asn": 12876,
-      "as_org": "Scaleway SAS",
-      "earliest_block_height": 1,
+      "earliest_block_height": 14131714,
       "tx_index": true,
       "catching_up": false
     },
@@ -171,7 +163,7 @@
       "country": "FR",
       "asn": 12876,
       "as_org": "Scaleway SAS",
-      "earliest_block_height": 14120915,
+      "earliest_block_height": 14131714,
       "tx_index": true,
       "catching_up": false
     },
@@ -216,7 +208,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 14118371,
+      "earliest_block_height": 14133371,
       "tx_index": false,
       "catching_up": false
     },
@@ -234,7 +226,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 14120914,
+      "earliest_block_height": 14131714,
       "tx_index": true,
       "catching_up": false
     },
@@ -270,7 +262,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 9664586,
+      "earliest_block_height": 9010151,
       "tx_index": true,
       "catching_up": false
     },
@@ -297,7 +289,7 @@
       "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 14073915,
+      "earliest_block_height": 14084714,
       "tx_index": true,
       "catching_up": false
     },
@@ -306,7 +298,7 @@
       "country": "DE",
       "asn": 207252,
       "as_org": "Felix Gassan",
-      "earliest_block_height": 14087915,
+      "earliest_block_height": 14098714,
       "tx_index": true,
       "catching_up": false
     },
@@ -315,7 +307,16 @@
       "country": "DE",
       "asn": 24961,
       "as_org": "WIIT AG",
-      "earliest_block_height": 14120915,
+      "earliest_block_height": 14131712,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.lavenderfive.com:443/celestia",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 13434001,
       "tx_index": true,
       "catching_up": false
     },
@@ -324,7 +325,7 @@
       "country": "FR",
       "asn": 12876,
       "as_org": "Scaleway SAS",
-      "earliest_block_height": 14120915,
+      "earliest_block_height": 14131714,
       "tx_index": false,
       "catching_up": false
     }
