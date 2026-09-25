@@ -1,87 +1,93 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-24T23:18:47.331690598Z",
+  "crawled_at": "2026-09-25T05:09:47.261197258Z",
   "public_nodes": 10,
-  "non_public_nodes": 124,
+  "non_public_nodes": 117,
   "countries": {
-    "AU": 2,
+    "AU": 1,
     "CA": 1,
-    "DE": 21,
+    "DE": 22,
     "FI": 9,
     "FR": 9,
     "GB": 1,
     "HK": 3,
-    "IE": 3,
-    "JP": 52,
+    "IE": 2,
+    "JP": 49,
     "KR": 4,
     "NL": 2,
-    "SG": 10,
-    "US": 16
+    "SG": 8,
+    "US": 15
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 29,
-      "share": 0.21641791044776118,
-      "connection_share": 0.13984168865435356
+      "nodes": 24,
+      "share": 0.1889763779527559,
+      "connection_share": 0.12921348314606743
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 18,
+      "share": 0.14173228346456693,
+      "connection_share": 0.24719101123595505
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.13432835820895522,
-      "connection_share": 0.11477572559366754
-    },
-    {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 17,
-      "share": 0.12686567164179105,
-      "connection_share": 0.2532981530343008
+      "share": 0.14173228346456693,
+      "connection_share": 0.11235955056179775
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 13,
-      "share": 0.09701492537313433,
-      "connection_share": 0.025065963060686015
+      "nodes": 12,
+      "share": 0.09448818897637795,
+      "connection_share": 0.025280898876404494
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 13,
-      "share": 0.09701492537313433,
-      "connection_share": 0.12005277044854881
+      "nodes": 11,
+      "share": 0.08661417322834646,
+      "connection_share": 0.12078651685393259
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
       "nodes": 5,
-      "share": 0.03731343283582089,
-      "connection_share": 0.0079155672823219
+      "share": 0.03937007874015748,
+      "connection_share": 0.007022471910112359
+    },
+    {
+      "asn": 45102,
+      "org": "Alibaba (US) Technology Co., Ltd.",
+      "nodes": 5,
+      "share": 0.03937007874015748,
+      "connection_share": 0.009831460674157303
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.03731343283582089,
-      "connection_share": 0.014511873350923483
+      "share": 0.03937007874015748,
+      "connection_share": 0.012640449438202247
     }
   ],
   "versions": {
-    "population": 134,
+    "population": 127,
     "shares": {
-      "0.38.5": 0.9925373134328358,
-      "other": 0.007462686567164179
+      "0.38.5": 1
     }
   },
   "graph": {
-    "population": 134,
-    "largest_component_fraction": 0.9850746268656716,
+    "population": 127,
+    "largest_component_fraction": 0.984251968503937,
     "top_n": 5,
-    "top_n_share": 0.4366754617414248
+    "top_n_share": 0.43820224719101125
   },
   "directory": [
     {
