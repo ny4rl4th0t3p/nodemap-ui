@@ -97,3 +97,4 @@
 {"schema_version":1,"at":"2026-09-28T16:50:50.300042464Z","chain":"celestia","public_nodes":22,"non_public_nodes":244,"version_shares":{"0.38.17":1},"largest_component_fraction":0.9924812030075187,"top_n_share":0.2227204783258595}
 {"schema_version":1,"at":"2026-09-29T00:27:20.578184791Z","chain":"celestia","public_nodes":22,"non_public_nodes":244,"version_shares":{"0.38.17":1},"largest_component_fraction":0.9924812030075187,"top_n_share":0.22638680659670166}
 {"schema_version":1,"at":"2026-09-29T10:48:04.021091243Z","chain":"celestia","public_nodes":22,"non_public_nodes":247,"version_shares":{"0.38.17":1},"largest_component_fraction":0.9925650557620818,"top_n_share":0.2261457550713749}
+{"schema_version":1,"at":"2026-09-29T18:09:55.219201069Z","chain":"celestia","public_nodes":22,"non_public_nodes":244,"version_shares":{"0.38.17":1},"largest_component_fraction":0.9924812030075187,"top_n_share":0.22841444270015698}
