@@ -1,80 +1,88 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-09-29T23:50:45.736357572Z",
-  "public_nodes": 9,
-  "non_public_nodes": 114,
+  "crawled_at": "2026-09-30T05:47:05.841972351Z",
+  "public_nodes": 10,
+  "non_public_nodes": 128,
   "countries": {
-    "AU": 1,
+    "AU": 2,
     "CA": 1,
-    "DE": 21,
+    "DE": 25,
     "FI": 11,
-    "FR": 7,
+    "FR": 8,
     "GB": 1,
-    "IE": 2,
+    "HK": 3,
+    "IE": 3,
     "IL": 1,
-    "JP": 49,
+    "JP": 52,
     "KR": 3,
-    "NL": 3,
-    "SG": 8,
-    "US": 14
+    "NL": 4,
+    "SG": 10,
+    "US": 13
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 23,
-      "share": 0.18699186991869918,
-      "connection_share": 0.12931034482758622
+      "nodes": 27,
+      "share": 0.1956521739130435,
+      "connection_share": 0.13055555555555556
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 19,
-      "share": 0.15447154471544716,
-      "connection_share": 0.22701149425287356
+      "nodes": 22,
+      "share": 0.15942028985507245,
+      "connection_share": 0.2611111111111111
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 18,
-      "share": 0.14634146341463414,
-      "connection_share": 0.11063218390804598
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 13,
-      "share": 0.10569105691056911,
-      "connection_share": 0.13218390804597702
+      "share": 0.13043478260869565,
+      "connection_share": 0.1
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 10,
-      "share": 0.08130081300813008,
-      "connection_share": 0.02442528735632184
+      "nodes": 11,
+      "share": 0.07971014492753623,
+      "connection_share": 0.027777777777777776
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
+      "nodes": 11,
+      "share": 0.07971014492753623,
+      "connection_share": 0.09861111111111111
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
+      "nodes": 7,
+      "share": 0.050724637681159424,
+      "connection_share": 0.0125
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
       "nodes": 5,
-      "share": 0.04065040650406504,
-      "connection_share": 0.008620689655172414
+      "share": 0.036231884057971016,
+      "connection_share": 0.0125
     }
   ],
   "versions": {
-    "population": 123,
+    "population": 138,
     "shares": {
-      "0.38.5": 0.983739837398374,
-      "other": 0.016260162601626018
+      "0.38.5": 0.9782608695652174,
+      "other": 0.021739130434782608
     }
   },
   "graph": {
-    "population": 123,
-    "largest_component_fraction": 0.983739837398374,
+    "population": 138,
+    "largest_component_fraction": 0.9855072463768116,
     "top_n": 5,
-    "top_n_share": 0.4454022988505747
+    "top_n_share": 0.4652777777777778
   },
   "directory": [
     {
@@ -114,6 +122,15 @@
       "catching_up": false
     },
     {
+      "endpoint": "http://65.108.74.48:32657",
+      "country": "FI",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
       "endpoint": "http://67.213.123.157:26657",
       "country": "JP",
       "asn": 396356,
@@ -127,7 +144,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 107412001,
+      "earliest_block_height": 107429816,
       "tx_index": true,
       "catching_up": false
     },
