@@ -1,71 +1,92 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-21T23:30:46.100908092Z",
+  "crawled_at": "2026-10-22T05:06:58.601768791Z",
   "public_nodes": 6,
-  "non_public_nodes": 87,
+  "non_public_nodes": 94,
   "countries": {
-    "AU": 2,
+    "AU": 1,
     "CA": 1,
     "DE": 19,
-    "FI": 9,
+    "FI": 8,
     "FR": 7,
-    "HK": 1,
-    "JP": 30,
+    "HK": 2,
+    "IE": 3,
+    "JP": 34,
     "KR": 3,
     "NL": 1,
-    "SG": 8,
-    "US": 11
+    "SG": 7,
+    "US": 13
   },
   "asns": [
     {
-      "asn": 24940,
-      "org": "Hetzner Online GmbH",
-      "nodes": 19,
-      "share": 0.20430107526881722,
-      "connection_share": 0.18632075471698112
-    },
-    {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 18,
-      "share": 0.1935483870967742,
-      "connection_share": 0.15330188679245282
+      "nodes": 19,
+      "share": 0.19,
+      "connection_share": 0.15021459227467812
+    },
+    {
+      "asn": 24940,
+      "org": "Hetzner Online GmbH",
+      "nodes": 17,
+      "share": 0.17,
+      "connection_share": 0.21030042918454936
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 13,
-      "share": 0.13978494623655913,
-      "connection_share": 0.05660377358490566
+      "nodes": 15,
+      "share": 0.15,
+      "connection_share": 0.05793991416309013
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
       "nodes": 8,
-      "share": 0.08602150537634409,
-      "connection_share": 0.02122641509433962
+      "share": 0.08,
+      "connection_share": 0.02145922746781116
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
+      "nodes": 6,
+      "share": 0.06,
+      "connection_share": 0.02575107296137339
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
       "nodes": 5,
-      "share": 0.053763440860215055,
-      "connection_share": 0.02122641509433962
+      "share": 0.05,
+      "connection_share": 0.01072961373390558
+    },
+    {
+      "asn": 20473,
+      "org": "The Constant Company, LLC",
+      "nodes": 5,
+      "share": 0.05,
+      "connection_share": 0.012875536480686695
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
+      "nodes": 5,
+      "share": 0.05,
+      "connection_share": 0.019313304721030045
     }
   ],
   "versions": {
-    "population": 93,
+    "population": 100,
     "shares": {
-      "0.38.5": 0.978494623655914,
-      "other": 0.021505376344086023
+      "0.38.5": 1
     }
   },
   "graph": {
-    "population": 93,
-    "largest_component_fraction": 0.978494623655914,
+    "population": 100,
+    "largest_component_fraction": 0.98,
     "top_n": 5,
-    "top_n_share": 0.660377358490566
+    "top_n_share": 0.6030042918454935
   },
   "directory": [
     {
