@@ -135,3 +135,4 @@
 {"schema_version":1,"at":"2026-10-21T23:30:46.100908092Z","chain":"dydx-mainnet-1","public_nodes":6,"non_public_nodes":87,"version_shares":{"0.38.5":0.978494623655914,"other":0.021505376344086023},"largest_component_fraction":0.978494623655914,"top_n_share":0.660377358490566}
 {"schema_version":1,"at":"2026-10-22T05:06:58.601768791Z","chain":"dydx-mainnet-1","public_nodes":6,"non_public_nodes":94,"version_shares":{"0.38.5":1},"largest_component_fraction":0.98,"top_n_share":0.6030042918454935}
 {"schema_version":1,"at":"2026-10-22T13:58:26.230432335Z","chain":"dydx-mainnet-1","public_nodes":6,"non_public_nodes":69,"version_shares":{"0.38.5":1},"largest_component_fraction":0.9733333333333334,"top_n_share":0.6551724137931034}
+{"schema_version":1,"at":"2026-10-22T20:16:12.54056714Z","chain":"dydx-mainnet-1","public_nodes":6,"non_public_nodes":104,"version_shares":{"0.38.5":1},"largest_component_fraction":0.9818181818181818,"top_n_share":0.5983263598326359}
