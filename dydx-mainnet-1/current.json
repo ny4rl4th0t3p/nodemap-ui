@@ -1,70 +1,122 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-23T05:06:37.096775302Z",
-  "public_nodes": 5,
-  "non_public_nodes": 56,
+  "crawled_at": "2026-10-23T13:39:21.685222189Z",
+  "public_nodes": 8,
+  "non_public_nodes": 116,
   "countries": {
     "AU": 1,
     "CA": 1,
-    "DE": 14,
-    "FI": 7,
-    "FR": 6,
-    "JP": 23,
-    "NL": 2,
-    "SG": 2,
-    "US": 4
+    "DE": 23,
+    "FI": 9,
+    "FR": 10,
+    "HK": 2,
+    "IE": 3,
+    "JP": 43,
+    "KR": 5,
+    "NL": 3,
+    "SG": 9,
+    "US": 14
   },
   "asns": [
     {
+      "asn": 16509,
+      "org": "Amazon.com, Inc.",
+      "nodes": 29,
+      "share": 0.23387096774193547,
+      "connection_share": 0.13973063973063973
+    },
+    {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 14,
-      "share": 0.22950819672131148,
-      "connection_share": 0.3161290322580645
+      "nodes": 20,
+      "share": 0.16129032258064516,
+      "connection_share": 0.23232323232323232
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 11,
-      "share": 0.18032786885245902,
-      "connection_share": 0.04838709677419355
+      "nodes": 15,
+      "share": 0.12096774193548387,
+      "connection_share": 0.08080808080808081
     },
     {
-      "asn": 16509,
-      "org": "Amazon.com, Inc.",
+      "asn": 16276,
+      "org": "OVH SAS",
+      "nodes": 11,
+      "share": 0.08870967741935484,
+      "connection_share": 0.04713804713804714
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
       "nodes": 7,
-      "share": 0.11475409836065574,
-      "connection_share": 0.02903225806451613
+      "share": 0.056451612903225805,
+      "connection_share": 0.06060606060606061
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
+      "nodes": 6,
+      "share": 0.04838709677419355,
+      "connection_share": 0.011784511784511785
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 6,
-      "share": 0.09836065573770492,
-      "connection_share": 0.02258064516129032
+      "share": 0.04838709677419355,
+      "connection_share": 0.018518518518518517
     },
     {
-      "asn": 16276,
-      "org": "OVH SAS",
+      "asn": 20473,
+      "org": "The Constant Company, LLC",
       "nodes": 5,
-      "share": 0.08196721311475409,
-      "connection_share": 0.016129032258064516
+      "share": 0.04032258064516129,
+      "connection_share": 0.011784511784511785
     }
   ],
   "versions": {
-    "population": 61,
+    "population": 124,
     "shares": {
-      "0.38.5": 1
+      "0.38.5": 0.9919354838709677,
+      "other": 0.008064516129032258
     }
   },
   "graph": {
-    "population": 61,
-    "largest_component_fraction": 0.9672131147540983,
+    "population": 124,
+    "largest_component_fraction": 0.9838709677419355,
     "top_n": 5,
-    "top_n_share": 0.7548387096774194
+    "top_n_share": 0.48484848484848486
   },
   "directory": [
+    {
+      "endpoint": "http://152.236.16.107:26657",
+      "country": "JP",
+      "asn": 396356,
+      "as_org": "Latitude.sh",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://18.177.172.207:26657",
+      "country": "JP",
+      "asn": 16509,
+      "as_org": "Amazon.com, Inc.",
+      "earliest_block_height": 59019001,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://216.106.184.11:26667",
+      "country": "US",
+      "asn": 63023,
+      "as_org": "GTHost",
+      "earliest_block_height": 86781127,
+      "tx_index": true,
+      "catching_up": false
+    },
     {
       "endpoint": "http://37.27.48.4:2001",
       "country": "FI",
@@ -75,12 +127,12 @@
       "catching_up": false
     },
     {
-      "endpoint": "https://dydx-rpc.kingnodes.com:443",
-      "country": "FI",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 107429816,
-      "tx_index": true,
+      "endpoint": "http://51.75.129.143:26657",
+      "country": "FR",
+      "asn": 16276,
+      "as_org": "OVH SAS",
+      "earliest_block_height": 110622141,
+      "tx_index": false,
       "catching_up": false
     },
     {
