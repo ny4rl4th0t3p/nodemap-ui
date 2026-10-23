@@ -1,103 +1,88 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-23T20:02:32.414784579Z",
+  "crawled_at": "2026-10-23T23:17:14.602862764Z",
   "public_nodes": 7,
-  "non_public_nodes": 108,
+  "non_public_nodes": 126,
   "countries": {
-    "AU": 1,
+    "AU": 2,
     "CA": 1,
-    "DE": 21,
-    "FI": 7,
+    "DE": 23,
+    "FI": 8,
     "FR": 9,
-    "HK": 2,
+    "HK": 1,
     "IE": 2,
-    "JP": 39,
-    "KR": 5,
-    "NL": 3,
-    "SG": 8,
-    "US": 16
+    "JP": 46,
+    "KR": 4,
+    "NL": 2,
+    "SG": 14,
+    "US": 20
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 26,
-      "share": 0.22608695652173913,
-      "connection_share": 0.15682656826568267
+      "nodes": 33,
+      "share": 0.24812030075187969,
+      "connection_share": 0.15555555555555556
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 15,
-      "share": 0.13043478260869565,
-      "connection_share": 0.1863468634686347
+      "nodes": 18,
+      "share": 0.13533834586466165,
+      "connection_share": 0.24126984126984127
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 15,
-      "share": 0.13043478260869565,
-      "connection_share": 0.07195571955719557
+      "nodes": 17,
+      "share": 0.12781954887218044,
+      "connection_share": 0.06349206349206349
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 11,
-      "share": 0.09565217391304348,
-      "connection_share": 0.04059040590405904
+      "nodes": 12,
+      "share": 0.09022556390977443,
+      "connection_share": 0.03968253968253968
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 6,
-      "share": 0.05217391304347826,
-      "connection_share": 0.014760147601476014
+      "nodes": 7,
+      "share": 0.05263157894736842,
+      "connection_share": 0.015873015873015872
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
-      "nodes": 6,
-      "share": 0.05217391304347826,
-      "connection_share": 0.016605166051660517
+      "nodes": 7,
+      "share": 0.05263157894736842,
+      "connection_share": 0.020634920634920634
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 6,
-      "share": 0.05217391304347826,
-      "connection_share": 0.05904059040590406
-    },
-    {
-      "asn": 20473,
-      "org": "The Constant Company, LLC",
-      "nodes": 5,
-      "share": 0.043478260869565216,
-      "connection_share": 0.014760147601476014
+      "nodes": 7,
+      "share": 0.05263157894736842,
+      "connection_share": 0.05714285714285714
     }
   ],
   "versions": {
-    "population": 115,
+    "population": 133,
     "shares": {
-      "0.38.5": 1
+      "0.38.5": 0.9699248120300752,
+      "other": 0.03007518796992481
     }
   },
   "graph": {
-    "population": 115,
-    "largest_component_fraction": 0.9826086956521739,
+    "population": 133,
+    "largest_component_fraction": 0.9849624060150376,
     "top_n": 5,
-    "top_n_share": 0.533210332103321
+    "top_n_share": 0.5238095238095238
   },
   "directory": [
-    {
-      "endpoint": "http://152.236.16.107:26657",
-      "country": "JP",
-      "asn": 396356,
-      "as_org": "Latitude.sh",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
     {
       "endpoint": "http://18.177.172.207:26657",
       "country": "JP",
@@ -121,13 +106,22 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 110661921,
+      "earliest_block_height": 110681957,
       "tx_index": false,
       "catching_up": false
     },
     {
+      "endpoint": "http://67.213.123.157:26657",
+      "country": "JP",
+      "asn": 396356,
+      "as_org": "Latitude.sh",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
       "endpoint": "https://dydx-rpc.polkachu.com:443",
-      "country": "FI",
+      "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
       "earliest_block_height": 0,
