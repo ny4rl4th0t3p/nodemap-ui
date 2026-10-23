@@ -1,70 +1,68 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-22T23:30:32.615372403Z",
+  "crawled_at": "2026-10-23T05:06:37.096775302Z",
   "public_nodes": 5,
-  "non_public_nodes": 58,
+  "non_public_nodes": 56,
   "countries": {
-    "AU": 2,
+    "AU": 1,
     "CA": 1,
-    "DE": 18,
-    "FI": 6,
+    "DE": 14,
+    "FI": 7,
     "FR": 6,
-    "HK": 1,
-    "JP": 20,
+    "JP": 23,
     "NL": 2,
-    "SG": 1,
-    "US": 5
+    "SG": 2,
+    "US": 4
   },
   "asns": [
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
       "nodes": 14,
-      "share": 0.2222222222222222,
-      "connection_share": 0.3223684210526316
+      "share": 0.22950819672131148,
+      "connection_share": 0.3161290322580645
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 12,
-      "share": 0.19047619047619047,
-      "connection_share": 0.05263157894736842
-    },
-    {
-      "asn": 16276,
-      "org": "OVH SAS",
-      "nodes": 7,
-      "share": 0.1111111111111111,
-      "connection_share": 0.023026315789473683
-    },
-    {
-      "asn": 206264,
-      "org": "Amarutu Technology Ltd",
-      "nodes": 7,
-      "share": 0.1111111111111111,
-      "connection_share": 0.02631578947368421
+      "nodes": 11,
+      "share": 0.18032786885245902,
+      "connection_share": 0.04838709677419355
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
+      "nodes": 7,
+      "share": 0.11475409836065574,
+      "connection_share": 0.02903225806451613
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
+      "nodes": 6,
+      "share": 0.09836065573770492,
+      "connection_share": 0.02258064516129032
+    },
+    {
+      "asn": 16276,
+      "org": "OVH SAS",
       "nodes": 5,
-      "share": 0.07936507936507936,
-      "connection_share": 0.023026315789473683
+      "share": 0.08196721311475409,
+      "connection_share": 0.016129032258064516
     }
   ],
   "versions": {
-    "population": 63,
+    "population": 61,
     "shares": {
-      "0.38.5": 0.9841269841269841,
-      "other": 0.015873015873015872
+      "0.38.5": 1
     }
   },
   "graph": {
-    "population": 63,
-    "largest_component_fraction": 0.9682539682539683,
+    "population": 61,
+    "largest_component_fraction": 0.9672131147540983,
     "top_n": 5,
-    "top_n_share": 0.75
+    "top_n_share": 0.7548387096774194
   },
   "directory": [
     {
