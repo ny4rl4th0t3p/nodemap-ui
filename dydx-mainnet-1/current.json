@@ -1,93 +1,93 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-24T22:37:58.027604237Z",
+  "crawled_at": "2026-10-25T05:00:09.782490697Z",
   "public_nodes": 9,
-  "non_public_nodes": 135,
+  "non_public_nodes": 137,
   "countries": {
-    "AU": 2,
+    "AU": 1,
     "CA": 2,
     "DE": 25,
-    "FI": 10,
-    "FR": 10,
-    "HK": 1,
+    "FI": 11,
+    "FR": 11,
+    "HK": 2,
     "IE": 3,
-    "JP": 49,
+    "JP": 50,
     "KR": 4,
     "NL": 3,
     "SG": 15,
-    "US": 19
+    "US": 18
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 37,
-      "share": 0.2569444444444444,
-      "connection_share": 0.15615615615615616
+      "nodes": 39,
+      "share": 0.2671232876712329,
+      "connection_share": 0.14722222222222223
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
       "nodes": 22,
-      "share": 0.1527777777777778,
-      "connection_share": 0.26876876876876876
+      "share": 0.1506849315068493,
+      "connection_share": 0.29583333333333334
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 17,
-      "share": 0.11805555555555555,
-      "connection_share": 0.07057057057057058
+      "share": 0.11643835616438356,
+      "connection_share": 0.08055555555555556
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 13,
-      "share": 0.09027777777777778,
-      "connection_share": 0.03153153153153153
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 8,
-      "share": 0.05555555555555555,
-      "connection_share": 0.06156156156156156
-    },
-    {
-      "asn": 14618,
-      "org": "Amazon.com, Inc.",
-      "nodes": 7,
-      "share": 0.04861111111111111,
-      "connection_share": 0.015015015015015015
+      "nodes": 15,
+      "share": 0.10273972602739725,
+      "connection_share": 0.034722222222222224
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 7,
-      "share": 0.04861111111111111,
-      "connection_share": 0.021021021021021023
+      "share": 0.04794520547945205,
+      "connection_share": 0.019444444444444445
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
+      "nodes": 7,
+      "share": 0.04794520547945205,
+      "connection_share": 0.05277777777777778
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
+      "nodes": 6,
+      "share": 0.0410958904109589,
+      "connection_share": 0.011111111111111112
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
-      "nodes": 6,
-      "share": 0.041666666666666664,
-      "connection_share": 0.015015015015015015
+      "nodes": 5,
+      "share": 0.03424657534246575,
+      "connection_share": 0.011111111111111112
     }
   ],
   "versions": {
-    "population": 144,
+    "population": 146,
     "shares": {
-      "0.38.5": 0.9861111111111112,
-      "other": 0.013888888888888888
+      "0.38.5": 0.9931506849315068,
+      "other": 0.00684931506849315
     }
   },
   "graph": {
-    "population": 144,
-    "largest_component_fraction": 0.9791666666666666,
+    "population": 146,
+    "largest_component_fraction": 0.9863013698630136,
     "top_n": 5,
-    "top_n_share": 0.524024024024024
+    "top_n_share": 0.4875
   },
   "directory": [
     {
@@ -169,7 +169,7 @@
       "as_org": "Hetzner Online GmbH",
       "earliest_block_height": 0,
       "tx_index": true,
-      "catching_up": true
+      "catching_up": false
     }
   ]
 }
