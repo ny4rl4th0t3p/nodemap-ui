@@ -1,97 +1,105 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-26T05:03:24.995927206Z",
+  "crawled_at": "2026-10-26T15:21:09.951965734Z",
   "public_nodes": 7,
-  "non_public_nodes": 131,
+  "non_public_nodes": 135,
   "countries": {
     "AU": 1,
     "CA": 2,
     "DE": 24,
-    "FI": 11,
-    "FR": 11,
+    "FI": 12,
+    "FR": 12,
     "HK": 1,
     "IE": 3,
-    "IN": 1,
-    "JP": 46,
+    "JP": 51,
     "KR": 3,
-    "NL": 3,
+    "NL": 4,
     "PL": 1,
-    "SG": 10,
-    "US": 20
+    "SG": 11,
+    "US": 16
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
       "nodes": 35,
-      "share": 0.2536231884057971,
-      "connection_share": 0.15397350993377484
+      "share": 0.24647887323943662,
+      "connection_share": 0.1672661870503597
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 21,
-      "share": 0.15217391304347827,
-      "connection_share": 0.3360927152317881
+      "nodes": 22,
+      "share": 0.15492957746478872,
+      "connection_share": 0.329136690647482
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 17,
-      "share": 0.12318840579710146,
-      "connection_share": 0.06291390728476821
+      "share": 0.11971830985915492,
+      "connection_share": 0.08273381294964029
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 12,
-      "share": 0.08695652173913043,
-      "connection_share": 0.023178807947019868
-    },
-    {
-      "asn": 14618,
-      "org": "Amazon.com, Inc.",
-      "nodes": 9,
-      "share": 0.06521739130434782,
-      "connection_share": 0.014900662251655629
+      "nodes": 14,
+      "share": 0.09859154929577464,
+      "connection_share": 0.02877697841726619
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 8,
-      "share": 0.057971014492753624,
-      "connection_share": 0.013245033112582781
-    },
-    {
-      "asn": 206264,
-      "org": "Amarutu Technology Ltd",
       "nodes": 7,
-      "share": 0.050724637681159424,
-      "connection_share": 0.024834437086092714
+      "share": 0.04929577464788732,
+      "connection_share": 0.012589928057553957
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
+      "nodes": 6,
+      "share": 0.04225352112676056,
+      "connection_share": 0.01618705035971223
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
+      "nodes": 6,
+      "share": 0.04225352112676056,
+      "connection_share": 0.023381294964028777
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
       "nodes": 5,
-      "share": 0.036231884057971016,
-      "connection_share": 0.013245033112582781
+      "share": 0.035211267605633804,
+      "connection_share": 0.012589928057553957
     }
   ],
   "versions": {
-    "population": 138,
+    "population": 142,
     "shares": {
-      "0.38.5": 0.9927536231884058,
-      "other": 0.007246376811594203
+      "0.38.5": 0.9859154929577465,
+      "other": 0.014084507042253521
     }
   },
   "graph": {
-    "population": 138,
-    "largest_component_fraction": 0.9855072463768116,
+    "population": 142,
+    "largest_component_fraction": 0.9859154929577465,
     "top_n": 5,
-    "top_n_share": 0.5496688741721855
+    "top_n_share": 0.5179856115107914
   },
   "directory": [
+    {
+      "endpoint": "http://172.237.6.69:26657",
+      "country": "JP",
+      "asn": 63949,
+      "as_org": "Akamai Technologies, Inc.",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
     {
       "endpoint": "http://18.177.172.207:26657",
       "country": "JP",
@@ -107,15 +115,6 @@
       "asn": 63023,
       "as_org": "GTHost",
       "earliest_block_height": 86781127,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "http://37.27.48.4:2001",
-      "country": "FI",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": false
     },
