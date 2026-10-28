@@ -1,70 +1,79 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-10-28T15:16:30.123145497Z",
+  "crawled_at": "2026-10-28T21:15:13.969180748Z",
   "public_nodes": 4,
-  "non_public_nodes": 86,
+  "non_public_nodes": 92,
   "countries": {
     "CA": 2,
-    "DE": 12,
-    "FI": 7,
-    "FR": 13,
-    "GB": 2,
-    "IE": 2,
-    "JP": 25,
+    "DE": 13,
+    "FI": 9,
+    "FR": 12,
+    "GB": 3,
+    "IE": 1,
+    "JP": 23,
     "PL": 1,
-    "SG": 6,
-    "US": 19
+    "RO": 1,
+    "SG": 4,
+    "SY": 1,
+    "US": 25
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 19,
-      "share": 0.2111111111111111,
-      "connection_share": 0.03544776119402985
-    },
-    {
-      "asn": 16509,
-      "org": "Amazon.com, Inc.",
-      "nodes": 15,
-      "share": 0.16666666666666666,
-      "connection_share": 0.027985074626865673
+      "nodes": 23,
+      "share": 0.23958333333333334,
+      "connection_share": 0.04121863799283154
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 14,
-      "share": 0.15555555555555556,
-      "connection_share": 0.026119402985074626
+      "nodes": 15,
+      "share": 0.15625,
+      "connection_share": 0.026881720430107527
+    },
+    {
+      "asn": 16509,
+      "org": "Amazon.com, Inc.",
+      "nodes": 12,
+      "share": 0.125,
+      "connection_share": 0.021505376344086023
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 8,
-      "share": 0.08888888888888889,
-      "connection_share": 0.17350746268656717
+      "nodes": 10,
+      "share": 0.10416666666666667,
+      "connection_share": 0.1827956989247312
     },
     {
       "asn": 396982,
       "org": "Google LLC",
-      "nodes": 8,
-      "share": 0.08888888888888889,
-      "connection_share": 0.014925373134328358
+      "nodes": 7,
+      "share": 0.07291666666666667,
+      "connection_share": 0.012544802867383513
+    },
+    {
+      "asn": 20326,
+      "org": "TeraSwitch Networks Inc.",
+      "nodes": 5,
+      "share": 0.052083333333333336,
+      "connection_share": 0.008960573476702509
     }
   ],
   "versions": {
-    "population": 90,
+    "population": 96,
     "shares": {
-      "1.0.1": 0.9777777777777777,
-      "other": 0.022222222222222223
+      "1.0.1": 0.9791666666666666,
+      "other": 0.020833333333333332
     }
   },
   "graph": {
-    "population": 90,
-    "largest_component_fraction": 0.5777777777777777,
+    "population": 96,
+    "largest_component_fraction": 0.5833333333333334,
     "top_n": 5,
-    "top_n_share": 0.8395522388059702
+    "top_n_share": 0.8333333333333334
   },
   "directory": [
     {
@@ -90,7 +99,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 0,
+      "earliest_block_height": 185943801,
       "tx_index": true,
       "catching_up": false
     }
