@@ -1,95 +1,94 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-10-30T15:10:16.777231513Z",
+  "crawled_at": "2026-10-30T20:57:17.900101494Z",
   "public_nodes": 10,
-  "non_public_nodes": 139,
+  "non_public_nodes": 136,
   "countries": {
     "AU": 1,
-    "CA": 2,
-    "DE": 25,
+    "CA": 1,
+    "DE": 22,
     "FI": 12,
-    "FR": 13,
+    "FR": 11,
     "HK": 2,
-    "IE": 4,
-    "IN": 1,
-    "JP": 51,
+    "IE": 3,
+    "JP": 52,
     "KR": 4,
     "NL": 3,
     "PL": 1,
-    "SG": 10,
+    "SG": 14,
     "US": 19
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 36,
-      "share": 0.24161073825503357,
-      "connection_share": 0.14722222222222223
+      "nodes": 32,
+      "share": 0.2191780821917808,
+      "connection_share": 0.12303664921465969
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 23,
-      "share": 0.15436241610738255,
-      "connection_share": 0.3111111111111111
+      "nodes": 24,
+      "share": 0.1643835616438356,
+      "connection_share": 0.27356020942408377
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 17,
-      "share": 0.11409395973154363,
-      "connection_share": 0.08472222222222223
+      "share": 0.11643835616438356,
+      "connection_share": 0.0824607329842932
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 15,
-      "share": 0.10067114093959731,
-      "connection_share": 0.05
-    },
-    {
-      "asn": 14618,
-      "org": "Amazon.com, Inc.",
-      "nodes": 8,
-      "share": 0.053691275167785234,
-      "connection_share": 0.015277777777777777
+      "nodes": 13,
+      "share": 0.08904109589041095,
+      "connection_share": 0.041884816753926704
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 8,
-      "share": 0.053691275167785234,
-      "connection_share": 0.06527777777777778
+      "nodes": 10,
+      "share": 0.0684931506849315,
+      "connection_share": 0.09424083769633508
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
+      "nodes": 7,
+      "share": 0.04794520547945205,
+      "connection_share": 0.014397905759162303
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 7,
-      "share": 0.04697986577181208,
-      "connection_share": 0.018055555555555554
+      "share": 0.04794520547945205,
+      "connection_share": 0.014397905759162303
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
       "nodes": 6,
-      "share": 0.040268456375838924,
-      "connection_share": 0.009722222222222222
+      "share": 0.0410958904109589,
+      "connection_share": 0.010471204188481676
     }
   ],
   "versions": {
-    "population": 149,
+    "population": 146,
     "shares": {
-      "0.38.5": 0.9932885906040269,
-      "other": 0.006711409395973154
+      "0.38.5": 0.9863013698630136,
+      "other": 0.0136986301369863
     }
   },
   "graph": {
-    "population": 149,
-    "largest_component_fraction": 0.9798657718120806,
+    "population": 146,
+    "largest_component_fraction": 0.9863013698630136,
     "top_n": 5,
-    "top_n_share": 0.43472222222222223
+    "top_n_share": 0.468586387434555
   },
   "directory": [
     {
@@ -129,21 +128,21 @@
       "catching_up": false
     },
     {
-      "endpoint": "http://37.27.48.4:2001",
-      "country": "FI",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
       "endpoint": "http://51.75.129.143:26657",
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 111655484,
+      "earliest_block_height": 111689822,
       "tx_index": false,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://67.213.123.157:26657",
+      "country": "JP",
+      "asn": 396356,
+      "as_org": "Latitude.sh",
+      "earliest_block_height": 0,
+      "tx_index": true,
       "catching_up": false
     },
     {
