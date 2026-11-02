@@ -1,106 +1,97 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-11-02T06:30:33.960356643Z",
+  "crawled_at": "2026-11-02T18:35:37.685839745Z",
   "public_nodes": 9,
-  "non_public_nodes": 135,
+  "non_public_nodes": 100,
   "countries": {
     "AU": 1,
-    "CA": 2,
-    "DE": 21,
-    "FI": 13,
-    "FR": 9,
-    "HK": 1,
-    "IE": 3,
-    "IN": 1,
-    "JP": 51,
-    "KR": 5,
-    "NL": 3,
+    "CA": 1,
+    "CH": 1,
+    "DE": 17,
+    "FI": 9,
+    "FR": 7,
+    "HK": 2,
+    "IE": 2,
+    "JP": 33,
+    "KR": 3,
+    "NL": 1,
     "PL": 1,
     "SG": 10,
-    "US": 22
+    "US": 20
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 34,
-      "share": 0.2361111111111111,
-      "connection_share": 0.14285714285714285
+      "nodes": 23,
+      "share": 0.21100917431192662,
+      "connection_share": 0.12643678160919541
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 22,
-      "share": 0.1527777777777778,
-      "connection_share": 0.2542857142857143
+      "nodes": 17,
+      "share": 0.1559633027522936,
+      "connection_share": 0.1781609195402299
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 18,
-      "share": 0.125,
-      "connection_share": 0.07857142857142857
+      "nodes": 13,
+      "share": 0.11926605504587157,
+      "connection_share": 0.07471264367816093
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 12,
-      "share": 0.08333333333333333,
-      "connection_share": 0.04
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 9,
-      "share": 0.0625,
-      "connection_share": 0.07285714285714286
+      "nodes": 11,
+      "share": 0.10091743119266056,
+      "connection_share": 0.04789272030651341
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 8,
-      "share": 0.05555555555555555,
-      "connection_share": 0.02142857142857143
-    },
-    {
-      "asn": 20473,
-      "org": "The Constant Company, LLC",
-      "nodes": 7,
-      "share": 0.04861111111111111,
-      "connection_share": 0.011428571428571429
+      "nodes": 6,
+      "share": 0.05504587155963303,
+      "connection_share": 0.013409961685823755
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
-      "nodes": 7,
-      "share": 0.04861111111111111,
-      "connection_share": 0.02
+      "nodes": 6,
+      "share": 0.05504587155963303,
+      "connection_share": 0.019157088122605363
+    },
+    {
+      "asn": 20473,
+      "org": "The Constant Company, LLC",
+      "nodes": 5,
+      "share": 0.045871559633027525,
+      "connection_share": 0.009578544061302681
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
+      "nodes": 5,
+      "share": 0.045871559633027525,
+      "connection_share": 0.09578544061302682
     }
   ],
   "versions": {
-    "population": 144,
+    "population": 109,
     "shares": {
-      "0.38.5": 0.9930555555555556,
-      "other": 0.006944444444444444
+      "0.38.5": 0.9908256880733946,
+      "other": 0.009174311926605505
     }
   },
   "graph": {
-    "population": 144,
-    "largest_component_fraction": 0.9791666666666666,
+    "population": 109,
+    "largest_component_fraction": 0.981651376146789,
     "top_n": 5,
-    "top_n_share": 0.5085714285714286
+    "top_n_share": 0.5363984674329502
   },
   "directory": [
-    {
-      "endpoint": "http://152.236.16.107:26657",
-      "country": "JP",
-      "asn": 396356,
-      "as_org": "Latitude.sh",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
     {
       "endpoint": "http://18.177.172.207:26657",
       "country": "JP",
@@ -133,8 +124,17 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 112020065,
+      "earliest_block_height": 112087325,
       "tx_index": false,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://67.213.123.157:26657",
+      "country": "JP",
+      "asn": 396356,
+      "as_org": "Latitude.sh",
+      "earliest_block_height": 0,
+      "tx_index": true,
       "catching_up": false
     },
     {
