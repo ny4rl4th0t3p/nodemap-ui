@@ -1,96 +1,105 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-11-07T20:22:13.364945525Z",
+  "crawled_at": "2026-11-07T23:45:41.203526895Z",
   "public_nodes": 9,
-  "non_public_nodes": 136,
+  "non_public_nodes": 132,
   "countries": {
     "AU": 1,
     "CA": 1,
-    "DE": 25,
-    "FI": 10,
+    "DE": 21,
+    "FI": 11,
     "FR": 8,
-    "HK": 1,
+    "HK": 2,
     "IE": 4,
-    "JP": 51,
-    "KR": 6,
+    "JP": 47,
+    "KR": 5,
     "NL": 4,
     "PL": 1,
-    "SG": 10,
-    "US": 22
+    "SG": 11,
+    "US": 24
   },
   "asns": [
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 37,
-      "share": 0.25517241379310346,
-      "connection_share": 0.15522388059701492
+      "nodes": 35,
+      "share": 0.24822695035460993,
+      "connection_share": 0.1497175141242938
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 21,
-      "share": 0.14482758620689656,
-      "connection_share": 0.2835820895522388
+      "nodes": 20,
+      "share": 0.14184397163120568,
+      "connection_share": 0.2895480225988701
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
       "nodes": 16,
-      "share": 0.1103448275862069,
-      "connection_share": 0.05970149253731343
+      "share": 0.11347517730496454,
+      "connection_share": 0.06073446327683616
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 10,
-      "share": 0.06896551724137931,
-      "connection_share": 0.020895522388059702
+      "nodes": 9,
+      "share": 0.06382978723404255,
+      "connection_share": 0.018361581920903956
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 10,
-      "share": 0.06896551724137931,
-      "connection_share": 0.03582089552238806
-    },
-    {
-      "asn": 206264,
-      "org": "Amarutu Technology Ltd",
-      "nodes": 7,
-      "share": 0.04827586206896552,
-      "connection_share": 0.022388059701492536
+      "nodes": 9,
+      "share": 0.06382978723404255,
+      "connection_share": 0.043785310734463276
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 5,
-      "share": 0.034482758620689655,
-      "connection_share": 0.016417910447761194
+      "nodes": 7,
+      "share": 0.04964539007092199,
+      "connection_share": 0.018361581920903956
+    },
+    {
+      "asn": 206264,
+      "org": "Amarutu Technology Ltd",
+      "nodes": 6,
+      "share": 0.0425531914893617,
+      "connection_share": 0.022598870056497175
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
       "nodes": 5,
-      "share": 0.034482758620689655,
-      "connection_share": 0.013432835820895522
+      "share": 0.03546099290780142,
+      "connection_share": 0.012711864406779662
     }
   ],
   "versions": {
-    "population": 145,
+    "population": 141,
     "shares": {
-      "0.38.5": 0.993103448275862,
-      "other": 0.006896551724137931
+      "0.38.5": 0.9929078014184397,
+      "other": 0.0070921985815602835
     }
   },
   "graph": {
-    "population": 145,
-    "largest_component_fraction": 0.9862068965517241,
+    "population": 141,
+    "largest_component_fraction": 0.9858156028368794,
     "top_n": 5,
-    "top_n_share": 0.5298507462686567
+    "top_n_share": 0.518361581920904
   },
   "directory": [
+    {
+      "endpoint": "http://152.236.16.107:26657",
+      "country": "JP",
+      "asn": 396356,
+      "as_org": "Latitude.sh",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
     {
       "endpoint": "http://172.237.6.69:26657",
       "country": "JP",
@@ -123,15 +132,6 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "http://67.213.123.157:26657",
-      "country": "JP",
-      "asn": 396356,
-      "as_org": "Latitude.sh",
       "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": false
