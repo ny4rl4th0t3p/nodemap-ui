@@ -1,110 +1,110 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-06T21:42:02.490198195Z",
+  "crawled_at": "2026-11-07T06:18:32.059490036Z",
   "public_nodes": 21,
-  "non_public_nodes": 309,
+  "non_public_nodes": 306,
   "countries": {
     "CA": 12,
-    "DE": 68,
-    "FI": 25,
-    "FR": 32,
-    "GB": 4,
-    "HK": 9,
-    "IE": 4,
-    "JP": 85,
-    "KR": 7,
+    "DE": 67,
+    "FI": 26,
+    "FR": 30,
+    "GB": 3,
+    "HK": 10,
+    "IE": 3,
+    "JP": 79,
+    "KR": 9,
     "NL": 1,
     "PL": 1,
     "RO": 1,
-    "SG": 15,
+    "SG": 16,
     "SY": 1,
-    "US": 64
+    "US": 67
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 83,
-      "share": 0.2515151515151515,
-      "connection_share": 0.22858197932053176
+      "nodes": 80,
+      "share": 0.24464831804281345,
+      "connection_share": 0.23414820473644002
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 45,
-      "share": 0.13636363636363635,
-      "connection_share": 0.2891432791728213
+      "nodes": 44,
+      "share": 0.1345565749235474,
+      "connection_share": 0.2872421695951108
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
       "nodes": 33,
-      "share": 0.1,
-      "connection_share": 0.03840472673559823
+      "share": 0.10091743119266056,
+      "connection_share": 0.03972498090145149
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 31,
-      "share": 0.09393939393939393,
-      "connection_share": 0.0483751846381093
-    },
-    {
-      "asn": 210162,
-      "org": "UAB Cherry Servers",
-      "nodes": 17,
-      "share": 0.051515151515151514,
-      "connection_share": 0.0206794682422452
+      "nodes": 30,
+      "share": 0.09174311926605505,
+      "connection_share": 0.0481283422459893
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
+      "nodes": 17,
+      "share": 0.05198776758409786,
+      "connection_share": 0.023300229182582125
+    },
+    {
+      "asn": 210162,
+      "org": "UAB Cherry Servers",
       "nodes": 14,
-      "share": 0.04242424242424243,
-      "connection_share": 0.02031019202363368
+      "share": 0.04281345565749235,
+      "connection_share": 0.017188693659281894
     },
     {
       "asn": 396982,
       "org": "Google LLC",
-      "nodes": 14,
-      "share": 0.04242424242424243,
-      "connection_share": 0.02141802067946824
+      "nodes": 13,
+      "share": 0.039755351681957186,
+      "connection_share": 0.0213903743315508
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 12,
-      "share": 0.03636363636363636,
-      "connection_share": 0.011078286558345642
+      "share": 0.03669724770642202,
+      "connection_share": 0.010313216195569137
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 10,
-      "share": 0.030303030303030304,
-      "connection_share": 0.04911373707533235
+      "nodes": 11,
+      "share": 0.03363914373088685,
+      "connection_share": 0.05042016806722689
     },
     {
-      "asn": 46475,
-      "org": "Limestone Networks, Inc.",
+      "asn": 60068,
+      "org": "Datacamp Limited",
       "nodes": 8,
-      "share": 0.024242424242424242,
-      "connection_share": 0.004431314623338257
+      "share": 0.024464831804281346,
+      "connection_share": 0.0546218487394958
     }
   ],
   "versions": {
-    "population": 330,
+    "population": 327,
     "shares": {
-      "1.0.1": 0.996969696969697,
-      "other": 0.0030303030303030303
+      "1.0.1": 0.9969418960244648,
+      "other": 0.0030581039755351682
     }
   },
   "graph": {
-    "population": 330,
-    "largest_component_fraction": 0.8272727272727273,
+    "population": 327,
+    "largest_component_fraction": 0.8409785932721713,
     "top_n": 5,
-    "top_n_share": 0.19682422451994092
+    "top_n_share": 0.1917494270435447
   },
   "directory": [
     {
@@ -283,7 +283,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 186387753,
+      "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": false
     }
