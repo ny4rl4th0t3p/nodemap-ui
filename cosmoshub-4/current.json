@@ -1,37 +1,37 @@
 {
   "schema_version": 1,
   "chain": "cosmoshub-4",
-  "crawled_at": "2026-11-07T14:59:54.137779142Z",
-  "public_nodes": 33,
-  "non_public_nodes": 516,
+  "crawled_at": "2026-11-07T20:21:36.957724516Z",
+  "public_nodes": 34,
+  "non_public_nodes": 480,
   "countries": {
     "AE": 1,
-    "AT": 6,
-    "AU": 7,
-    "BG": 4,
+    "AT": 5,
+    "AU": 6,
+    "BG": 3,
     "BY": 1,
     "CA": 21,
     "CH": 2,
-    "DE": 138,
+    "DE": 129,
     "ES": 1,
-    "FI": 63,
-    "FR": 25,
-    "GB": 13,
-    "HK": 16,
-    "IE": 7,
+    "FI": 60,
+    "FR": 22,
+    "GB": 11,
+    "HK": 15,
+    "IE": 8,
     "IN": 3,
     "IT": 2,
     "JP": 22,
-    "KR": 17,
+    "KR": 16,
     "LT": 2,
     "LV": 2,
-    "MC": 3,
-    "MX": 2,
+    "MC": 2,
+    "MX": 1,
     "NL": 23,
     "PA": 1,
-    "PL": 9,
+    "PL": 8,
     "PT": 4,
-    "RO": 13,
+    "RO": 9,
     "RU": 5,
     "SE": 3,
     "SG": 29,
@@ -39,95 +39,95 @@
     "TR": 1,
     "TW": 3,
     "UA": 1,
-    "US": 93,
-    "VN": 3,
+    "US": 86,
+    "VN": 2,
     "ZA": 1
   },
   "asns": [
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 143,
-      "share": 0.2604735883424408,
-      "connection_share": 0.4051685393258427
+      "nodes": 132,
+      "share": 0.25680933852140075,
+      "connection_share": 0.4156193895870736
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 53,
-      "share": 0.0965391621129326,
-      "connection_share": 0.04719101123595506
+      "nodes": 50,
+      "share": 0.09727626459143969,
+      "connection_share": 0.04735188509874327
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 46,
-      "share": 0.08378870673952642,
-      "connection_share": 0.10382022471910113
+      "nodes": 45,
+      "share": 0.08754863813229571,
+      "connection_share": 0.10121184919210054
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 19,
-      "share": 0.03460837887067395,
-      "connection_share": 0.028314606741573035
+      "nodes": 17,
+      "share": 0.033073929961089495,
+      "connection_share": 0.029398563734290842
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 18,
-      "share": 0.03278688524590164,
-      "connection_share": 0.03415730337078652
+      "nodes": 17,
+      "share": 0.033073929961089495,
+      "connection_share": 0.03388689407540395
     },
     {
       "asn": 45102,
       "org": "Alibaba (US) Technology Co., Ltd.",
-      "nodes": 14,
-      "share": 0.025500910746812388,
-      "connection_share": 0.0056179775280898875
-    },
-    {
-      "asn": 9009,
-      "org": "M247 Europe SRL",
       "nodes": 13,
-      "share": 0.023679417122040074,
-      "connection_share": 0.03393258426966292
+      "share": 0.02529182879377432,
+      "connection_share": 0.006508078994614004
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
       "nodes": 10,
-      "share": 0.018214936247723135,
-      "connection_share": 0.006741573033707865
+      "share": 0.019455252918287938,
+      "connection_share": 0.006732495511669659
     },
     {
       "asn": 132203,
       "org": "Shenzhen Tencent Computer Systems Company Limited",
+      "nodes": 10,
+      "share": 0.019455252918287938,
+      "connection_share": 0.004263913824057451
+    },
+    {
+      "asn": 9009,
+      "org": "M247 Europe SRL",
       "nodes": 9,
-      "share": 0.01639344262295082,
-      "connection_share": 0.003820224719101124
+      "share": 0.017509727626459144,
+      "connection_share": 0.03231597845601436
     },
     {
       "asn": 396982,
       "org": "Google LLC",
       "nodes": 9,
-      "share": 0.01639344262295082,
-      "connection_share": 0.01101123595505618
+      "share": 0.017509727626459144,
+      "connection_share": 0.01099640933572711
     }
   ],
   "versions": {
-    "population": 549,
+    "population": 514,
     "shares": {
-      "0.38.22": 0.02185792349726776,
-      "0.38.25": 0.9489981785063752,
-      "other": 0.029143897996357013
+      "0.38.22": 0.023346303501945526,
+      "0.38.25": 0.9494163424124513,
+      "other": 0.027237354085603113
     }
   },
   "graph": {
-    "population": 549,
-    "largest_component_fraction": 0.9326047358834244,
+    "population": 514,
+    "largest_component_fraction": 0.9922178988326849,
     "top_n": 5,
-    "top_n_share": 0.2197752808988764
+    "top_n_share": 0.22912926391382404
   },
   "directory": [
     {
@@ -216,7 +216,7 @@
       "country": "US",
       "asn": 262287,
       "as_org": "Maxihost LTDA",
-      "earliest_block_height": 32769811,
+      "earliest_block_height": 32773187,
       "tx_index": true,
       "catching_up": false
     },
@@ -243,7 +243,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 32769802,
+      "earliest_block_height": 32773177,
       "tx_index": true,
       "catching_up": false
     },
@@ -261,7 +261,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 33618735,
+      "earliest_block_height": 32841442,
       "tx_index": true,
       "catching_up": false
     },
@@ -315,7 +315,7 @@
       "country": "DE",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 33671600,
+      "earliest_block_height": 31553263,
       "tx_index": true,
       "catching_up": false
     },
@@ -342,8 +342,8 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 33670755,
-      "tx_index": true,
+      "earliest_block_height": 0,
+      "tx_index": false,
       "catching_up": false
     },
     {
@@ -372,6 +372,15 @@
       "earliest_block_height": 33670755,
       "tx_index": true,
       "catching_up": false
+    },
+    {
+      "endpoint": "https://rpc.cosmoshub-4-archive.citizenweb3.com:443",
+      "country": "PT",
+      "asn": 15457,
+      "as_org": "NOS Madeira Comunicacoes, S.A.",
+      "earliest_block_height": 5200791,
+      "tx_index": true,
+      "catching_up": true
     },
     {
       "endpoint": "https://rpc.cosmoshub-main.ccvalidators.com:443",

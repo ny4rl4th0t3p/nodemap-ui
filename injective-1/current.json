@@ -1,109 +1,110 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-07T15:01:32.565709987Z",
+  "crawled_at": "2026-11-07T20:23:12.489745039Z",
   "public_nodes": 21,
-  "non_public_nodes": 298,
+  "non_public_nodes": 302,
   "countries": {
-    "CA": 10,
-    "DE": 68,
-    "FI": 25,
-    "FR": 28,
+    "CA": 12,
+    "DE": 69,
+    "FI": 26,
+    "FR": 29,
     "GB": 4,
-    "HK": 6,
-    "IE": 4,
-    "JP": 82,
-    "KR": 7,
+    "HK": 7,
+    "IE": 3,
+    "JP": 81,
+    "KR": 8,
     "NL": 1,
     "PL": 1,
     "RO": 1,
-    "SG": 14,
-    "US": 67
+    "SG": 13,
+    "SY": 1,
+    "US": 66
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 78,
-      "share": 0.2445141065830721,
-      "connection_share": 0.22200158856235108
+      "nodes": 81,
+      "share": 0.25077399380804954,
+      "connection_share": 0.24336283185840707
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 44,
-      "share": 0.13793103448275862,
-      "connection_share": 0.2994440031771247
+      "nodes": 46,
+      "share": 0.14241486068111456,
+      "connection_share": 0.30370072405470633
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 33,
-      "share": 0.10344827586206896,
-      "connection_share": 0.04169976171564734
+      "nodes": 32,
+      "share": 0.09907120743034056,
+      "connection_share": 0.04304102976669348
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 32,
-      "share": 0.10031347962382445,
-      "connection_share": 0.048451151707704525
+      "nodes": 30,
+      "share": 0.09287925696594428,
+      "connection_share": 0.05148833467417538
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 16,
-      "share": 0.050156739811912224,
-      "connection_share": 0.022637013502779985
+      "nodes": 18,
+      "share": 0.05572755417956656,
+      "connection_share": 0.027353177795655673
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
       "nodes": 16,
-      "share": 0.050156739811912224,
-      "connection_share": 0.017871326449563147
+      "share": 0.04953560371517028,
+      "connection_share": 0.021319388576025743
     },
     {
       "asn": 396982,
       "org": "Google LLC",
       "nodes": 14,
-      "share": 0.0438871473354232,
-      "connection_share": 0.023828435266084195
+      "share": 0.043343653250773995,
+      "connection_share": 0.027353177795655673
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 13,
-      "share": 0.04075235109717868,
-      "connection_share": 0.011517077045274026
+      "share": 0.04024767801857585,
+      "connection_share": 0.01246983105390185
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
       "nodes": 9,
-      "share": 0.02821316614420063,
-      "connection_share": 0.048451151707704525
+      "share": 0.02786377708978328,
+      "connection_share": 0.05108608205953339
     },
     {
       "asn": 60068,
       "org": "Datacamp Limited",
       "nodes": 8,
-      "share": 0.025078369905956112,
-      "connection_share": 0.058379666401906276
+      "share": 0.02476780185758514,
+      "connection_share": 0.05631536604987932
     }
   ],
   "versions": {
-    "population": 319,
+    "population": 323,
     "shares": {
-      "1.0.1": 0.9905956112852664,
-      "other": 0.009404388714733543
+      "1.0.1": 0.9938080495356038,
+      "other": 0.006191950464396285
     }
   },
   "graph": {
-    "population": 319,
-    "largest_component_fraction": 0.8338557993730408,
+    "population": 323,
+    "largest_component_fraction": 0.8297213622291022,
     "top_n": 5,
-    "top_n_share": 0.18784749801429707
+    "top_n_share": 0.15245374094931616
   },
   "directory": [
     {
@@ -282,7 +283,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 0,
+      "earliest_block_height": 185943801,
       "tx_index": true,
       "catching_up": false
     }
