@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-08T20:41:36.170166074Z",
+  "crawled_at": "2026-11-09T06:58:11.820745688Z",
   "public_nodes": 21,
-  "non_public_nodes": 309,
+  "non_public_nodes": 311,
   "countries": {
-    "CA": 11,
-    "DE": 71,
+    "CA": 10,
+    "DE": 76,
     "FI": 26,
-    "FR": 29,
+    "FR": 32,
     "GB": 3,
-    "HK": 9,
+    "HK": 8,
     "IE": 4,
-    "JP": 84,
-    "KR": 11,
+    "JP": 81,
+    "KR": 12,
     "NL": 1,
     "PL": 1,
     "RO": 1,
-    "SG": 15,
+    "SG": 13,
     "SY": 1,
     "US": 62
   },
@@ -25,86 +25,86 @@
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 77,
-      "share": 0.23333333333333334,
-      "connection_share": 0.24369747899159663
+      "nodes": 79,
+      "share": 0.23795180722891565,
+      "connection_share": 0.2531545741324921
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 46,
-      "share": 0.1393939393939394,
-      "connection_share": 0.2826585179526356
-    },
-    {
-      "asn": 16509,
-      "org": "Amazon.com, Inc.",
-      "nodes": 33,
-      "share": 0.1,
-      "connection_share": 0.04201680672268908
+      "nodes": 50,
+      "share": 0.15060240963855423,
+      "connection_share": 0.30047318611987384
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 32,
-      "share": 0.09696969696969697,
-      "connection_share": 0.04660045836516425
+      "nodes": 33,
+      "share": 0.09939759036144578,
+      "connection_share": 0.04968454258675079
     },
     {
-      "asn": 210162,
-      "org": "UAB Cherry Servers",
-      "nodes": 20,
-      "share": 0.06060606060606061,
-      "connection_share": 0.022536287242169595
+      "asn": 16509,
+      "org": "Amazon.com, Inc.",
+      "nodes": 30,
+      "share": 0.09036144578313253,
+      "connection_share": 0.04219242902208202
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 17,
-      "share": 0.051515151515151514,
-      "connection_share": 0.02826585179526356
+      "nodes": 21,
+      "share": 0.06325301204819277,
+      "connection_share": 0.02641955835962145
+    },
+    {
+      "asn": 210162,
+      "org": "UAB Cherry Servers",
+      "nodes": 19,
+      "share": 0.0572289156626506,
+      "connection_share": 0.025236593059936908
+    },
+    {
+      "asn": 14618,
+      "org": "Amazon.com, Inc.",
+      "nodes": 11,
+      "share": 0.03313253012048193,
+      "connection_share": 0.011829652996845425
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
       "nodes": 11,
-      "share": 0.03333333333333333,
-      "connection_share": 0.0481283422459893
+      "share": 0.03313253012048193,
+      "connection_share": 0.05165615141955836
     },
     {
       "asn": 396982,
       "org": "Google LLC",
       "nodes": 11,
-      "share": 0.03333333333333333,
-      "connection_share": 0.009549274255156608
+      "share": 0.03313253012048193,
+      "connection_share": 0.010646687697160883
     },
     {
-      "asn": 14618,
-      "org": "Amazon.com, Inc.",
-      "nodes": 10,
-      "share": 0.030303030303030304,
-      "connection_share": 0.011077158135981665
-    },
-    {
-      "asn": 60068,
-      "org": "Datacamp Limited",
+      "asn": 3786,
+      "org": "LG DACOM Corporation",
       "nodes": 9,
-      "share": 0.02727272727272727,
-      "connection_share": 0.05767761650114591
+      "share": 0.02710843373493976,
+      "connection_share": 0.011041009463722398
     }
   ],
   "versions": {
-    "population": 330,
+    "population": 332,
     "shares": {
-      "1.0.1": 0.9878787878787879,
-      "other": 0.012121212121212121
+      "1.0.1": 0.9849397590361446,
+      "other": 0.015060240963855422
     }
   },
   "graph": {
-    "population": 330,
-    "largest_component_fraction": 0.8272727272727273,
+    "population": 332,
+    "largest_component_fraction": 0.8253012048192772,
     "top_n": 5,
-    "top_n_share": 0.19022154316271964
+    "top_n_share": 0.1553627760252366
   },
   "directory": [
     {
