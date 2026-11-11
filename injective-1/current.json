@@ -1,111 +1,111 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-11T16:24:24.776704197Z",
+  "crawled_at": "2026-11-11T22:55:20.9136199Z",
   "public_nodes": 21,
-  "non_public_nodes": 289,
+  "non_public_nodes": 292,
   "countries": {
     "AE": 1,
     "CA": 9,
-    "DE": 69,
+    "DE": 68,
     "FI": 24,
-    "FR": 29,
+    "FR": 28,
     "GB": 2,
-    "HK": 8,
+    "HK": 9,
     "IE": 4,
-    "JP": 79,
-    "KR": 11,
+    "JP": 78,
+    "KR": 12,
     "NL": 1,
     "PL": 1,
     "RO": 2,
     "SG": 9,
     "SY": 1,
-    "US": 59
+    "US": 63
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 73,
-      "share": 0.23548387096774193,
-      "connection_share": 0.22627737226277372
+      "nodes": 70,
+      "share": 0.22364217252396165,
+      "connection_share": 0.24531377343113284
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 45,
-      "share": 0.14516129032258066,
-      "connection_share": 0.29318734793187345
+      "nodes": 46,
+      "share": 0.14696485623003194,
+      "connection_share": 0.29665851670741644
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 34,
-      "share": 0.10967741935483871,
-      "connection_share": 0.046228710462287104
+      "nodes": 36,
+      "share": 0.11501597444089456,
+      "connection_share": 0.04767726161369193
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 31,
-      "share": 0.1,
-      "connection_share": 0.050283860502838604
+      "nodes": 30,
+      "share": 0.09584664536741214,
+      "connection_share": 0.05623471882640587
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 16,
-      "share": 0.05161290322580645,
-      "connection_share": 0.019870235198702353
+      "nodes": 17,
+      "share": 0.054313099041533544,
+      "connection_share": 0.020374898125509373
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 15,
-      "share": 0.04838709677419355,
-      "connection_share": 0.021897810218978103
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 12,
-      "share": 0.03870967741935484,
-      "connection_share": 0.05190592051905921
+      "nodes": 16,
+      "share": 0.051118210862619806,
+      "connection_share": 0.02444987775061125
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 11,
-      "share": 0.035483870967741936,
-      "connection_share": 0.006893755068937551
+      "nodes": 13,
+      "share": 0.04153354632587859,
+      "connection_share": 0.008964955175224124
     },
     {
       "asn": 396982,
       "org": "Google LLC",
+      "nodes": 11,
+      "share": 0.03514376996805112,
+      "connection_share": 0.008557457212713936
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
       "nodes": 10,
-      "share": 0.03225806451612903,
-      "connection_share": 0.008921330089213302
+      "share": 0.03194888178913738,
+      "connection_share": 0.05093724531377343
     },
     {
       "asn": 3786,
       "org": "LG DACOM Corporation",
-      "nodes": 8,
-      "share": 0.025806451612903226,
-      "connection_share": 0.015004055150040552
+      "nodes": 9,
+      "share": 0.02875399361022364,
+      "connection_share": 0.01915240423797881
     }
   ],
   "versions": {
-    "population": 310,
+    "population": 313,
     "shares": {
-      "1.0.1": 0.9903225806451613,
-      "other": 0.00967741935483871
+      "1.0.1": 0.9904153354632588,
+      "other": 0.009584664536741214
     }
   },
   "graph": {
-    "population": 310,
-    "largest_component_fraction": 0.8290322580645161,
+    "population": 313,
+    "largest_component_fraction": 0.8370607028753994,
     "top_n": 5,
-    "top_n_share": 0.22303325223033252
+    "top_n_share": 0.17400162999185004
   },
   "directory": [
     {
@@ -115,7 +115,7 @@
       "as_org": "Datacamp Limited",
       "earliest_block_height": 184939701,
       "tx_index": true,
-      "catching_up": true
+      "catching_up": false
     },
     {
       "endpoint": "http://136.243.77.235:26657",
@@ -187,7 +187,7 @@
       "as_org": "Datacamp Limited",
       "earliest_block_height": 184939701,
       "tx_index": true,
-      "catching_up": true
+      "catching_up": false
     },
     {
       "endpoint": "http://37.27.139.246:26657",
@@ -257,7 +257,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 185943801,
+      "earliest_block_height": 191293243,
       "tx_index": true,
       "catching_up": false
     },
