@@ -1,111 +1,111 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-15T00:03:08.641308148Z",
-  "public_nodes": 22,
-  "non_public_nodes": 298,
+  "crawled_at": "2026-11-15T06:53:48.709069504Z",
+  "public_nodes": 23,
+  "non_public_nodes": 289,
   "countries": {
     "AE": 1,
-    "CA": 10,
-    "DE": 67,
+    "CA": 9,
+    "DE": 72,
     "FI": 23,
-    "FR": 30,
+    "FR": 27,
     "GB": 7,
     "HK": 8,
     "IE": 4,
-    "JP": 81,
-    "KR": 11,
+    "JP": 75,
+    "KR": 10,
     "NL": 1,
     "PL": 1,
-    "RO": 3,
+    "RO": 2,
     "SG": 14,
     "SY": 1,
-    "US": 57
+    "US": 56
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 76,
-      "share": 0.2375,
-      "connection_share": 0.23716275021758051
+      "nodes": 74,
+      "share": 0.23717948717948717,
+      "connection_share": 0.2359375
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 44,
-      "share": 0.1375,
-      "connection_share": 0.2876414273281114
+      "nodes": 48,
+      "share": 0.15384615384615385,
+      "connection_share": 0.279296875
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 41,
-      "share": 0.128125,
-      "connection_share": 0.05961705831157528
+      "nodes": 37,
+      "share": 0.11858974358974358,
+      "connection_share": 0.0546875
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 31,
-      "share": 0.096875,
-      "connection_share": 0.04960835509138381
+      "nodes": 24,
+      "share": 0.07692307692307693,
+      "connection_share": 0.043359375
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 17,
-      "share": 0.053125,
-      "connection_share": 0.020017406440382943
+      "nodes": 16,
+      "share": 0.05128205128205128,
+      "connection_share": 0.017578125
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
+      "nodes": 14,
+      "share": 0.04487179487179487,
+      "connection_share": 0.0171875
+    },
+    {
+      "asn": 396982,
+      "org": "Google LLC",
       "nodes": 11,
-      "share": 0.034375,
-      "connection_share": 0.020887728459530026
+      "share": 0.035256410256410256,
+      "connection_share": 0.009375
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 10,
-      "share": 0.03125,
-      "connection_share": 0.011314186248912098
-    },
-    {
-      "asn": 396982,
-      "org": "Google LLC",
-      "nodes": 10,
-      "share": 0.03125,
-      "connection_share": 0.009573542210617928
+      "share": 0.03205128205128205,
+      "connection_share": 0.011328125
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 9,
-      "share": 0.028125,
-      "connection_share": 0.05526544821583986
+      "nodes": 8,
+      "share": 0.02564102564102564,
+      "connection_share": 0.049609375
     },
     {
       "asn": 3786,
       "org": "LG DACOM Corporation",
-      "nodes": 8,
-      "share": 0.025,
-      "connection_share": 0.013489991296779809
+      "nodes": 7,
+      "share": 0.022435897435897436,
+      "connection_share": 0.012890625
     }
   ],
   "versions": {
-    "population": 320,
+    "population": 312,
     "shares": {
-      "1.0.1": 0.9875,
-      "other": 0.0125
+      "1.0.1": 0.9839743589743589,
+      "other": 0.016025641025641024
     }
   },
   "graph": {
-    "population": 320,
-    "largest_component_fraction": 0.840625,
+    "population": 312,
+    "largest_component_fraction": 0.8878205128205128,
     "top_n": 5,
-    "top_n_share": 0.18059181897302
+    "top_n_share": 0.2046875
   },
   "directory": [
     {
@@ -158,7 +158,7 @@
       "country": "CA",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 191566736,
+      "earliest_block_height": 191607809,
       "tx_index": true,
       "catching_up": false
     },
@@ -179,6 +179,15 @@
       "earliest_block_height": 1,
       "tx_index": true,
       "catching_up": true
+    },
+    {
+      "endpoint": "http://176.9.143.252:11750",
+      "country": "DE",
+      "asn": 24940,
+      "as_org": "Hetzner Online GmbH",
+      "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
     },
     {
       "endpoint": "http://178.249.213.216:26657",
@@ -293,7 +302,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 190916661,
+      "earliest_block_height": 191293243,
       "tx_index": true,
       "catching_up": false
     }
