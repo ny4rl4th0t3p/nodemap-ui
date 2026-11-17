@@ -1,26 +1,27 @@
 {
   "schema_version": 1,
   "chain": "cosmoshub-4",
-  "crawled_at": "2026-11-17T13:41:16.770558834Z",
-  "public_nodes": 32,
-  "non_public_nodes": 512,
+  "crawled_at": "2026-11-17T23:36:52.019904226Z",
+  "public_nodes": 33,
+  "non_public_nodes": 527,
   "countries": {
     "AE": 1,
     "AT": 4,
-    "AU": 7,
-    "BG": 4,
-    "CA": 26,
+    "AU": 5,
+    "BE": 1,
+    "BG": 5,
+    "CA": 23,
     "CH": 1,
-    "DE": 133,
+    "DE": 134,
     "ES": 1,
-    "FI": 65,
-    "FR": 25,
-    "GB": 12,
+    "FI": 67,
+    "FR": 27,
+    "GB": 14,
     "HK": 13,
     "IE": 9,
-    "IN": 3,
+    "IN": 4,
     "IT": 3,
-    "JP": 24,
+    "JP": 27,
     "KR": 15,
     "LT": 2,
     "LV": 2,
@@ -29,16 +30,17 @@
     "MX": 2,
     "NL": 21,
     "PA": 1,
-    "PL": 10,
-    "PT": 3,
+    "PL": 11,
+    "PT": 4,
     "RO": 13,
     "RU": 8,
     "SE": 4,
     "SG": 30,
+    "SY": 1,
     "TR": 1,
     "TW": 3,
     "UA": 1,
-    "US": 88,
+    "US": 93,
     "VN": 2,
     "ZA": 1
   },
@@ -46,87 +48,87 @@
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 139,
-      "share": 0.2555147058823529,
-      "connection_share": 0.4174408783783784
+      "nodes": 143,
+      "share": 0.25535714285714284,
+      "connection_share": 0.41322144903806796
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 58,
-      "share": 0.10661764705882353,
-      "connection_share": 0.048564189189189186
+      "nodes": 62,
+      "share": 0.11071428571428571,
+      "connection_share": 0.049733933688088414
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 46,
-      "share": 0.08455882352941177,
-      "connection_share": 0.09649493243243243
+      "nodes": 52,
+      "share": 0.09285714285714286,
+      "connection_share": 0.09721653704461727
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 19,
-      "share": 0.034926470588235295,
-      "connection_share": 0.033150337837837836
+      "nodes": 20,
+      "share": 0.03571428571428571,
+      "connection_share": 0.03376995497339337
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 18,
-      "share": 0.03308823529411765,
-      "connection_share": 0.028716216216216218
+      "share": 0.03214285714285714,
+      "connection_share": 0.025583299222267705
     },
     {
       "asn": 9009,
       "org": "M247 Europe SRL",
       "nodes": 13,
-      "share": 0.02389705882352941,
-      "connection_share": 0.03209459459459459
+      "share": 0.023214285714285715,
+      "connection_share": 0.03315595579205895
     },
     {
       "asn": 45102,
       "org": "Alibaba (US) Technology Co., Ltd.",
       "nodes": 13,
-      "share": 0.02389705882352941,
-      "connection_share": 0.003800675675675676
+      "share": 0.023214285714285715,
+      "connection_share": 0.004707327056897258
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
       "nodes": 10,
-      "share": 0.01838235294117647,
-      "connection_share": 0.011190878378378379
+      "share": 0.017857142857142856,
+      "connection_share": 0.010847318870241505
+    },
+    {
+      "asn": 396982,
+      "org": "Google LLC",
+      "nodes": 10,
+      "share": 0.017857142857142856,
+      "connection_share": 0.009414654113794515
     },
     {
       "asn": 3786,
       "org": "LG DACOM Corporation",
       "nodes": 8,
-      "share": 0.014705882352941176,
-      "connection_share": 0.005278716216216216
-    },
-    {
-      "asn": 396982,
-      "org": "Google LLC",
-      "nodes": 8,
-      "share": 0.014705882352941176,
-      "connection_share": 0.010346283783783784
+      "share": 0.014285714285714285,
+      "connection_share": 0.0059353254195661075
     }
   ],
   "versions": {
-    "population": 544,
+    "population": 560,
     "shares": {
-      "0.38.22": 0.025735294117647058,
-      "0.38.25": 0.9430147058823529,
-      "other": 0.03125
+      "0.38.22": 0.025,
+      "0.38.25": 0.9464285714285714,
+      "other": 0.02857142857142857
     }
   },
   "graph": {
-    "population": 544,
-    "largest_component_fraction": 0.9264705882352942,
+    "population": 560,
+    "largest_component_fraction": 0.9303571428571429,
     "top_n": 5,
-    "top_n_share": 0.22508445945945946
+    "top_n_share": 0.213876381498158
   },
   "directory": [
     {
@@ -184,6 +186,15 @@
       "catching_up": false
     },
     {
+      "endpoint": "http://221.255.180.106:26657",
+      "country": "JP",
+      "asn": 17506,
+      "as_org": "ARTERIA Networks Corporation",
+      "earliest_block_height": 33087755,
+      "tx_index": false,
+      "catching_up": false
+    },
+    {
       "endpoint": "http://37.120.245.41:26657",
       "country": "RO",
       "asn": 9009,
@@ -198,6 +209,15 @@
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
       "earliest_block_height": 0,
+      "tx_index": true,
+      "catching_up": false
+    },
+    {
+      "endpoint": "http://64.34.93.51:26657",
+      "country": "US",
+      "asn": 262287,
+      "as_org": "Maxihost LTDA",
+      "earliest_block_height": 32927025,
       "tx_index": true,
       "catching_up": false
     },
@@ -224,7 +244,7 @@
       "country": "FI",
       "asn": 24940,
       "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 32920709,
+      "earliest_block_height": 32927010,
       "tx_index": true,
       "catching_up": false
     },
@@ -242,7 +262,7 @@
       "country": "CA",
       "asn": 13335,
       "as_org": "Cloudflare, Inc.",
-      "earliest_block_height": 32841442,
+      "earliest_block_height": 33618735,
       "tx_index": true,
       "catching_up": false
     },
@@ -314,15 +334,6 @@
       "country": "US",
       "asn": 18450,
       "as_org": "WebNX, Inc.",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "https://public.stakewolle.com/cosmos/cosmoshub/rpc",
-      "country": "CA",
-      "asn": 13335,
-      "as_org": "Cloudflare, Inc.",
       "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": false
