@@ -1,112 +1,112 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-20T07:35:12.61384745Z",
+  "crawled_at": "2026-11-20T17:06:17.561882137Z",
   "public_nodes": 19,
-  "non_public_nodes": 268,
+  "non_public_nodes": 261,
   "countries": {
     "BE": 1,
     "CA": 8,
-    "DE": 64,
+    "DE": 62,
     "FI": 18,
     "FR": 30,
     "GB": 4,
     "HK": 8,
-    "IE": 4,
-    "JP": 72,
+    "IE": 3,
+    "JP": 70,
     "KR": 9,
     "MX": 1,
     "NL": 1,
     "PL": 1,
     "RO": 2,
-    "SG": 12,
+    "SG": 11,
     "SY": 1,
-    "US": 50
+    "US": 49
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 65,
-      "share": 0.2264808362369338,
-      "connection_share": 0.23471307619943557
+      "nodes": 64,
+      "share": 0.22857142857142856,
+      "connection_share": 0.23116760828625235
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 40,
-      "share": 0.13937282229965156,
-      "connection_share": 0.3104421448730009
+      "nodes": 38,
+      "share": 0.1357142857142857,
+      "connection_share": 0.3192090395480226
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 35,
-      "share": 0.12195121951219512,
-      "connection_share": 0.04891815616180621
+      "nodes": 34,
+      "share": 0.12142857142857143,
+      "connection_share": 0.0475517890772128
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 22,
-      "share": 0.07665505226480836,
-      "connection_share": 0.04656632173095014
+      "nodes": 21,
+      "share": 0.075,
+      "connection_share": 0.05084745762711865
     },
     {
       "asn": 20326,
       "org": "TeraSwitch Networks Inc.",
-      "nodes": 20,
-      "share": 0.06968641114982578,
-      "connection_share": 0.027751646284101598
+      "nodes": 18,
+      "share": 0.06428571428571428,
+      "connection_share": 0.02495291902071563
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 14,
-      "share": 0.04878048780487805,
-      "connection_share": 0.02398871119473189
+      "nodes": 15,
+      "share": 0.05357142857142857,
+      "connection_share": 0.025423728813559324
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 10,
-      "share": 0.03484320557491289,
-      "connection_share": 0.008936970837253057
-    },
-    {
-      "asn": 60068,
-      "org": "Datacamp Limited",
-      "nodes": 9,
-      "share": 0.0313588850174216,
-      "connection_share": 0.07478833490122296
-    },
-    {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 9,
-      "share": 0.0313588850174216,
-      "connection_share": 0.05738476011288805
+      "share": 0.03571428571428571,
+      "connection_share": 0.008945386064030132
     },
     {
       "asn": 396982,
       "org": "Google LLC",
+      "nodes": 9,
+      "share": 0.03214285714285714,
+      "connection_share": 0.007532956685499058
+    },
+    {
+      "asn": 60068,
+      "org": "Datacamp Limited",
       "nodes": 8,
-      "share": 0.027874564459930314,
-      "connection_share": 0.0070555032925682035
+      "share": 0.02857142857142857,
+      "connection_share": 0.07250470809792843
+    },
+    {
+      "asn": 396356,
+      "org": "Latitude.sh",
+      "nodes": 8,
+      "share": 0.02857142857142857,
+      "connection_share": 0.04990583804143126
     }
   ],
   "versions": {
-    "population": 287,
+    "population": 280,
     "shares": {
-      "1.0.1": 0.9825783972125436,
-      "other": 0.017421602787456445
+      "1.0.1": 0.9928571428571429,
+      "other": 0.007142857142857143
     }
   },
   "graph": {
-    "population": 287,
-    "largest_component_fraction": 0.9930313588850174,
+    "population": 280,
+    "largest_component_fraction": 0.9928571428571429,
     "top_n": 5,
-    "top_n_share": 0.19238005644402634
+    "top_n_share": 0.185969868173258
   },
   "directory": [
     {
@@ -150,7 +150,7 @@
       "country": "CA",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 192324719,
+      "earliest_block_height": 192381709,
       "tx_index": true,
       "catching_up": false
     },
