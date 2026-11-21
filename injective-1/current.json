@@ -1,112 +1,111 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-21T12:53:43.10522598Z",
+  "crawled_at": "2026-11-21T21:47:37.785808585Z",
   "public_nodes": 19,
-  "non_public_nodes": 267,
+  "non_public_nodes": 258,
   "countries": {
     "BE": 1,
     "CA": 8,
-    "DE": 68,
-    "FI": 18,
-    "FR": 31,
-    "GB": 4,
-    "HK": 9,
+    "DE": 65,
+    "FI": 19,
+    "FR": 30,
+    "GB": 5,
+    "HK": 8,
     "IE": 3,
-    "JP": 72,
+    "JP": 69,
     "KR": 9,
     "MX": 1,
     "NL": 1,
     "PL": 1,
     "RO": 2,
     "SG": 10,
-    "SY": 1,
-    "US": 46
+    "US": 44
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 65,
-      "share": 0.22727272727272727,
-      "connection_share": 0.23073351903435468
+      "nodes": 63,
+      "share": 0.22743682310469315,
+      "connection_share": 0.22974261201143947
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 40,
-      "share": 0.13986013986013987,
-      "connection_share": 0.32219127205199627
+      "nodes": 41,
+      "share": 0.148014440433213,
+      "connection_share": 0.32459485224022877
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 33,
-      "share": 0.11538461538461539,
-      "connection_share": 0.04874651810584958
-    },
-    {
-      "asn": 20326,
-      "org": "TeraSwitch Networks Inc.",
-      "nodes": 21,
-      "share": 0.07342657342657342,
-      "connection_share": 0.028319405756731662
+      "nodes": 32,
+      "share": 0.11552346570397112,
+      "connection_share": 0.05100095328884652
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 21,
-      "share": 0.07342657342657342,
-      "connection_share": 0.04735376044568245
+      "nodes": 20,
+      "share": 0.07220216606498195,
+      "connection_share": 0.05100095328884652
+    },
+    {
+      "asn": 20326,
+      "org": "TeraSwitch Networks Inc.",
+      "nodes": 16,
+      "share": 0.05776173285198556,
+      "connection_share": 0.0219256434699714
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 14,
-      "share": 0.04895104895104895,
-      "connection_share": 0.019962859795728878
+      "nodes": 13,
+      "share": 0.04693140794223827,
+      "connection_share": 0.017159199237368923
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
-      "nodes": 10,
-      "share": 0.03496503496503497,
-      "connection_share": 0.009285051067780872
-    },
-    {
-      "asn": 396982,
-      "org": "Google LLC",
-      "nodes": 10,
-      "share": 0.03496503496503497,
-      "connection_share": 0.008356545961002786
+      "nodes": 12,
+      "share": 0.04332129963898917,
+      "connection_share": 0.010486177311725452
     },
     {
       "asn": 60068,
       "org": "Datacamp Limited",
-      "nodes": 8,
-      "share": 0.027972027972027972,
-      "connection_share": 0.07149489322191271
+      "nodes": 9,
+      "share": 0.032490974729241874,
+      "connection_share": 0.07530981887511916
     },
     {
-      "asn": 396356,
-      "org": "Latitude.sh",
-      "nodes": 8,
-      "share": 0.027972027972027972,
-      "connection_share": 0.0510677808727948
+      "asn": 396982,
+      "org": "Google LLC",
+      "nodes": 9,
+      "share": 0.032490974729241874,
+      "connection_share": 0.007149666348903718
+    },
+    {
+      "asn": 132203,
+      "org": "Shenzhen Tencent Computer Systems Company Limited",
+      "nodes": 7,
+      "share": 0.02527075812274368,
+      "connection_share": 0.012869399428026692
     }
   ],
   "versions": {
-    "population": 286,
+    "population": 277,
     "shares": {
-      "1.0.1": 0.9825174825174825,
-      "other": 0.017482517482517484
+      "1.0.1": 0.9819494584837545,
+      "other": 0.018050541516245487
     }
   },
   "graph": {
-    "population": 286,
-    "largest_component_fraction": 0.993006993006993,
+    "population": 277,
+    "largest_component_fraction": 0.9927797833935018,
     "top_n": 5,
-    "top_n_share": 0.1787372330547818
+    "top_n_share": 0.1801715919923737
   },
   "directory": [
     {
@@ -150,7 +149,7 @@
       "country": "CA",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 192500209,
+      "earliest_block_height": 192553800,
       "tx_index": true,
       "catching_up": false
     },
