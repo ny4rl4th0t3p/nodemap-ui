@@ -1,113 +1,110 @@
 {
   "schema_version": 1,
   "chain": "injective-1",
-  "crawled_at": "2026-11-24T03:01:50.704502676Z",
-  "public_nodes": 20,
-  "non_public_nodes": 267,
+  "crawled_at": "2026-11-24T15:03:47.612018002Z",
+  "public_nodes": 16,
+  "non_public_nodes": 205,
   "countries": {
     "BE": 1,
-    "CA": 8,
-    "DE": 69,
-    "FI": 18,
-    "FR": 30,
-    "GB": 5,
-    "HK": 7,
-    "IE": 4,
-    "JP": 70,
+    "CA": 5,
+    "DE": 49,
+    "FI": 11,
+    "FR": 25,
+    "GB": 2,
+    "HK": 8,
+    "IE": 3,
+    "JP": 59,
     "KR": 9,
     "MX": 1,
-    "NL": 1,
-    "PL": 1,
     "RO": 2,
-    "RU": 1,
-    "SG": 12,
+    "SG": 8,
     "SY": 1,
-    "US": 46
+    "US": 36
   },
   "asns": [
     {
       "asn": 16276,
       "org": "OVH SAS",
-      "nodes": 64,
-      "share": 0.2229965156794425,
-      "connection_share": 0.2393526405451448
+      "nodes": 57,
+      "share": 0.2579185520361991,
+      "connection_share": 0.19669421487603306
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 38,
-      "share": 0.13240418118466898,
-      "connection_share": 0.2772572402044293
+      "nodes": 25,
+      "share": 0.11312217194570136,
+      "connection_share": 0.2900826446280992
     },
     {
       "asn": 16509,
       "org": "Amazon.com, Inc.",
-      "nodes": 35,
-      "share": 0.12195121951219512,
-      "connection_share": 0.05068143100511073
-    },
-    {
-      "asn": 20326,
-      "org": "TeraSwitch Networks Inc.",
-      "nodes": 27,
-      "share": 0.09407665505226481,
-      "connection_share": 0.05366269165247019
+      "nodes": 24,
+      "share": 0.1085972850678733,
+      "connection_share": 0.05371900826446281
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 22,
-      "share": 0.07665505226480836,
-      "connection_share": 0.05110732538330494
+      "nodes": 17,
+      "share": 0.07692307692307693,
+      "connection_share": 0.033884297520661154
+    },
+    {
+      "asn": 20326,
+      "org": "TeraSwitch Networks Inc.",
+      "nodes": 12,
+      "share": 0.05429864253393665,
+      "connection_share": 0.032231404958677684
     },
     {
       "asn": 210162,
       "org": "UAB Cherry Servers",
-      "nodes": 15,
-      "share": 0.05226480836236934,
-      "connection_share": 0.04599659284497445
+      "nodes": 10,
+      "share": 0.04524886877828054,
+      "connection_share": 0.03801652892561983
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 10,
-      "share": 0.03484320557491289,
-      "connection_share": 0.05323679727427598
+      "nodes": 9,
+      "share": 0.04072398190045249,
+      "connection_share": 0.0768595041322314
     },
     {
       "asn": 396982,
       "org": "Google LLC",
       "nodes": 8,
-      "share": 0.027874564459930314,
-      "connection_share": 0.007666098807495741
+      "share": 0.03619909502262444,
+      "connection_share": 0.012396694214876033
+    },
+    {
+      "asn": 46475,
+      "org": "Limestone Networks, Inc.",
+      "nodes": 7,
+      "share": 0.03167420814479638,
+      "connection_share": 0.011570247933884297
     },
     {
       "asn": 60068,
       "org": "Datacamp Limited",
       "nodes": 7,
-      "share": 0.024390243902439025,
-      "connection_share": 0.06345826235093696
-    },
-    {
-      "asn": 3786,
-      "org": "LG DACOM Corporation",
-      "nodes": 6,
-      "share": 0.020905923344947737,
-      "connection_share": 0.007666098807495741
+      "share": 0.03167420814479638,
+      "connection_share": 0.08512396694214876
     }
   ],
   "versions": {
-    "population": 287,
+    "population": 221,
     "shares": {
-      "1.0.1": 0.9825783972125436,
-      "other": 0.017421602787456445
+      "1.0.1": 0.9773755656108597,
+      "other": 0.02262443438914027
     }
   },
   "graph": {
-    "population": 287,
-    "largest_component_fraction": 0.9930313588850174,
+    "population": 221,
+    "largest_component_fraction": 0.9909502262443439,
     "top_n": 5,
-    "top_n_share": 0.17248722316865417
+    "top_n_share": 0.228099173553719
   },
   "directory": [
     {
@@ -115,7 +112,7 @@
       "country": "JP",
       "asn": 210162,
       "as_org": "UAB Cherry Servers",
-      "earliest_block_height": 191573588,
+      "earliest_block_height": 191644999,
       "tx_index": true,
       "catching_up": false
     },
@@ -147,20 +144,11 @@
       "catching_up": false
     },
     {
-      "endpoint": "http://15.235.117.212:26672",
-      "country": "CA",
-      "asn": 16276,
-      "as_org": "OVH SAS",
-      "earliest_block_height": 182151998,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
       "endpoint": "http://15.235.13.116:11750",
       "country": "CA",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 192873588,
+      "earliest_block_height": 192944999,
       "tx_index": true,
       "catching_up": false
     },
@@ -207,7 +195,7 @@
       "as_org": "Hetzner Online GmbH",
       "earliest_block_height": 181026502,
       "tx_index": true,
-      "catching_up": true
+      "catching_up": false
     },
     {
       "endpoint": "http://37.27.58.188:26657",
@@ -237,15 +225,6 @@
       "catching_up": false
     },
     {
-      "endpoint": "http://65.109.51.80:11750",
-      "country": "FI",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
       "endpoint": "http://65.109.69.143:13021",
       "country": "FI",
       "asn": 24940,
@@ -253,24 +232,6 @@
       "earliest_block_height": 0,
       "tx_index": true,
       "catching_up": true
-    },
-    {
-      "endpoint": "http://72.251.11.205:26672",
-      "country": "CA",
-      "asn": 16276,
-      "as_org": "OVH SAS",
-      "earliest_block_height": 182151998,
-      "tx_index": true,
-      "catching_up": false
-    },
-    {
-      "endpoint": "https://injective-rpc.polkachu.com:443",
-      "country": "FI",
-      "asn": 24940,
-      "as_org": "Hetzner Online GmbH",
-      "earliest_block_height": 0,
-      "tx_index": true,
-      "catching_up": false
     },
     {
       "endpoint": "https://injective-rpc.publicnode.com:443",
