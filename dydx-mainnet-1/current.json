@@ -1,23 +1,25 @@
 {
   "schema_version": 1,
   "chain": "dydx-mainnet-1",
-  "crawled_at": "2026-11-26T00:34:59.820547002Z",
+  "crawled_at": "2026-11-26T14:05:42.738977432Z",
   "public_nodes": 9,
   "non_public_nodes": 131,
   "countries": {
-    "AU": 1,
-    "CA": 1,
-    "DE": 22,
-    "FI": 8,
-    "FR": 9,
+    "AU": 2,
+    "CA": 2,
+    "DE": 21,
+    "FI": 7,
+    "FR": 8,
+    "GB": 1,
     "HK": 2,
-    "IE": 3,
-    "JP": 52,
+    "IE": 2,
+    "IN": 1,
+    "JP": 50,
     "KR": 6,
-    "NL": 4,
+    "NL": 3,
     "PL": 1,
-    "SG": 8,
-    "US": 22
+    "SG": 9,
+    "US": 24
   },
   "asns": [
     {
@@ -25,56 +27,56 @@
       "org": "Amazon.com, Inc.",
       "nodes": 31,
       "share": 0.22142857142857142,
-      "connection_share": 0.1422872340425532
+      "connection_share": 0.15902578796561603
     },
     {
       "asn": 395201,
       "org": "Allnodes Inc",
-      "nodes": 18,
-      "share": 0.12857142857142856,
-      "connection_share": 0.07845744680851063
+      "nodes": 17,
+      "share": 0.12142857142857143,
+      "connection_share": 0.06876790830945559
     },
     {
       "asn": 24940,
       "org": "Hetzner Online GmbH",
-      "nodes": 17,
-      "share": 0.12142857142857143,
-      "connection_share": 0.2699468085106383
+      "nodes": 16,
+      "share": 0.11428571428571428,
+      "connection_share": 0.28939828080229224
     },
     {
       "asn": 16276,
       "org": "OVH SAS",
       "nodes": 14,
       "share": 0.1,
-      "connection_share": 0.047872340425531915
+      "connection_share": 0.05300859598853868
     },
     {
       "asn": 396356,
       "org": "Latitude.sh",
-      "nodes": 9,
-      "share": 0.06428571428571428,
-      "connection_share": 0.05585106382978723
+      "nodes": 8,
+      "share": 0.05714285714285714,
+      "connection_share": 0.050143266475644696
     },
     {
       "asn": 14618,
       "org": "Amazon.com, Inc.",
       "nodes": 7,
       "share": 0.05,
-      "connection_share": 0.014627659574468085
+      "connection_share": 0.012893982808022923
     },
     {
       "asn": 206264,
       "org": "Amarutu Technology Ltd",
       "nodes": 7,
       "share": 0.05,
-      "connection_share": 0.018617021276595744
+      "connection_share": 0.017191977077363897
     },
     {
       "asn": 20473,
       "org": "The Constant Company, LLC",
       "nodes": 6,
       "share": 0.04285714285714286,
-      "connection_share": 0.014627659574468085
+      "connection_share": 0.014326647564469915
     }
   ],
   "versions": {
@@ -88,7 +90,7 @@
     "population": 140,
     "largest_component_fraction": 0.9857142857142858,
     "top_n": 5,
-    "top_n_share": 0.49069148936170215
+    "top_n_share": 0.47421203438395415
   },
   "directory": [
     {
@@ -123,7 +125,7 @@
       "country": "FR",
       "asn": 16276,
       "as_org": "OVH SAS",
-      "earliest_block_height": 115287877,
+      "earliest_block_height": 115362478,
       "tx_index": false,
       "catching_up": false
     },
